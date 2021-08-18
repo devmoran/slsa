@@ -1,8 +1,86 @@
-# Use Cases
+# Use cases
+
+<span class="subtitle">
 
 These are some of the use cases for SLSA.  Of these the first use case (a developer checking
 their own packages prior to publishing) is the most ready for adoption as it does not require
 interactions with any other party.
+
+</span>
+
+<table class="link-tree">
+<th>On this page</th>
+<tr>
+<td>
+
+[Developer publishing a software package](#developer-publishing-a-software-package)
+How an organisation can protect their users from malicious damage to the software they publish
+
+</td>
+</tr>
+<tr>
+<td>
+
+[Software consumer using third party software](#software-consumer-using-third-party-software)
+How an organisation can work with third party software suppliers to reduce risk in a software supply chain
+
+</td>
+</tr>
+<tr>
+<td>
+
+[Package repository accepting a package](#package-repository-accepting-a-software-package)
+How a repository can protect their users from malicious changes to uploaded software artifacts
+</td>
+</tr>
+<tr>
+<td>
+
+[Checking an artifact’s SLSA level](#checking-an-artifacts-slsa-level)
+
+</td>
+</tr>
+<tr>
+<td>
+
+[Determining a package’s intent](#determining-a-packages-intent)
+
+</td>
+</tr>
+<tr>
+<td>
+
+[Common requirements](#common-requirements)
+
+</td>
+</tr>
+<tr>
+<td>
+
+[IN DEVELOPMENT]: Automatically verifying software
+</td>
+</tr>
+
+</table>
+
+<table class="link-tree">
+<th>Further reading</th>
+<tr>
+<td>
+
+[Example of use](/example.md)
+
+</td>
+</tr>
+<tr>
+<td>
+
+[Case studies](https://github.com/slsa-framework/slsa/tree/main/case-studies)
+
+</td>
+</tr>
+
+</table>
 
 ## Developer publishing a software package
 
@@ -31,7 +109,7 @@ or from their distribution channels.  It doesn't, however, protect their users f
 BarImage from being tampered with after publication (though there may be other ways to address
 those concerns, such as code-signing after verification, and time-of-use verification).
 
-## Developer using third party software packages
+## Software consumer using third party software
 
 A developer using BarImage wants to ensure it hasn't been tampered with before using it.
 
@@ -84,6 +162,10 @@ They could do this by:
 
 This approach could protect users of protected repos from malicious tampering without requring all
 users to do their own policy checks of each image they consume.
+
+## Checking an artifact’s SLSA level
+
+## Determining a package's intent
 
 [Determine how to convey these keys]: https://github.com/slsa-framework/slsa/issues/101
 [in-toto SLSA Provenance]: https://slsa.dev/provenance

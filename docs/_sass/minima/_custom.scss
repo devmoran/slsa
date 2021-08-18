@@ -187,3 +187,31 @@ h4 {
         display: block;
     }
 }
+
+table.link-tree {
+    max-width: 500px;
+    border: none;
+
+    tr {
+        background-color: transparent;
+    }
+    td {
+        background-color: transparent;
+        border: 1px solid #C9C9C9;
+        padding: 4px 8px;
+    }
+    th {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: $grey-color;
+        font-weight: normal;
+    }
+    a {
+        display: block;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
