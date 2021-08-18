@@ -14,7 +14,6 @@ interactions with any other party.
 <td>
 
 [Developer publishing a software package](#developer-publishing-a-software-package)
-How an organisation can protect their users from malicious damage to the software they publish
 
 </td>
 </tr>
@@ -22,7 +21,6 @@ How an organisation can protect their users from malicious damage to the softwar
 <td>
 
 [Software consumer using third party software](#software-consumer-using-third-party-software)
-How an organisation can work with third party software suppliers to reduce risk in a software supply chain
 
 </td>
 </tr>
@@ -30,7 +28,7 @@ How an organisation can work with third party software suppliers to reduce risk 
 <td>
 
 [Package repository accepting a package](#package-repository-accepting-a-software-package)
-How a repository can protect their users from malicious changes to uploaded software artifacts
+
 </td>
 </tr>
 <tr>
@@ -47,14 +45,6 @@ How a repository can protect their users from malicious changes to uploaded soft
 
 </td>
 </tr>
-<tr>
-<td>
-
-[Common requirements](#common-requirements)
-
-</td>
-</tr>
-<tr>
 <td>
 
 [IN DEVELOPMENT]: Automatically verifying software
@@ -84,30 +74,36 @@ How a repository can protect their users from malicious changes to uploaded soft
 
 ## Developer publishing a software package
 
-A developer, BarInc, has the following goals in applying SLSA:
+### How an organisation can protect their users from malicious damage to the software they publish
 
-1.  Protect their users from malicious changes to the BarImage container image.
-2.  Protect their reputation, which would be harmed, if BarImage were compromised.
-3.  Access to metadata for auditing and ad-hoc analysis.
+| Subject   | Description                              |
+|:----------|:-----------------------------------------|
+| **Users** | Developers                               |
+| **Goals** | Protecting users from malicious changes  |
+|           | Protecting their company’s reputation    |
+|           | Access to metadata for auditing/analysis |
 
-BarInc can acheive these goals when publishing the container image by:
+A software development organisation (e.g. BarInc) wants to protect consumers of their software from malicious changes to the BarImage container image they publish. They also want to prevent any negative consequences and  damage to their reputation which would occur if that happened, and to have access to metadata for auditing and ad hoc analysis.
 
-1.  Upgrading their source control systems to meet higher SLSA levels.
-2.  Upgrading their build system to meet higher SLSA levels.
-3.  Ensuring BarImage **MUST** go through a secure control-point in order to be published.
-4.  Having the control-point check the candidate BarImage against its provenance, checking:
-    1.  That the expected builder created it.
-    2.  That the builder meets some minimum SLSA level.
-    3.  That the source repos listed in the provenance meet some minimum SLSA level.
-    4.  That the build entry point listed in the provenance is what they expect.
-    5.  (TBD) That the binary dependencies listed in the provenance meet some minimum SLSA level.
-5.  Only publishing the container image if all the checks in #4 pass.
-6.  Storing the provenance and all other attestations for future reference.
+### How to do it
 
-This approach allows BarInc to acheive their goals without requiring any changes from their users
-or from their distribution channels.  It doesn't, however, protect their users from a published
-BarImage from being tampered with after publication (though there may be other ways to address
-those concerns, such as code-signing after verification, and time-of-use verification).
+BarInc can achieve these goals when publishing the container image by:
+
+-   Upgrading their source control systems to meet higher SLSA levels
+-   Upgrading their build system to meet higher SLSA levels
+-   Ensuring BarImage must go through a secure control-point in order to be published
+-   Having the control-point check the candidate BarImage against its provenance, checking that:
+    -   The expected builder created it
+    -   The builder meets a minimum SLSA level
+    -   The source repositories listed in the provenance meets a minimum SLSA level
+    -   The build entry point listed in the provenance is expected
+    -   The binary dependencies listed in the provenance meets a minimum SLSA level
+-   Only publishing the container image if all the above checks pass
+-   Storing the provenance and all other attestations for future reference
+
+### Limitations
+
+This approach doesn’t protect their users from a published BarImage being tampered with after production. There may be other ways to address these concerns such as code signing after verification, time-of-use verification, or encouraging use of the SLSA framework by their software consumers.
 
 ## Software consumer using third party software
 
