@@ -58,14 +58,14 @@ This approach doesn’t protect their users from a published BarImage being tamp
 <tr>
 <td>
 
-[Checking an artifact’s SLSA level](#checking-an-artifacts-slsa-level)
+[IN DEVELOPMENT]: Checking an artifact’s SLSA level
 
 </td>
 </tr>
 <tr>
 <td>
 
-[Determining a package’s intent](#determining-a-packages-intent)
+[IN DEVELOPMENT]: Determining a package’s intent
 
 </td>
 </tr>
