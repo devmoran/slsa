@@ -1,0 +1,5 @@
+.DS_store
+.sass-cache
+_site
+node_modules
+.jekyll-cache/
