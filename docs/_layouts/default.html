@@ -7,8 +7,11 @@
     <div class="max-width">
       {%- include header.html -%}
       <main aria-label="Content">
+        <div id="table-of-contents">
+          {{ content | toc_only }}
+        </div>
         <div class="wrapper">
-          {{ content }}
+          {{ content | inject_anchors }}
         </div>
       </main>
     </div>
