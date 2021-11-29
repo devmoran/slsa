@@ -1,0 +1,16 @@
+<article class="p-8 flex flex-col items-start justify-between">
+    <div class="w-full">
+        <p class="h4">
+            {{testimonial[forloop.index].quote}}
+        </p>
+    </div>
+    <div class="flex flex items-start justify-between">
+        <div class="w-3/4 pr-6">
+            <h4 class="h4">{{testimonial[forloop.index].name}}</h4>
+            <p>{{testimonial[forloop.index].role}}</p>
+        </div>
+        <div class="w-1/4">
+            <img src="{{testimonial[forloop.index].logo}}" alt"Testimonial Logo" />
+        </div>
+    </div>
+</article>
