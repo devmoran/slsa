@@ -1,3 +1,7 @@
+---
+title: Specifications
+toc: true
+---
 # Requirements
 
 <span class="subtitle">
