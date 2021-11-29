@@ -1,5 +1,5 @@
 ---
 title: Specifications landing page
-toc: true
+order: 0
 ---
 # Specs landing
