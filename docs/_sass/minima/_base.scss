@@ -133,25 +133,16 @@ h1 {
     padding-bottom: $title-padding-bottom;
 }
 
-h2 {
-    padding: 20px 0 10px 0;
-}
-
 /**
  * Links
  */
 a {
-    color: $brand-color;
+    color: inherit;
     text-decoration: none;
-    font-weight: 500;
-
-    &:visited {
-        color: darken($brand-color, 10%);
-    }
+    font-weight: 600;
 
     &:hover {
         text-decoration: underline;
-        // text-decoration: underline;
     }
 
     .social-media-list &:hover {
@@ -208,9 +199,6 @@ pre {
 /**
  * Wrapper
  */
-.wrapper {
-    @extend %clearfix;
-}
 
 /**
  * Clearfix
