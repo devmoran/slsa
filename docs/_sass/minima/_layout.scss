@@ -2,18 +2,40 @@
  * Site header
  */
 .site-header {
-    // border-top: 5px solid $grey-color-dark;
-    // border-bottom: 1px solid $grey-color-light;
-    min-height: $spacer-xl * 4;
     @include media-query($on-tablet) {
         min-height: $spacer-xl * 2;
     }
     @include media-query($on-palm) {
         min-height: $spacer-xl;
     }
+    transition: transform .25s ease-in-out;
+    will-change: transform;
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    &.fixed {
+        transform: translateY(-100%);
+        background-color: #155757;
+        position: fixed;
+    }
+
+    &.sticky {
+        transform: translateY(0%);
+        background-color: #155757;
+        position: fixed;
+    }
+
+    &.static {
+        transform: translateY(0%);
+        background-color: #155757;
+    }
 }
 
 .site-title {
@@ -50,16 +72,38 @@
         display: none;
     }
 
-    .page-link {
-        color: $text-color;
-        font-size: $small-font-size;
-        font-weight: 400;
-        line-height: $base-line-height;
+    ul li{
+        a{
+            color: $text-color-light;
+            font-size: $small-font-size;
+            font-weight: 400;
+            line-height: $base-line-height;
+        }
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
         }
+
+        ul li:not(:last-child) {
+            margin-right: 0px;
+        }
+
+        & > ul {
+            li {
+                margin:0;
+                a{
+                    color: $text-color;
+                    font-size: $small-font-size;
+                    font-weight: 400;
+                    line-height: $base-line-height;
+                }
+            }
+        }
+    }
+
+    & > .dropdown {
+        min-width: 135px;
     }
 
     @include media-query($on-tablet) {
@@ -120,12 +164,20 @@
  * Site footer
  */
 .site-footer {
-    padding: $spacer-xl 0;
-    margin-top: 80px;
-    color: $text-color;
+    padding: $spacer-l 0;
+    color: white;
+    background-color: $green-darkest;
+    font-size: 12px;
+
+    ul li{
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
 
     a {
-        color: $brand-color;
+        color: white;
     }
 }
 
@@ -184,4 +236,31 @@
 
 .post-content {
     margin-bottom: $spacer-xl;
+}
+
+
+// hero styling
+
+.hero{
+    position: relative;
+    padding: 80px 0;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background-color: $dark-green;
+    height: 85vh;
+
+    &.home{
+        background-image: url('/images/hero-image.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.section{
+    position: relative;
+    padding: 120px 0 120px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    height: auto;
 }
