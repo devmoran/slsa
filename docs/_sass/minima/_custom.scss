@@ -10,9 +10,44 @@
     box-sizing: border-box;
 }
 
+// Fonts
+
+@font-face {
+    font-family: 'Prodigy';
+    src:  url('../../fonts/ProdigySans-Regular.ttf') format('truetype'),
+          url('../../fonts/ProdigySans-Regular.woff2') format('woff2'),
+          url('../../fonts/ProdigySans-Regular.woff') format('woff');
+}
+
 //
 // LAYOUT
 //
+
+
+// Colour
+
+.text{
+    &-green{
+        color: $light-green;
+    }
+}
+.bg{
+    &-light-green{
+        background-color: $light-green;
+    }
+    &-light-pastel-green {
+        background-color: #B4F3C9;
+    }
+    &-pastel-green{
+        background-color: $pastel-green;
+    }
+    &-green-dark{
+        background-color: $dark-green;
+    }
+    &-green-darkest{
+        background-color: $green-darkest;
+    }
+}
 
 // Blocks of content
 .content-block {
@@ -50,11 +85,16 @@
 
 .wrapper {
     max-width: $content-width;
-    padding: 0 40px;
+    padding: 0 20px;
     margin: 0 auto;
 
     @include media-query($on-mobile) {
         padding: 0 20px;
+    }
+
+    &.inner{
+        padding-left: 70px;
+        padding-right: 70px;
     }
 }
 
@@ -93,8 +133,12 @@
 // STYLING
 //
 
+h1, h2, h3, h4, h5 {
+    font-family: $header-font-family;
+}
+
 // Type size ramp
-h1 {
+h1, .h1 {
     font-weight: $title-font-weight;
     padding-top: $title-padding-top;
     padding-bottom: $title-padding-bottom;
@@ -102,6 +146,7 @@ h1 {
     font-size: $title-font-size;
     letter-spacing: $title-letter-spacing;
     line-height: 1.2;
+    font-family: $header-font-family;
 
     @include media-query($on-mobile) {
         font-size: $title-font-size-mobile;
@@ -112,21 +157,19 @@ h1 {
     }
 }
 
-h2 {
+h2, .h2 {
     font-size: $header2-font-size;
     line-height: 1.15;
-    padding: 20px 0 10px 0;
 }
 
-h3 {
+h3, .h3 {
     font-size: $header3-font-size;
     line-height: 1.3;
-    padding: 10px 0 5px 0;
 }
 
-h4 {
+h4, .h4 {
     line-height: 1.3;
-    font-weight: 700;
+    font-size: $header4-font-size;
 }
 
 .subtitle {
@@ -192,6 +235,30 @@ h4 {
 }
 
 // Link styles for the 'button' look
+
+.cta-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding-left: 25px;
+    &::before {
+        content:'';
+        position: absolute;
+        left:0;
+        top:0;
+        height: 14px;
+        width: 14px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 15px;
+        background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.697085 14.1509C-0.232361 9.52348 -0.232362 4.77828 0.697083 0.150878C5.54439 1.72628 10.0667 4.10277 14 7.15088C10.0667 10.199 5.54439 12.5755 0.697085 14.1509Z' fill='%2340DB88'/%3E%3C/svg%3E%0A");
+    }
+
+    & .white {
+        color: white;
+    }
+}
 
 .pseudo-button {
     box-sizing: border-box;
