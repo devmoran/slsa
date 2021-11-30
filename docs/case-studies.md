@@ -1,8 +1,12 @@
+---
+title: Case Studies
+subheading: Safeguarding artifact integrity across any supply chain
+---
 # Get involved
 
 <span class="subtitle">
 
-We rely on feedback from other organizations to evolve SLSA and be more useful to more people. We’d love to hear your experiences using it!
+# We rely on feedback from other organizations to evolve SLSA and be more useful to more people. We’d love to hear your experiences using it!
 
 </span>
 

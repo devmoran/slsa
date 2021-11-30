@@ -1,3 +1,9 @@
+---
+title: Threats
+order: 4
+layout: specifications
+description: Specific supply chain attacks and how SLSA helps
+---
 # Threats and mitigations
 
 > **IMPORTANT:** This is a work in progress.

@@ -2,22 +2,163 @@
  * Site header
  */
 .site-header {
-    // border-top: 5px solid $grey-color-dark;
-    // border-bottom: 1px solid $grey-color-light;
-    min-height: $spacer-xl * 4;
     @include media-query($on-tablet) {
         min-height: $spacer-xl * 2;
     }
     @include media-query($on-palm) {
         min-height: $spacer-xl;
     }
+    transition: all .25s ease-in-out;
+    will-change: transform;
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    &.is-specification-markdown {
+        & .site-nav ul li a{
+            color: $text-color;
+        }
+
+        & svg path {
+            fill: $text-color;
+        }
+    }
+
+    & .logo-white {
+        visibility: hidden;
+        opacity:0;
+        transition: all .25s ease-in-out;
+        height: 0;
+        width: 0;
+    }
+
+    & .logo-green {
+        visibility: visible;
+        opacity:1;
+        transition: all .25s ease-in-out;
+        width: 100px;
+    }
+
+    &.fixed {
+        transform: translateY(-100%);
+        background-color: #155757;
+        position: fixed;
+    }
+
+    &.sticky {
+        transform: translateY(0%);
+        background-color: #155757;
+        position: fixed;
+
+        & .logo-white {
+            visibility: visible;
+            opacity:1;
+            transition: all .25s ease-in-out;
+        }
+    
+        & .logo-green {
+            visibility: hidden;
+            opacity:0;
+            transition: all .25s ease-in-out;
+            height: 0;
+            width: 0;
+        }
+
+        &.is-specification-markdown {
+            & .site-nav ul li a{
+                color: white;
+            }
+
+            & .site-nav ul li ul li a{
+                color: $text-color;
+
+                &:hover {
+    
+                    &:after {
+                        background-color: $text-color;
+                    }
+                }
+    
+                &.active {
+                    &:after {
+                        background-color: $text-color;
+                    }
+                }
+            }
+    
+            & svg path {
+                fill: white;
+            }
+        }
+
+    }
+
+    &.static {
+        transform: translateY(0%);
+        background-color: transparent;
+        transition: all .25s ease-in-out;
+
+        & .logo-white {
+            visibility: hidden;
+            opacity:0;
+            transition: all .25s ease-in-out;
+        }
+    
+        & .logo-green {
+            visibility: visible;
+            opacity:1;
+            transition: all .25s ease-in-out;
+        }
+
+        &.is-specification-markdown {
+            & .site-nav ul li a{
+                color: $text-color;
+
+                &:hover {
+    
+                    &:after {
+                        background-color: $text-color;
+                    }
+                }
+    
+                &.active {
+                    &:after {
+                        background-color: $text-color;
+                    }
+                }
+            }
+
+            & .site-nav ul li > ul li a{
+                color: $text-color;
+
+                &:hover {
+    
+                    &:after {
+                        background-color: $text-color;
+                    }
+                }
+    
+                &.active {
+                    &:after {
+                        background-color: $text-color;
+                    }
+                }
+            }
+    
+            & svg path {
+                fill: $text-color;
+            }
+        }
+    }
 }
 
 .site-title {
-    float: left;
     font-size: $logo-font-size;
     font-weight: $logo-font-weight;
     font-family: $logo-font-family;
@@ -39,8 +180,7 @@
 }
 
 .site-nav {
-    float: right;
-    padding: $spacer-l 0 $spacer-m 0;
+    padding: $spacer-l 0 $spacer-l 0;
 
     .nav-trigger {
         display: none;
@@ -50,16 +190,76 @@
         display: none;
     }
 
-    .page-link {
-        color: $text-color;
-        font-size: $small-font-size;
-        font-weight: 400;
-        line-height: $base-line-height;
+    ul li{
+        a{
+            color: $text-color-light;
+            font-size: $small-font-size;
+            font-weight: 400;
+            line-height: $base-line-height;
+            position: relative;
+
+            &:hover {
+                text-decoration: none;
+
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: white;
+                    position: absolute;
+                    bottom:0px;
+                }
+            }
+
+            &.active {
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: white;
+                    position: absolute;
+                    bottom:0px;
+                }
+            }
+        }
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
         }
+
+        ul li:not(:last-child) {
+            margin-right: 0px;
+        }
+
+        & > ul {
+            li {
+                margin:0;
+                a{
+                    color: $text-color;
+                    font-size: $small-font-size;
+                    font-weight: 400;
+                    line-height: $base-line-height;
+
+                    &:hover {
+                        text-decoration: none;
+        
+                        &:after {
+                            content: '';
+                            width: auto;
+                            height: 1px;
+                            background-color: white;
+                            position: absolute;
+                            bottom:0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & > .dropdown {
+        min-width: 135px;
     }
 
     @include media-query($on-tablet) {
@@ -120,12 +320,20 @@
  * Site footer
  */
 .site-footer {
-    padding: $spacer-xl 0;
-    margin-top: 80px;
-    color: $text-color;
+    padding: $spacer-l*2 0;
+    color: white;
+    background-color: $green-darkest;
+    font-size: 12px;
+
+    ul li{
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
 
     a {
-        color: $brand-color;
+        color: white;
     }
 }
 
@@ -184,4 +392,39 @@
 
 .post-content {
     margin-bottom: $spacer-xl;
+}
+
+
+// hero styling
+
+.hero{
+    position: relative;
+    padding: 80px 0;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background-color: $dark-green;
+    height: 85vh;
+
+    &.home{
+        background-image: url('/images/hero-image.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.specifications{
+        background-color: $light-green;
+    }
+}
+
+.section{
+    position: relative;
+    padding: 120px 0 120px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    height: auto;
+
+    &.cta_banner {
+        padding: 30px 0 30px;
+    }
 }

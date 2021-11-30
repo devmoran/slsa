@@ -1,3 +1,9 @@
+---
+title: Provenance
+order: 3
+layout: specifications
+description: Artifact metadata crucial to achieving all levels
+---
 # Provenance
 
 This page describes the "SLSA Provenance" predicate that fits within the larger

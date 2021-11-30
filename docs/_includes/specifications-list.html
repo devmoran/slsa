@@ -1,0 +1,19 @@
+<ul>
+{%- for collection in site.collections -%}
+{% if collection.label == 'specifications' %}
+{% for item in site[collection.label] %}
+<li>
+{%- assign url_version = item.path | split:'/' | map: site.specs_version | join: '' -%}
+{% if item.path contains site.specs_version %}
+{% if item.title != 'Specifications' %}
+<a class="text-black border-b border-black-900 inline-block w-full mb-6" href="/{{item.path | replace: "_", "" | replace: ".md", "" }}">
+<p class="h4 font-normal mb-6">{{ item.title }}</p>
+<p class="mb-6 font-normal">{{ item.description }}</p>
+</a>
+{% endif %}
+{% endif %}
+</li>
+{% endfor %}
+{% endif %}
+{%- endfor -%}
+</ul>
