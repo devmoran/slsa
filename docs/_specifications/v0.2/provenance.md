@@ -1,6 +1,8 @@
 ---
 title: Provenance
 order: 3
+layout: specifications
+description: Artifact metadata crucial to achieving all levels
 ---
 # Provenance
 

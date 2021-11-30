@@ -1,6 +1,8 @@
 ---
 title: Requirements
 order: 2
+layout: specifications
+description: The checks and measures for each level
 ---
 # Requirements
 
