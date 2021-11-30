@@ -38,21 +38,28 @@ levels:
 
 <!--{% endif %}-->
 
-# SLSA 101
+<section class="section bg-white">
+<!-- no indentation here to get markdown working with jekyll commonmark for styling the headings better -->
+<div class="wrapper inner w-full">
+<div class="mb-16">
+
+## SLSA 101
+
 ### Threats
 
-<section class="section bg-white">
+</div>
+</div>
     <div class="wrapper inner w-full">
         <div class="w-full">
             <h4 class="h4 mb-8">
                 Protecting against key threats
             </h4>
         </div>
-        <div class="flex flex-row justify-between items-start">
-            <div class="text w-1/2">
+        <div class="flex flex-row justify-between items-start -ml-6 -mr-6">
+            <div class="text w-1/2 pl-6">
                 <p>Supply chain attacks are an ever-present threat, exploiting weakpoints to interfere with software. The SLSA framework establishes three trust boundaries encouraging the right standards, attestation and technical controls, so you can harden a system from these threats and risks.</p>
             </div>
-            <div class="w-1/2">
+            <div class="w-1/2 pl-6">
                 <p>This means automatic capability to analyse artifacts, guarantee the original source code, protect against interference that can happen in the build and distribution processes, isolate any hidden vulnerabilities and knowing with certainty which system components might be affected.</p>
             </div>
         </div>
@@ -98,6 +105,7 @@ levels:
 </section>
 
 <section class="section flex flex-col justify-center items-center">
+<!-- no indentation here to get markdown working with jekyll commonmark for styling the headings better -->
 <div class="wrapper inner w-full">
 <div class="mb-16">
 
@@ -142,11 +150,16 @@ levels:
 <section class="section flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start">
-            <div class="text w-2/3">
-                <h3 class="h3 mb-8">Specifications</h3>
-            </div>
+<!-- no indentation here to get markdown working with jekyll commonmark for styling the headings better -->
+<div class="text w-2/3">
+<div class="h3 mb-8">
+
+### Specifications
+
+</div>
+</div>
             <div class="w-2/4">
-            {% include specifications-list.html %}
+                {% include specifications-list.html %}
             </div>
         </div>
     </div>
