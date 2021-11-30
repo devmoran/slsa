@@ -4,7 +4,7 @@
         <li>
             {%- assign url_version = item.path | split:'/' | map: site.specs_version | join: '' -%}
             {% if item.path contains site.specs_version %}
-            <a class="text-black" href="{{item.path | replace: "_", "" | replace: ".md", "" }}">
+            <a class="text-black" href="/{{item.path | replace: "_", "" | replace: ".md", "" }}">
                 {{ item.title }}
             </a>
             {% endif %}
