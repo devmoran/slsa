@@ -66,7 +66,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-    margin-bottom: $spacer-xl / 2;
+    margin-bottom: inherit;
 }
 
 /**
@@ -124,8 +124,6 @@ h6 {
 
 h1 {
     font-weight: $title-font-weight;
-    padding-top: $title-padding-top;
-    padding-bottom: $title-padding-bottom;
 }
 
 /**

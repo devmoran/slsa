@@ -141,9 +141,6 @@ h1, h2, h3, h4, h5 {
 // Type size ramp
 h1, .h1 {
     font-weight: $title-font-weight;
-    padding-top: $title-padding-top;
-    padding-bottom: $title-padding-bottom;
-
     font-size: $title-font-size;
     letter-spacing: $title-letter-spacing;
     line-height: 1.2;
