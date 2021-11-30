@@ -98,10 +98,6 @@ figcaption {
 /**
  * Lists
  */
-ul,
-ol {
-    margin-left: $spacer-xl;
-}
 
 li {
     > ul,
@@ -118,7 +114,6 @@ h2,
 h3,
 h4 {
     font-family: $header-font-family;
-    font-weight: $header-font-weight;
 }
 
 h5,
