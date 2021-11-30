@@ -1,5 +1,6 @@
 ---
 title: Overview
+toc: true
 ---
 # Improving artifact integrity across the supply chain
 
@@ -8,7 +9,6 @@ title: Overview
 **NOTE: This site is best viewed at https://slsa.dev.**
 
 <!--{% endif %}-->
-
 <span class="subtitle">
 
 SLSA ("[salsa](https://www.google.com/search?q=how+to+pronounce+salsa)") is **Supply-chain Levels for Software Artifacts.**
