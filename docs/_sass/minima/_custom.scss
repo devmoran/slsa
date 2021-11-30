@@ -87,12 +87,13 @@
     max-width: $content-width;
     padding: 0 20px;
     margin: 0 auto;
+    width: 100%;
 
     @include media-query($on-mobile) {
         padding: 0 20px;
     }
 
-    &.inner{
+    &.inner, .inner{
         padding-left: 70px;
         padding-right: 70px;
     }
@@ -326,6 +327,16 @@ h4, .h4 {
 
             td {
                 padding: $spacer-m;
+            }
+        }
+    }
+}
+
+.table-of-contents {
+    ul {
+        li {
+            ul {
+                padding-left: 20px;
             }
         }
     }
