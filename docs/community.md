@@ -1,3 +1,7 @@
+---
+title: Community
+subheading: Safeguarding artifact integrity across any supply chain
+---
 # Get involved
 
 <span class="subtitle">
