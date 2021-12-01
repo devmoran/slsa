@@ -4,7 +4,7 @@ layout: specifications
 subheading: Safeguarding artifact integrity across any supply chain
 hero_text: SLSA is a set of standards and technical controls you can adopt to improve artifact integrity, and build towards completely resilient systems. It’s not a single tool, but a step-by-step outline to prevent artifacts being tampered with and tampered artifacts from being used, and at the higher levels, hardening up the platforms that make up a supply chain. These requirements are explained below, along with the rest of the essential specifications.
 order: 0
-version: 0.2
+version: 0.3
 stages:
     - 1:
         title: Build integrity
