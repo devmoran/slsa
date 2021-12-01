@@ -5,7 +5,7 @@ repository: slsa-framework/slsa
 header_pages:
   - index.md
   - specifications.md
-  - case-studies.md
+  - use-cases.md
   - get-started.md
   - community.md
 exclude:
@@ -46,3 +46,7 @@ defaults:
       path: "assets/images"
     values:
       image: true
+  - scope:
+      path: "_specifications"
+    values:
+      folder: true
