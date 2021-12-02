@@ -1,5 +1,5 @@
 ---
-title: Case Studies
+title: Use Cases
 subheading: Safeguarding artifact integrity across any supply chain
 ---
 # Get involved

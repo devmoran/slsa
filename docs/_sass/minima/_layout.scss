@@ -406,10 +406,10 @@
     height: 85vh;
 
     &.home{
-        background-image: url('/images/hero-image.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        height: 100vh;
     }
 
     &.specifications{
@@ -419,10 +419,14 @@
 
 .section{
     position: relative;
-    padding: 120px 0 120px;
+    padding: 100px 0 100px;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     height: auto;
+
+    @include media-query($on-mobile) {
+        padding: 40px 0 40px;
+    }
 
     &.cta_banner {
         padding: 30px 0 30px;

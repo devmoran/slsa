@@ -17,15 +17,16 @@ $grey-color-dark: darken($grey-color, 25%) !default;
 $grey-color-border: #dedede;
 
 $dark-green: #155757;
-$light-green: #3BE088;
+$light-green: #40DB88;
 $green-darkest: #102D23;
 $pastel-green: #ECF8F2;
-
+$button-green: #23907E;
 
 // font variables
 
 $base-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-button-font: "IBM Plex Mono", monospace !default;
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.9 !default;
@@ -36,6 +37,7 @@ $header-font-family: 'Prodigy';
 $header2-font-size: 52px !default;
 $header3-font-size: 40px !default;
 $header4-font-size: 24px !default;
+$header5-font-size: 20px !default;
 $header-font-weight: 700 !default;
 
 $title-font-size: 76px !default;

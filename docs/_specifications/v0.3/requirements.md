@@ -1,7 +1,7 @@
 ---
 title: Requirements
 order: 2
-version: 0.2
+version: 0.3
 layout: specifications
 description: The checks and measures for each level
 ---
