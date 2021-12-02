@@ -1,46 +1,68 @@
 ---
-title: Get Started
+title: Get started
+layout: standard
 subheading: Safeguarding artifact integrity across any supply chain
+hero_text: If you’re looking to jump straight in and try SLSA, here’s a quick start guide for the steps to take to reach the first SLSA level. Level 1 ensures that you’re setting up the foundation of trust in a system and that all your applications are generating appropriate provenance data. It also sets a baseline to achieve higher SLSA compliance later, which we explain in detail below.
+order: 0
 ---
-# Get involved
+<!--{% if false %}-->
 
-<span class="subtitle">
+**NOTE: This site is best viewed at https://slsa.dev.**
 
-# We rely on feedback from other organizations to evolve SLSA and be more useful to more people. We’d love to hear your experiences using it!
+<!--{% endif %}-->
+<section class="section bg-pastel-green flex justify-center items-center">
+    <div class="wrapper inner w-full">
+        <div class="flex justify-between items-start mb-16">
+            <div class="text w-1/3">
+<div class="h3 p-0">
 
-</span>
+### Reaching SLSA Level 1
 
-## Feedback
+</div>
+            </div>
+            <div class="w-2/4">
+                <div class="bg-white h-full rounded-lg p-10"> 
+                    <p>
+                        This guide will help you achieve Level 1, and it should take less than a couple of hours for an individual project. By following the steps, you’ll soon be compliant with these SLSA requirements:
+<ul class="list-disc mt-6 pl-4"><li class="pb-4">Producing provenance data</li>
+<li class="pb-4">Automating your builds</li></ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-white flex justify-center items-center">
+    <div class="wrapper inner w-full">
+        <div class="flex justify-between items-start mb-16">
+            <div class="text w-1/3">
+<div class="h3 p-0">
 
-**Are the levels achievable in your project? Would you add or remove anything from the framework? What’s preventing you from adopting it today?**
+### Building to higher levels
 
--   If you want to discuss the framework, [github issues](https://github.com/slsa-framework/slsa/issues) are [the way](https://i.redd.it/yj67b76hxwd61.jpg).
--   If you want to contribute to the framework take a look at our [contribution guidelines](https://github.com/slsa-framework/slsa/blob/main/CONTRIBUTING.md).
--   We’re keen to hear your thoughts on how to improve this website. **Take our 5 minute survey [by visiting this link](https://www.smartsurvey.co.uk/s/FM3W4B/).**
-
-## Community
-
--   We meet bi-weekly on Wednesdays at 9am PT. Anyone is welcome to join, whether to listen or to contribute. [Here's the invite](https://calendar.google.com/calendar/u/0/r/week/2021/8/11?eid=NjIycXNoOHBtbDhuNTJiNjlmaWk5ZjU5ZWVfMjAyMTA4MTFUMTYwMDAwWiBzNjN2b2VmaHA1aTlwZmx0YjVxNjduZ3Blc0Bn&sf=true).
--   We're part of the OpenSSF [Digital Identity Attestation Working Group](https://github.com/ossf/wg-digital-identity-attestation). The OpenSSF community calendar is [here](https://calendar.google.com/calendar/u/0?cid=czYzdm9lZmhwNWk5cGZsdGI1cTY3bmdwZXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
--   Our mailing list is [slsa-discussion@googlegroups.com](https://groups.google.com/g/slsa-discussion).
-
-## Steering committee
-
-SLSA is currently led by an initial cross-organization, vendor-neutral steering committee. This committee is:
-
--   [Joshua Lock](https://github.com/joshuagl) - VMware
--   [Bruno Domingues](https://github.com/brunodom) - Intel
--   [David A. Wheeler](https://github.com/david-a-wheeler) - Linux Foundation
--   [Trishank Karthik Kuppusamy](https://github.com/trishankatdatadog) - Datadog
--   [Mike Lieberman](https://github.com/mlieberman85) - Citi/CNCF
--   [Zak Greant](https://github.com/zakgreant) - ActiveState
--   [Mark Lodato](https://github.com/MarkLodato) - Google
-
-## Contributors
-
--   [Kim Lewandowski](https://github.com/kimsterv)
--   [Mark Lodato](https://github.com/MarkLodato)
--   [Tom Hennen](https://github.com/TomHennen)
--   [Joshua Lock](https://github.com/joshuagl)
--   [Jacques Chester](https://github.com/jchestershopify)
--   And [many others](https://github.com/slsa-framework/slsa/graphs/contributors)
+</div>
+            </div>
+            <div class="w-1/2">
+                <div class="bg-white h-full rounded-lg"> 
+                    <p>Once the foundations are in place with Level 1, you can start looking towards the higher levels to further strengthen artifact integrity with central monitoring, authentication and automated compilation, as well as more secure development practices. But there’s a few things to consider first:</p>
+                    <ul class="list-disc mt-6 pl-4">
+                    <li class="pb-4">Decide what level is appropriate for your project in the short term and for your immediate needs. It can take years to achieve the ideal security state, so having intermediate milestones is important.</li>
+<li class="pb-4">You can progressively attain higher SLSA levels. Each artifact’s SLSA level is independent from each another, allowing parallel progress and prioritization based on risk.</li>
+<li class="pb-4">Not all projects require Level 4, and for others it’s impossible to achieve. If it seems unrealistic for your project, concentrate on Level 3 instead.</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-pastel-green">
+    <div class="wrapper inner w-full">
+        <div class="flex flex-col justify-center items-center mb-8 w-2/3 mx-auto pl-5">
+            <h4 class="h3">Help us improve SLSA</h4>
+            <div class="w-full lg:w-full mx-auto text-center">
+                <p>Already at SLSA Level 1? Let us know what went well, what didn’t, and what could be improved. We’re developing new tools and onboarding resources to make the process even easier, so your contribution really goes a long way.</p>
+                <a target="_blank" href="https://github.com/slsa-framework/slsa/issues" class="cta-link center mt-8">Leave a GitHub issue</a><br>
+                <a target="_blank" href="https://github.com/slsa-framework/slsa/issues" class="cta-link center mt-8">Join the community</a>
+            </div>
+        </div>
+    </div>
+</section>
