@@ -3,9 +3,9 @@ title: Threats
 order: 4
 version: 0.2
 layout: specifications
+hero_text: SLSA’s levels prioritize measures to provide you and your users with appropriate, industry-recognized security guarantees. They make it easier to know what’s most relevant to an immediate scenario, and that over time, there’s more integrity built in to the systems you’re working with.<br><br>Each of the levels build upon baseline guarantees that the source code you analyze and trust is the code that you're actually using, starting by prioritizing the security of packages you’re using, and then focusing effort to securing the infrastructure in place to deliver that package.<br><br>For something to be compliant with a SLSA level, that shows a reasonable, agreed upon level of security. It shows that the measures to harden integrity have progressed from foundational efforts to a more secure software supply chain overall, and can help allow users to automatically verify artifacts, influence policy and protect against more advanced threats. 
 description: Specific supply chain attacks and how SLSA helps
 ---
-# Threats and mitigations
 
 > **IMPORTANT:** This is a work in progress.
 

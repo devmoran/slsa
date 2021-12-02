@@ -3,9 +3,9 @@ title: Requirements
 order: 2
 version: 0.2
 layout: specifications
+hero_text: SLSA’s levels prioritize measures to provide you and your users with appropriate, industry-recognized security guarantees. They make it easier to know what’s most relevant to an immediate scenario, and that over time, there’s more integrity built in to the systems you’re working with.<br><br>Each of the levels build upon baseline guarantees that the source code you analyze and trust is the code that you're actually using, starting by prioritizing the security of packages you’re using, and then focusing effort to securing the infrastructure in place to deliver that package.<br><br>For something to be compliant with a SLSA level, that shows a reasonable, agreed upon level of security. It shows that the measures to harden integrity have progressed from foundational efforts to a more secure software supply chain overall, and can help allow users to automatically verify artifacts, influence policy and protect against more advanced threats. 
 description: The checks and measures for each level
 ---
-# Requirements
 
 <span class="subtitle">
 
@@ -15,26 +15,6 @@ This document covers all of the detailed requirements for an artifact to meet SL
 
 _Reminder: SLSA is in [alpha](roadmap.md). The definitions below are not yet finalized and subject to change, particularly SLSA 3-4._
 
-<div class="link-tree">
-
-| On this page                                        |
-| :-------------------------------------------------- |
-| [What is SLSA?](#what-is-slsa)                      |
-| [Definitions](#definitions)                         |
-| [Source requirements](#source-requirements)         |
-| [Build requirements](#build-requirements)           |
-| [Provenance requirements](#provenance-requirements) |
-| [Common requirements](#common-requirements)         |
-
-</div>
-
-<div class="link-tree">
-
-| Further reading          |
-| :----------------------- |
-| [FAQs](/faq.md)          |
-
-</div>
 
 ## What is SLSA?
 
