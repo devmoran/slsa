@@ -148,7 +148,7 @@ levels:
         <a href="/specifications/{{ site.specs_version}}/security-levels" class="cta-link white">Read the level specifications</a>
     </div>
 </section>
-<section class="section flex flex-col justify-center items-center">
+<section x-data="{ specificationPages: [], currentVersion: `{{site.specs_version|replace: "v", ""}}` }" class="section flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start">
 <!-- no indentation here to get markdown working with jekyll commonmark for styling the headings better -->
@@ -158,10 +158,16 @@ levels:
 ### Specifications
 
 </div>
-{% include specifications-versions.html %}
-</div>
+
+<!-- Alpine js state for version buttons here -->
+
+{% assign versions = "v0.2,v0.3" | split: ',' %}
+  {% for item in versions %}
+  <button x-on:click="currentVersion = `{{item|replace: "v", ""}}`" class="{% if item == site.specs_version %}bg-button-green button-mono{% else %}button-mono border-green border text-green-button{% endif %} text-white rounded-lg p-2 text-20 mb-6">Version {{item | replace: "v", ""}}</button>
+  {% endfor %}
+  </div>
             <div class="w-2/4">
-                {% include specifications-list.html %}
+                {% include specifications-list.html  %}
             </div>
         </div>
     </div>
