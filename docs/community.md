@@ -23,7 +23,7 @@ order: 0
                 <p>We rely on feedback from other organizations to evolve SLSA and be more useful to more people. We’d love to hear your experiences using it, and welcome all contributions, challenges and collaboration.</p>
             </div>
             <div class="w-1/3">
-                <img class="mx-auto w-2/4" src="/images/slsa-dancing-goose-logo.svg" alt="SLSA dancing goose image">
+                <img class="mx-auto w-2/4" src="{{site.baseurl}}/images/slsa-dancing-goose-logo.svg" alt="SLSA dancing goose image">
             </div>
         </div>
         <div class="flex flex-wrap justify-center items-center w-6/7 mt-8 mx-auto -mr-5 -ml-5">
@@ -48,7 +48,7 @@ order: 0
     </div>
 </section>
 <section class="section relative bg-green-transparent flex justify-center items-center overflow-hidden">
-    <img class="object-cover absolute w-full h-full z-10" src="/images/community-bg.png" alt="Community background image">
+    <img class="object-cover absolute w-full h-full z-10" src="{{site.baseurl}}/images/community-bg.png" alt="Community background image">
     <div class="bg-light-green h-full rounded-lg p-10 z-20 w-2/3 mx-auto">
         <p class="h4 mb-6">“SLSA’s really the first of its kind, a framework for supply chain and build integrity. What sets it apart is the thriving community behind it, and it’s resonating with different organizations.”</p>
         <p>Kim Lewandowski<br>Founder, Chainguard</p>
@@ -65,15 +65,15 @@ order: 0
         </div>
         <div class="flex flex-wrap justify-start items-start mb-16 -mr-5 -ml-5">
             <div class="w-full lg:w-1/2 pl-5 pb-16">
-                <img class="mx-auto w-full" src="/images/operation-slsa.png" alt="operation slsa episode 1 image">
+                <img class="mx-auto w-full" src="{{site.baseurl}}/images/operation-slsa.png" alt="operation slsa episode 1 image">
                 <p class="text-green-darker font-bold h5 mt-4">Operation SLSA: Episode 1</p>
             </div>
             <div class="w-full lg:w-1/2 pl-5">
-                <img class="mx-auto w-full" src="/images/code.png" alt="slsa code image">
+                <img class="mx-auto w-full" src="{{site.baseurl}}/images/code.png" alt="slsa code image">
                 <p class="text-green-darker font-bold h5 mt-4">SLSA Biweekly Meetings (Playlist)</p>
             </div>
             <div class="w-full lg:w-1/2 pl-5">
-                <img class="mx-auto w-full" src="/images/supply-chain-media.png" alt="supply chain media image">
+                <img class="mx-auto w-full" src="{{site.baseurl}}/images/supply-chain-media.png" alt="supply chain media image">
                 <p class="text-green-darker font-bold h5 mt-4">Getting Started with Supply Chain Security is Easier Than You... Michael Lieberman & Timothy Miller</p>
             </div>
         </div>
@@ -141,7 +141,7 @@ order: 0
                 <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br> 
 We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
 Google has been using an internal version of SLSA since 2013 and requires it for all of their production workloads.</p>
-<a target="_blank" href="specifications/{{ site.specs_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
+<a target="_blank" href="/specifications/{{ site.current_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
             </div>
         </div>
     </div>

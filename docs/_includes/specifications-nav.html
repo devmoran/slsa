@@ -1,6 +1,6 @@
 {% for collection in site.pages %}
     <li>
-        {% if collection.path contains site.specs_version %}
+        {% if collection.path contains site.current_version %}
             <a class="text-black" href="{{site.baseurl}}/{{collection.path | replace: "_", "" | replace: ".md", "" }}">
                 {{ collection.title }}
             </a>

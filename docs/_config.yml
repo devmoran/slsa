@@ -5,11 +5,12 @@ repository: slsa-framework/slsa
 header_pages:
   - index.md
   - specifications.md
+  - provenance/v0.1.md
   - use-cases.md
   - get-started.md
   - community.md
 exclude:
-  - README.md
+  - README.md 
 google_analytics: G-VNK063J3QF
 theme: minima
 permalink: :path/:basename
@@ -35,7 +36,8 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-relative-links
   - jekyll-toc
-specs_version: "v0.2"
+versions: ['v0.2','v0.3']
+current_version: "v0.2"
 defaults:
   - scope:
       path: "assets/images"

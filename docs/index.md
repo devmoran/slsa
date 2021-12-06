@@ -49,7 +49,7 @@ testimonials:
 <!-- Hero -->
 <section class="hero home flex justify-center items-center relative">
     <video class="absolute object-cover h-full w-full z-0" autoplay muted loop>
-      <source src="/images/v1.mp4" type="video/mp4">
+      <source src="{{site.baseurl}}/images/v1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="wrapper inner text-green z-20">
@@ -92,7 +92,7 @@ These look at the builds, sources and dependencies in open source or commercial 
                 <h3 class="h3 mb-8">Levels of assurance</h3>
                 <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance. 
                 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
-                <a href="/specifications/{{ site.specs_version}}/security-levels" class="cta-link mt-8">Read the level specifications</a>
+                <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-8">Read the level specifications</a>
             </div>
             <div class="w-full md:w-1/3 md:mt-0 mt-8">
                 <img src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
@@ -199,14 +199,14 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
                 <div class="bg-white h-full rounded-lg p-10">
                     <p class="h4 mb-8 md:mb-0">Start using SLSA</p>
                     <p>The first big on-ramp to becoming SLSA Level 1 compliant is generating provenance. We’ve put together quick, step-by-step walkthroughs to help you on your way, and there’s still more to come as our roadmap progresses. </p>
-                    <a href="specifications/{{ site.specs_version}}/security-levels" class="cta-link mt-10">Learn more</a>
+                    <a href="specifications/{{ site.current_version}}/security-levels" class="cta-link mt-10">Learn more</a>
                 </div>
             </div>
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80">
                 <div class="bg-white h-full rounded-lg p-10">
                     <p class="h4 mb-8 md:mb-0">Github actions demo</p>
                     <p>Ready to put your project through it’s paces? There’s a comprehensive list of the specific requirements sources, builds, provenance need to pass for the different SLSA levels, as well as the common requirements involved.</p>
-                    <a href="/specifications/{{ site.specs_version}}/security-levels" class="cta-link mt-10">Learn more</a>
+                    <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-10">Learn more</a>
                 </div>
             </div>
         </div>
@@ -223,7 +223,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
                 <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br> 
 We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
 Google has been using an internal version of SLSA since 2013 and requires it for all of their production workloads.</p>
-<a href="/specifications/{{ site.specs_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
+<a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
             </div>
         </div>
     </div>

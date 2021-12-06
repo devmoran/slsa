@@ -84,7 +84,7 @@ levels:
 </section>
 <section class="section cta_banner bg-pastel-green">
     <div class="wrapper inner w-full flex items-center justify-center">
-        <a href="/specifications/{{ site.specs_version}}/threats" class="cta-link white">Read about threats in detail</a>
+        <a href="/specifications/{{ site.current_version}}/threats" class="cta-link white">Read about threats in detail</a>
     </div>
 </section>
 <section class="section bg-white border-b border-black-900">
@@ -145,7 +145,7 @@ levels:
 </section>
 <section class="section cta_banner bg-pastel-green">
     <div class="wrapper inner w-full flex items-center justify-center">
-        <a href="/specifications/{{ site.specs_version}}/security-levels" class="cta-link white">Read the level specifications</a>
+        <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link white">Read the level specifications</a>
     </div>
 </section>
 <section class="section flex flex-col justify-center items-center">
@@ -162,7 +162,7 @@ levels:
 
 {% assign versions = "v0.2,v0.3" | split: ',' %}
   {% for item in versions %}
-  <button x-on:click="currentVersion = `{{item|replace: "v", ""}}`" class="{% if item == site.specs_version %}bg-button-green button-mono{% else %}button-mono border-green border text-green-button{% endif %} text-white rounded-lg p-2 text-20 mb-6">Version {{item | replace: "v", ""}}</button>
+  <button x-on:click="currentVersion = `{{item|replace: "v", ""}}`" class="{% if item == site.current_version %}bg-button-green button-mono{% else %}button-mono border-green border text-green-button{% endif %} text-white rounded-lg p-2 text-20 mb-6">Version {{item | replace: "v", ""}}</button>
   {% endfor %}
 </div>
             <div class="w-2/4">

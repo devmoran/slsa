@@ -12,7 +12,7 @@
   'fixed': !sticky && lastPos > 0,
   'static': lastPos === 0 && !sticky
   }" 
-  class="site-header {% if page.url != '/specifications/{{site.specs_version}}/overview' and page.url != '/' or page.url == '/specifications/{{site.specs_version}}/overview' %} is-specification-markdown{% endif %}">
+  class="site-header {% if page.url != '/specifications/{{site.current_version}}/overview' and page.url != '/' or page.url == '/specifications/{{site.current_version}}/overview' %} is-specification-markdown{% endif %}">
     <div class="wrapper py-4 flex items-center justify-between">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -23,7 +23,7 @@
         <a rel="author" class="logo-green" href="{{ "/" | relative_url }}"><img class="w-full" src="/images/logo-green.svg" alt="{{site.title}} logo" /></a> -->
       </a>
       {%- if titles_size > 0 -%}
-        <nav class="site-nav w-2/3">
+        <nav class="site-nav w-full">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger">
             <span class="menu-icon">
