@@ -1,14 +1,9 @@
-{% for collection in site.collections %}
-    {% if collection.label == 'specifications' %}
-        {% for item in site[collection.label] %}
-        <li>
-            {%- assign url_version = item.path | split:'/' | map: site.specs_version | join: '' -%}
-            {% if item.path contains site.specs_version %}
-            <a class="text-black" href="/{{item.path | replace: "_", "" | replace: ".md", "" }}">
-                {{ item.title }}
+{% for collection in site.pages %}
+    <li>
+        {% if collection.path contains site.specs_version %}
+            <a class="text-black" href="/{{collection.path | replace: "_", "" | replace: ".md", "" }}">
+                {{ collection.title }}
             </a>
-            {% endif %}
-        </li>
-        {% endfor %}
-    {% endif %}
+        {% endif %}
+    </li>
 {% endfor %}
