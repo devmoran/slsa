@@ -3,8 +3,9 @@
 <li>
 {%- assign url_version = collection.path | split:'/' | map: site.current_version | join: '' -%}
 {% if collection.path contains site.current_version %}
+{%- assign v = page.url | replace: '/','' | replace: 'specifications','' -%}
 {% if collection.title != 'Specifications' %}
-<a class="text-black border-b border-black-900 inline-block w-full mb-6 hover:no-underline" href="/{{collection.path | replace: "_", "" | replace: ".md", "" }}">
+<a class="text-black border-b border-black-900 inline-block w-full mb-6 hover:no-underline" href="/{{collection.path | replace: site.current_version,v | replace: "_", "" | replace: ".md", "" }}">
 <p class="h4 font-normal mb-6 flex items-center">
     <span class="mr-4">
     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

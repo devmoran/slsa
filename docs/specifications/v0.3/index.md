@@ -4,7 +4,7 @@ layout: specifications
 subheading: Safeguarding artifact integrity across any supply chain
 hero_text: SLSA is a set of standards and technical controls you can adopt to improve artifact integrity, and build towards completely resilient systems. It’s not a single tool, but a step-by-step outline to prevent artifacts being tampered with and tampered artifacts from being used, and at the higher levels, hardening up the platforms that make up a supply chain. These requirements are explained below, along with the rest of the essential specifications.
 order: 0
-version: 0.3
+version: 0.2
 stages:
     - 1:
         title: Build integrity
@@ -148,7 +148,7 @@ levels:
         <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link white">Read the level specifications</a>
     </div>
 </section>
-<section class="section flex flex-col justify-center items-center">
+<section x-data="{ specificationPages: [], currentVersion: `{{site.current_version|replace: "v", ""}}` }" class="section flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start">
 <!-- no indentation here to get markdown working with jekyll commonmark for styling the headings better -->
@@ -158,15 +158,12 @@ levels:
 ### Specifications
 
 </div>
-<!-- Alpine js state for version buttons here -->
 
-{% assign versions = "v0.2,v0.3" | split: ',' %}
-  {% for item in versions %}
-  <button x-on:click="currentVersion = `{{item|replace: "v", ""}}`" class="{% if item == site.current_version %}bg-button-green button-mono{% else %}button-mono border-green border text-green-button{% endif %} text-white rounded-lg p-2 text-20 mb-6">Version {{item | replace: "v", ""}}</button>
-  {% endfor %}
+<!-- Alpine js state for version buttons here -->
+{% include specifications-versions.html %}
 </div>
             <div class="w-2/4">
-                {% include specifications-list.html %}
+                {% include specifications-list.html  %}
             </div>
         </div>
     </div>

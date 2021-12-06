@@ -160,12 +160,8 @@ levels:
 </div>
 
 <!-- Alpine js state for version buttons here -->
-
-{% assign versions = site.versions | split: ',' %}
-  {% for item in versions %}
-  <button x-on:click="currentVersion = `{{item|replace: "v", ""}}`" class="{% if item == site.current_version %}bg-button-green button-mono{% else %}button-mono border-green border text-green-button{% endif %} text-white rounded-lg p-2 text-20 mb-6">Version {{item | replace: "v", ""}}</button>
-  {% endfor %}
-  </div>
+{% include specifications-versions.html %}
+</div>
             <div class="w-2/4">
                 {% include specifications-list.html  %}
             </div>

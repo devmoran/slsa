@@ -1,4 +1,4 @@
-{% assign versions = "v0.2, v0.3" | split: ',' %}
+{% assign versions = site.versions %}
 {% for item in versions %}
-<button class="{% if item == site.current_version %}bg-button-green button-mono{% else %}button-mono border-green border text-green-button{% endif %} text-white rounded-lg p-2 text-20 mb-6">Version {{item | replace: "v", ""}}</button>
+<a href="/specifications/{{item}}/" class="inline-block {% if page.url contains item %}bg-button-green button-mono{% else %}button-mono border-green border text-green-button{% endif %} text-white rounded-lg p-2 text-20 mb-6">Version {{item | replace: "v", ""}}</a>
 {% endfor %}
