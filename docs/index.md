@@ -66,7 +66,7 @@ testimonials:
                 <p>Supply chain Levels for Software Artifacts, or SLSA (salsa). It’s a security framework, a check-list of standards and controls to prevent tampering, improve integrity, and secure packages and infrastructure in your projects, businesses or enterprises. It’s how you get from safe enough to being as resilient as possible, at any link in the chain.</p>
             </div>
             <div class="w-full md:w-1/3 md:mt-0 mt-8">
-                <img src="/images/logo-mono.svg" alt="SLSA logo mark mono version">
+                <img src="{{ site.baseurl }}/images/logo-mono.svg" alt="SLSA logo mark mono version">
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@ testimonials:
 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
             </div>
         </div>
-        <img class="mt-16" src="/images/SupplyChainDiagram.png" alt="the supply chain problem image">
+        <img class="mt-16" src="{{ site.baseurl }}/images/SupplyChainDiagram.png" alt="the supply chain problem image">
     </div>
 </section>
 <section class="section bg-pastel-green flex flex-col justify-center items-center">
@@ -92,10 +92,10 @@ These look at the builds, sources and dependencies in open source or commercial 
                 <h3 class="h3 mb-8">Levels of assurance</h3>
                 <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance. 
                 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
-                <a href="specifications/{{ site.specs_version}}/security-levels" class="cta-link mt-8">Read the level specifications</a>
+                <a href="/specifications/{{ site.specs_version}}/security-levels" class="cta-link mt-8">Read the level specifications</a>
             </div>
             <div class="w-full md:w-1/3 md:mt-0 mt-8">
-                <img src="/images/badge-exploded.svg" alt="SLSA levels badge">
+                <img src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
             </div>
         </div>
         <div class="flex flex-wrap justify-between items-center mt-16 -ml-4 -mr-4">
@@ -206,7 +206,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
                 <div class="bg-white h-full rounded-lg p-10">
                     <p class="h4 mb-8 md:mb-0">Github actions demo</p>
                     <p>Ready to put your project through it’s paces? There’s a comprehensive list of the specific requirements sources, builds, provenance need to pass for the different SLSA levels, as well as the common requirements involved.</p>
-                    <a href="specifications/{{ site.specs_version}}/security-levels" class="cta-link mt-10">Learn more</a>
+                    <a href="/specifications/{{ site.specs_version}}/security-levels" class="cta-link mt-10">Learn more</a>
                 </div>
             </div>
         </div>
@@ -223,7 +223,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
                 <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br> 
 We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
 Google has been using an internal version of SLSA since 2013 and requires it for all of their production workloads.</p>
-<a href="specifications/{{ site.specs_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
+<a href="/specifications/{{ site.specs_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
             </div>
         </div>
     </div>
