@@ -18,7 +18,7 @@
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
       <a rel="author" href="{{ "/" | relative_url }}" class="relative w-1/3">
-        <img src="/images/logo.svg" alt="{{site.title}} logo" />
+        <img src="{{ site.baseurl }}/images/logo.svg" alt="{{site.title}} logo" />
         <!-- <a rel="author" class="logo-white" href="{{ "/" | relative_url }}"><img class="w-full" src="/images/logo.svg" alt="{{site.title}} logo" /></a>
         <a rel="author" class="logo-green" href="{{ "/" | relative_url }}"><img class="w-full" src="/images/logo-green.svg" alt="{{site.title}} logo" /></a> -->
       </a>
