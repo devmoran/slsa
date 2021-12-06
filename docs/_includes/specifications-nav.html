@@ -1,7 +1,7 @@
 {% for collection in site.pages %}
     <li>
         {% if collection.path contains site.specs_version %}
-            <a class="text-black" href="/{{collection.path | replace: "_", "" | replace: ".md", "" }}">
+            <a class="text-black" href="{{site.baseurl}}/{{collection.path | replace: "_", "" | replace: ".md", "" }}">
                 {{ collection.title }}
             </a>
         {% endif %}
