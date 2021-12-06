@@ -10,11 +10,6 @@ header_pages:
   - community.md
 exclude:
   - README.md
-# collections:
-#   specifications:
-#     layout: specifications
-#     sort_by: order
-#     output: true
 google_analytics: G-VNK063J3QF
 theme: minima
 permalink: :path/:basename
