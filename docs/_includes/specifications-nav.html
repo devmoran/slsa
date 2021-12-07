@@ -1,6 +1,6 @@
 <ul>
 <li>
-    <a class="text-black" href="{{site.baseurl}}/specifications/{{site.current_version}}/overview">
+    <a class="text-white md:text-black" href="{{site.baseurl}}/specifications/{{site.current_version}}/overview">
         Overview
     </a>
 </li>
@@ -10,7 +10,7 @@
         {% for item in site[collection.label] %}
         {% if item.path contains site.current_version %}
         <li>
-        <a class="text-black" href="{{site.baseurl}}/{{item.path | replace: "_", "" | replace: ".md", "" }}">
+        <a class="text-white md:text-black" href="{{site.baseurl}}/{{item.path | replace: "_", "" | replace: ".md", "" }}">
         {{ item.title }}
         </a>
         </li>
