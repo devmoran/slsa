@@ -1,5 +1,5 @@
 ---
-layout: standard
+layout: specifications
 ---
 # Package Repository accepting a software package
 
@@ -22,7 +22,7 @@ A package repository (e.g. Docker Hub) wants to protect their users from malicio
 -   Checking new artifacts and their provenance (as well as any other attestations) against the policy above, ensuring any attestations evaluated by the policy are signed by the publisher's public key
 -   Preventing artifacts that fail the above check from being made public
 
-### Limitations
+## Limitations
 
 This use case relies on the package repository trusting the SLSA information that publishers provide. In the future, there may be accreditation bodies that confirm this information.
 

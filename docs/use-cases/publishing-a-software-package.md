@@ -1,5 +1,5 @@
 ---
-layout: standard
+layout: specifications
 ---
 # Publishing a software package
 
@@ -28,6 +28,6 @@ BarInc can achieve these goals when publishing the container image by:
 -   Only publishing the container image if all the above checks pass
 -   Storing the provenance and all other attestations for future reference
 
-### Limitations
+## Limitations
 
 This approach doesn’t protect their users from a published BarImage being tampered with after publication. There may be other ways to address these concerns such as code signing after verification, or encouraging [use of the SLSA framework by their software consumers](/consuming-third-party-software.md).

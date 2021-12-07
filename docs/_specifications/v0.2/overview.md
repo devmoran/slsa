@@ -99,7 +99,7 @@ levels:
         </div>
         <div class="flex flex-row justify-between items-start">
             <div class="text w-1/2">
-                <p>Complementary, not mutually exclusive. An open, collaborative standard for our industry, for anyone to be able to achieve the highest levels of software security. We’ve designed the framework to be compatible with SBOMs (software bills of materials), where the levels of SLSA compliance can make sure the data inside the SBOM is trustworthy itself.s</p>
+                <p>There’s more to security than just protection against tampering. From vulnerability management and fuzzing to testing and developer trust, many of these require solutions where effort’s focused on the source. That’s where SLSA complements your wider security efforts, giving you confidence that the code you run is the code you analyzed.</p>
             </div>
             <div class="w-1/2">
                 <img class="mx-auto" src="{{ site.baseurl }}/images/SLSA-SBOM.svg" alt="How it fits into the security ecosystem image" />

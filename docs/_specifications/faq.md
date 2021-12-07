@@ -1,11 +1,9 @@
 ---
-title: FAQs
+title: Frequently Asked Questions
 order: 5
 layout: specifications
 description: Questions and more information
 ---
-# Frequently Asked Questions
-
 <!-- NOTE: This page is currently not currently listed in the navbar because it is light on content. We will add a link once we have more questions. -->
 
 ## Q: Why is SLSA not transitive?

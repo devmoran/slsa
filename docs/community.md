@@ -69,7 +69,6 @@ order: 0
                 <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br>
 We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
 Google has been using an internal version of SLSA since 2013 and requires it for all of their production workloads.</p>
-<a target="_blank" href="/specifications/{{ site.current_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
             </div>
         </div>
     </div>
