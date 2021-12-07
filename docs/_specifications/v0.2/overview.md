@@ -2,7 +2,7 @@
 title: Specifications
 layout: landing
 subheading: Safeguarding artifact integrity across any supply chain
-hero_text: SLSA is a set§ of standards and technical controls you can adopt to improve artifact integrity, and build towards completely resilient systems. It’s not a single tool, but a step-by-step outline to prevent artifacts being tampered with and tampered artifacts from being used, and at the higher levels, hardening up the platforms that make up a supply chain. These requirements are explained below, along with the rest of the essential specifications.
+hero_text: SLSA is a set of standards and technical controls you can adopt to improve artifact integrity, and build towards completely resilient systems. It’s not a single tool, but a step-by-step outline to prevent artifacts being tampered with and tampered artifacts from being used, and at the higher levels, hardening up the platforms that make up a supply chain. These requirements are explained below, along with the rest of the essential specifications.
 order: 0
 version: 0.2
 stages:
@@ -77,7 +77,7 @@ levels:
         </div>
         <div class="flex flex-row justify-between items-start -ml-6 -mr-6">
             <div class="text w-1/2 pl-6">
-                <p>High profile attacks like SolarWinds, Codecov or Linux hypocrite commits exploit the kind of supply chain integrity vulnerabilities which may go unnoticed or be underdeveloped, and quickly become extremely public, disruptive and costly in today’s environment. </p>
+                <p>High profile attacks like <strong>SolarWinds</strong>, <strong>Codecov</strong> or <strong>Linux hypocrite commits</strong> exploit the kind of supply chain integrity vulnerabilities which may go unnoticed or be underdeveloped, and quickly become extremely public, disruptive and costly in today’s environment. </p>
             </div>
             <div class="w-1/2 pl-6">
                 <p>Attacks can occur at every link in a typical software supply chain, which puts an extra burden on anyone involved in complex critical systems. SLSA has been designed with these real world examples in mind to make sure they’re more common knowledge, and easier to protect against.</p>

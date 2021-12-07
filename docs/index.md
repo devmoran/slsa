@@ -68,7 +68,7 @@ testimonials:
             </div>
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
                 <p>Any software can introduce vulnerabilities into a supply chain. As a system gets more complex, it’s critical to already have checks and best practices in place to guarantee artifact integrity, that the source code you’re relying on is the code you’re actually using. Without solid foundations and a plan to harden the system as it grows, it’s difficult to focus your efforts against tomorrow’s next hack, breach or compromise.</p>
-                <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-8">More about supply chain attacks </a>
+                <a href="/specifications/{{ site.current_version}}/overview#supply-chain-threats" class="cta-link mt-8">More about supply chain attacks </a>
             </div>
         </div>
         <img class="mt-16" src="{{ site.baseurl }}/images/SupplyChainDiagram.png" alt="the supply chain problem image">
