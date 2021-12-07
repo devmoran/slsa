@@ -59,7 +59,7 @@ order: 0
 </div>
             </div>
             <div class="w-1/2">
-                <div class="bg-white h-full rounded-lg"> 
+                <div class="bg-white h-full rounded-lg">
                     <p>Once the foundations are in place with Level 1, you can start looking towards the higher levels to further strengthen artifact integrity with central monitoring, authentication and automated compilation, as well as more secure development practices. But there’s a few things to consider first:</p>
                     <div class="mt-6">
                     <p class="h4 font-normal mb-6 ">Define your ideal state</p>

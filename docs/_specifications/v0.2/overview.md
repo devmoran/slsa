@@ -2,7 +2,7 @@
 title: Specifications
 layout: landing
 subheading: Safeguarding artifact integrity across any supply chain
-hero_text: SLSA is a set of standards and technical controls you can adopt to improve artifact integrity, and build towards completely resilient systems. It’s not a single tool, but a step-by-step outline to prevent artifacts being tampered with and tampered artifacts from being used, and at the higher levels, hardening up the platforms that make up a supply chain. These requirements are explained below, along with the rest of the essential specifications.
+hero_text: SLSA is a set§ of standards and technical controls you can adopt to improve artifact integrity, and build towards completely resilient systems. It’s not a single tool, but a step-by-step outline to prevent artifacts being tampered with and tampered artifacts from being used, and at the higher levels, hardening up the platforms that make up a supply chain. These requirements are explained below, along with the rest of the essential specifications.
 order: 0
 version: 0.2
 stages:
@@ -18,7 +18,7 @@ stages:
 levels:
     - 1:
         title: Basic security steps
-        text: Level 1 means the supply chain is documented, there’s infrastructure to generate provenance data, and systems are prepared to comply with higher SLSA levels. 
+        text: Level 1 means the supply chain is documented, there’s infrastructure to generate provenance data, and systems are prepared to comply with higher SLSA levels.
         badge: /images/SLSA-Badge-full-level1.svg
     - 2:
         title: After the build
@@ -26,11 +26,11 @@ levels:
         badge: /images/SLSA-Badge-full-level2.svg
     - 3:
         title: Back to source
-        text: Level 3 shows that a system’s builds are fully trustworthy, build definitions come from the source and a system has more hardened CI. 
+        text: Level 3 shows that a system’s builds are fully trustworthy, build definitions come from the source and a system has more hardened CI.
         badge: /images/SLSA-Badge-full-level3.svg
     - 4:
         title: Across the chain
-        text: Level 4 means the build environment is fully accounted for, dependencies are tracked in provenance and insider threats are ruled out. 
+        text: Level 4 means the build environment is fully accounted for, dependencies are tracked in provenance and insider threats are ruled out.
         badge: /images/SLSA-Badge-full-level4.svg
 ---
 <!--{% if false %}-->
@@ -117,7 +117,7 @@ levels:
 
 </div>
 </div>
-    <div class="wrapper inner w-full">              
+    <div class="wrapper inner w-full">
         <div class="flex justify-between items-center">
             <div class="text w-1/2">
                 <h4 class="h4 mb-8">A ladder to the ideal state</h4>
@@ -168,7 +168,7 @@ levels:
 <div class="text w-2/3">
 <div class="h3 mb-8">
 
-### Specifications
+## Specifications
 
 </div>
 

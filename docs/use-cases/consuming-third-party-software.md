@@ -1,10 +1,7 @@
 ---
 layout: standard
 ---
-
-# Use cases
-
-## Consuming third party software
+# Consuming third party software
 
 A developer (e.g. FooCo) using third party software (e.g. HowDo developed by HowInc) wants to ensure it hasn’t been tampered with before using it. They could take these steps to protect the organization from the software they consume without having to rely on any trust in intermediate package repositories.
 
@@ -13,7 +10,7 @@ A developer (e.g. FooCo) using third party software (e.g. HowDo developed by How
 | **Users** | Software consumers            |
 | **Goals** | Protecting against tampering  |
 
-### How to do it
+## How to do it
 
 -   Requesting HowInc publish the [in-toto SLSA Provenance](https://slsa.dev/provenance) and any additional attestations (such as [source control attestations](https://github.com/in-toto/attestation/issues/47)) for HowDo each time it’s released
 -   Requesting HowInc publish the public keys its builder uses to sign the attestations

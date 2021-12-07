@@ -1,5 +1,5 @@
 ---
-title: Use Cases
+title: Use cases
 layout: standard
 subheading: Safeguarding artifact integrity across any supply chain
 hero_text: Here’s what SLSA looks like in practice, typical cases to explore and break down how compliance can provide protection. Whether you’re a developer working on a project or part of an enterprise, SLSA can be helpful both for securing your supply chain and clarifying existing tools and processes.
@@ -117,17 +117,15 @@ order: 0
                 </a>
             </li>
         </ul>
-        <div class="bg-pastel-green h-full rounded-lg p-10"> 
+        <div class="bg-pastel-green h-full rounded-lg p-10">
             <p class="h4 mb-6 font-bold">Real world examples</p>
             <p><strong>If you’ve been using SLSA already, get in touch.</strong><br><br>
-The scenarios above are proof of concepts and theoretical explorations. As more people adopt SLSA, we’ll add case studies to walk you through what long term adoption of the SLSA framework could look like, with real world scenarios, application and discovery, planning and strategic development.<br><br> 
+The scenarios above are proof of concepts and theoretical explorations. As more people adopt SLSA, we’ll add case studies to walk you through what long term adoption of the SLSA framework could look like, with real world scenarios, application and discovery, planning and strategic development.<br><br>
 The contribution guidelines help guide your feedback, and every contribution is useful for others to see how SLSA can be used in their project or organization.</p>
-            <a target="_blank" href="https://github.com/slsa-framework/slsa/blob/main/CONTRIBUTING.md" class="cta-link mt-8">Submit a case study</a>
+            <a target="_blank" href="https://github.com/slsa-framework/slsa/tree/main/case-studies" class="cta-link mt-8">Submit a case study</a>
         </div>
-    </div>  
+    </div>
 </section>
-
-
 
 <!-- # Use cases
 
