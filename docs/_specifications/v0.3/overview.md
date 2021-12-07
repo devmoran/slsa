@@ -31,7 +31,7 @@ levels:
     - 4:
         title: Across the chain
         text: Level 4 means the build environment is fully accounted for, dependencies are tracked in provenance and insider threats are ruled out. 
-        badge: {{ site.baseurl }}/images/SLSA-Badge-full-level4.svg
+        badge: /images/SLSA-Badge-full-level4.svg
 ---
 <!--{% if false %}-->
 
