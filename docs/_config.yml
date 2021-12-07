@@ -9,6 +9,11 @@ header_pages:
   - use-cases.md
   - get-started.md
   - community.md
+collections:
+  specifications:
+    layout: specifications
+    sort_by: order
+    output: true
 exclude:
   - README.md 
 google_analytics: G-VNK063J3QF
