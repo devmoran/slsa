@@ -20,24 +20,14 @@ levels:
         badge: /images/levelBadge4.svg
 testimonials:
     - 1:
-        quote: quote text
-        name: name of person
-        role: role of person
-        logo: /images/intel-logo.png
+        quote: This is our chance to work with the industry, set a standard which we can all agree to, and work together to raise the collective bar.
+        name: Trishank Karthik Kuppusamy
+        role: Engineering Manager at Datadog
+        logo: assets/images/logos/datadog.png
     - 2:
-        quote: quote text
-        name: name of person
-        role: role of person
-        logo: /images/intel-logo.png
-    - 3:
-        quote: quote text
-        name: name of person
-        role: role of person
-        logo: /images/intel-logo.png
-    - 4:
-        quote: quote text
-        name: name of person
-        role: role of person
+        quote: Software supply chain visibility will become a cross-industry need to establish best practices and trusted evidence in each link.
+        name: Bruno Domingues
+        role: CTO, Financial Services Industry, Intel
         logo: /images/intel-logo.png
 ---
 <!--{% if false %}-->
@@ -63,7 +53,7 @@ testimonials:
         <div class="flex flex-wrap justify-between items-center">
             <div class="text w-full md:w-1/2">
                 <h2 class="h3 mb-8">What is SLSA?</h2>
-                <p>Supply chain Levels for Software Artifacts, or SLSA (salsa). It’s a security framework, a check-list of standards and controls to prevent tampering, improve integrity, and secure packages and infrastructure in your projects, businesses or enterprises. It’s how you get from safe enough to being as resilient as possible, at any link in the chain.</p>
+                <p><strong>Supply chain Levels for Software Artifacts, or SLSA (salsa).</strong> It’s a security framework, a check-list of standards and controls to prevent tampering, improve integrity, and secure packages and infrastructure in your projects, businesses or enterprises. It’s how you get from safe enough to being as resilient as possible, at any link in the chain.</p>
             </div>
             <div class="w-full md:w-1/3 md:mt-0 mt-8">
                 <img src="{{ site.baseurl }}/images/logo-mono.svg" alt="SLSA logo mark mono version">
@@ -78,8 +68,7 @@ testimonials:
                 <h3 class="h3 p-0">The supply chain problem</h3>
             </div>
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
-                <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance.
-These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
+                <p>Any software can introduce vulnerabilities into a supply chain. As a system gets more complex, it’s critical to already have checks and best practices in place to guarantee artifact integrity, that the source code you’re relying on is the code you’re actually using. Without solid foundations and a plan to harden the system as it grows, it’s difficult to focus your efforts against tomorrow’s next hack, breach or compromise.</p>
             </div>
         </div>
         <img class="mt-16" src="{{ site.baseurl }}/images/SupplyChainDiagram.png" alt="the supply chain problem image">
@@ -177,7 +166,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
 <section class="section bg-white flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex flex-col justify-center items-center mb-16 text-center md:w-2/3 relative mx-auto">
-            <p class="h3 mb-10">Our Ethos</p>
+            <p class="h3 mb-10">Our ethos</p>
             <p>Today’s projects, products and services are increasingly complex and open to attack. As that trend continues, we need to scale up our effort to provide more secure, accessible ways to protect the development, distribution and consumption of the software we use, and all the impacted communities behind it.</p>
         </div>
         <div class="flex flex-wrap justify-center items-center mb-16 text-center md:w-3/4 relative mx-auto">
@@ -199,14 +188,14 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
                 <div class="bg-white h-full rounded-lg p-10">
                     <p class="h4 mb-8 md:mb-0">Start using SLSA</p>
                     <p>The first big on-ramp to becoming SLSA Level 1 compliant is generating provenance. We’ve put together quick, step-by-step walkthroughs to help you on your way, and there’s still more to come as our roadmap progresses. </p>
-                    <a href="specifications/{{ site.current_version}}/security-levels" class="cta-link mt-10">Learn more</a>
+                    <a href="/get-started#reaching-slsa-level-1" class="cta-link mt-10">Get started</a>
                 </div>
             </div>
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80">
                 <div class="bg-white h-full rounded-lg p-10">
                     <p class="h4 mb-8 md:mb-0">Github actions demo</p>
                     <p>Ready to put your project through it’s paces? There’s a comprehensive list of the specific requirements sources, builds, provenance need to pass for the different SLSA levels, as well as the common requirements involved.</p>
-                    <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-10">Learn more</a>
+                    <a href="https://github.com/slsa-framework/github-actions-demo" class="cta-link mt-10">Learn more</a>
                 </div>
             </div>
         </div>
@@ -216,14 +205,13 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
     <div class="wrapper inner w-full">
         <div class="flex flex-wrap justify-between items-start text-white">
             <div class="text w-full md:w-1/3">
-                <h3 class="h3 p-0">Project Status</h3>
+                <h3 class="h3 p-0">Project status</h3>
             </div>
             <div class="w-full md:w-1/2">
                 <div class="rounded-lg text-green p-5 border border-green-400 inline-block mt-8 md:mt-0 mb-8 h4">SLSA is currently in alpha</div>
                 <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br>
 We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
 Google has been using an internal version of SLSA since 2013 and requires it for all of their production workloads.</p>
-<a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
             </div>
         </div>
     </div>

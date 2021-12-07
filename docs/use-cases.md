@@ -1,5 +1,5 @@
 ---
-title: Use Cases
+title: Use cases
 layout: standard
 subheading: Safeguarding artifact integrity across any supply chain
 hero_text: Here’s what SLSA looks like in practice, typical cases to explore and break down how compliance can provide protection. Whether you’re a developer working on a project or part of an enterprise, SLSA can be helpful both for securing your supply chain and clarifying existing tools and processes.
@@ -81,7 +81,7 @@ Establishing a cryptographic chain of custody between trusted builds and your re
         <p class="h4">Example case studies</p>
         <ul class="mt-6 mb-6">
             <li>
-                <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/ }}">
+                <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="publishing-a-software-package">
                     <p class="h4 font-normal flex items-center pt-8 ">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
@@ -90,7 +90,7 @@ Establishing a cryptographic chain of custody between trusted builds and your re
                 </a>
             </li>
             <li>
-                <a class="p-0 m-0 text-green-dark border-t border-black-900 w-full hover:no-underline" href="/ }}">
+                <a class="p-0 m-0 text-green-dark border-t border-black-900 w-full hover:no-underline" href="consuming-third-party-software">
                     <p class="h4 font-normal flex items-center pt-8 ">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
@@ -99,7 +99,7 @@ Establishing a cryptographic chain of custody between trusted builds and your re
                 </a>
             </li>
             <li>
-                <a class="p-0 m-0 text-green-dark border-t border-black-900 w-full hover:no-underline" href="/ }}">
+                <a class="p-0 m-0 text-green-dark border-t border-black-900 w-full hover:no-underline" href="package-repository-accepting-a-software-package">
                     <p class="h4 font-normal flex items-center pt-8">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
@@ -108,7 +108,7 @@ Establishing a cryptographic chain of custody between trusted builds and your re
                 </a>
             </li>
             <li>
-                <a class="p-0 m-0 text-green-dark border-t border-black-900 w-full hover:no-underline" href="/ }}">
+                <a class="p-0 m-0 text-green-dark border-t border-black-900 w-full hover:no-underline" href="../example">
                     <p class="h4 font-normal flex items-center pt-8 pb-8">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
@@ -117,17 +117,15 @@ Establishing a cryptographic chain of custody between trusted builds and your re
                 </a>
             </li>
         </ul>
-        <div class="bg-pastel-green h-full rounded-lg p-10"> 
+        <div class="bg-pastel-green h-full rounded-lg p-10">
             <p class="h4 mb-6 font-bold">Real world examples</p>
             <p><strong>If you’ve been using SLSA already, get in touch.</strong><br><br>
-The scenarios above are proof of concepts and theoretical explorations. As more people adopt SLSA, we’ll add case studies to walk you through what long term adoption of the SLSA framework could look like, with real world scenarios, application and discovery, planning and strategic development.<br><br> 
+The scenarios above are proof of concepts and theoretical explorations. As more people adopt SLSA, we’ll add case studies to walk you through what long term adoption of the SLSA framework could look like, with real world scenarios, application and discovery, planning and strategic development.<br><br>
 The contribution guidelines help guide your feedback, and every contribution is useful for others to see how SLSA can be used in their project or organization.</p>
-            <a target="_blank" href="https://github.com/slsa-framework/slsa/blob/main/CONTRIBUTING.md" class="cta-link mt-8">Submit a case study</a>
+            <a target="_blank" href="https://github.com/slsa-framework/slsa/tree/main/case-studies" class="cta-link mt-8">Submit a case study</a>
         </div>
-    </div>  
+    </div>
 </section>
-
-
 
 <!-- # Use cases
 
