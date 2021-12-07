@@ -1,5 +1,5 @@
 ---
-layout: use-case
+layout: standard
 ---
 
 # Use cases
