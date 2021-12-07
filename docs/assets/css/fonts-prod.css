@@ -1,0 +1,9 @@
+
+/* // Fonts */
+
+@font-face {
+    font-family: 'Prodigy';
+    src:  url('/slsa/fonts/ProdigySans-Regular.ttf') format('truetype'),
+          url('/slsa/fonts/ProdigySans-Regular.woff2') format('woff2'),
+          url('/slsa/fonts/ProdigySans-Regular.woff') format('woff');
+}

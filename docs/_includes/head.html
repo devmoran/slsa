@@ -6,6 +6,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
           rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+    {% if jekyll.environment == 'production' %}
+      <link rel="stylesheet" href="/assets/css/fonts-prod.css">
+    {% else %}
+      <link rel="stylesheet" href="/assets/css/fonts.css">
+    {% endif %}
+
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
