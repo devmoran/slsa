@@ -1,9 +1,21 @@
-{% for collection in site.pages %}
-    <li>
-        {% if collection.path contains site.current_version %}
-            <a class="text-black" href="{{site.baseurl}}/{{collection.path | replace: "_", "" | replace: ".md", "" }}">
-                {{ collection.title }}
-            </a>
+<ul>
+<li>
+    <a class="text-black" href="{{site.baseurl}}/specifications/{{site.current_version}}/overview">
+        Overview
+    </a>
+</li>
+
+{% for collection in site.collections %}
+    {% if collection.label == 'specifications' %}
+        {% for item in site[collection.label] %}
+        {% if item.path contains site.current_version %}
+        <li>
+        <a class="text-black" href="{{site.baseurl}}/{{item.path | replace: "_", "" | replace: ".md", "" }}">
+        {{ item.title }}
+        </a>
+        </li>
         {% endif %}
-    </li>
+        {% endfor %}
+    {% endif%}
 {% endfor %}
+</ul>

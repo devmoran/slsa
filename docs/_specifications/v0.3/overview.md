@@ -1,6 +1,6 @@
 ---
 title: Specifications
-layout: specifications
+layout: landing
 subheading: Safeguarding artifact integrity across any supply chain
 hero_text: SLSA is a set of standards and technical controls you can adopt to improve artifact integrity, and build towards completely resilient systems. It’s not a single tool, but a step-by-step outline to prevent artifacts being tampered with and tampered artifacts from being used, and at the higher levels, hardening up the platforms that make up a supply chain. These requirements are explained below, along with the rest of the essential specifications.
 order: 0
@@ -31,7 +31,7 @@ levels:
     - 4:
         title: Across the chain
         text: Level 4 means the build environment is fully accounted for, dependencies are tracked in provenance and insider threats are ruled out. 
-        badge: /images/SLSA-Badge-full-level4.svg
+        badge: {{ site.baseurl }}/images/SLSA-Badge-full-level4.svg
 ---
 <!--{% if false %}-->
 
@@ -64,7 +64,7 @@ levels:
                 <p>This means automatic capability to analyse artifacts, guarantee the original source code, protect against interference that can happen in the build and distribution processes, isolate any hidden vulnerabilities and knowing with certainty which system components might be affected.</p>
             </div>
         </div>
-        <img src="/images/supply-chain-threats.svg" alt="supply chain full threats image" />
+        <img src="{{ site.baseurl }}/images/supply-chain-threats.svg" alt="supply chain full threats image" />
     </div>
     <div class="wrapper inner w-full">
         <div class="w-full">
@@ -99,7 +99,7 @@ levels:
                 <p>Complementary, not mutually exclusive. An open, collaborative standard for our industry, for anyone to be able to achieve the highest levels of software security. We’ve designed the framework to be compatible with SBOMs (software bills of materials), where the levels of SLSA compliance can make sure the data inside the SBOM is trustworthy itself.s</p>
             </div>
             <div class="w-1/2">
-                <img class="mx-auto" src="/images/SLSA-SBOM.svg" alt="How it fits into the security ecosystem image" />
+                <img class="mx-auto" src="{{ site.baseurl }}/images/SLSA-SBOM.svg" alt="How it fits into the security ecosystem image" />
             </div>
         </div>
     </div>
@@ -121,7 +121,7 @@ levels:
                 <p>SLSA’s requirements look at the three general main areas involved in a software artifact’s creation, and where vulnerabilities target - the build, the source, and the dependencies. As the levels scale up, they show that work’s been done to assure there’s more integrity in each area, which can be helpful in scenario planning.</p>
             </div>
             <div class="w-1/3">
-                <img src="/images/badge-exploded.svg" alt="SLSA levels badge">
+                <img src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
             </div>
         </div>
         <div class="flex flex-wrap justify-between items-start mt-16 -ml-8 -mr-8">
