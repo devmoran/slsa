@@ -169,6 +169,7 @@
 
 .logo {
     width: 100px;
+    z-index: 10;
 }
 
 .mobile-menu-button {
@@ -189,6 +190,19 @@
         margin-bottom: 5px;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1) 0s, background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1) 0s, opacity 0.55s ease 0s;
+    }
+
+    &.active span {
+        opacity: 1;
+    transform: rotate(45deg) translate(0px, 1px);
+    }
+
+    &.active span:nth-child(2) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    &.active span:last-child {
+        transform: rotate(-45deg) translate(1px, -4px);
     }
 }
 
@@ -297,6 +311,13 @@
     }
 
     @include media-query($on-tablet) {
+        display: none;
+    }
+}
+
+.site-nav-mobile {
+    display: none;
+    @include media-query($on-tablet) {
 
         width: 100%;
         position: absolute;
@@ -304,7 +325,8 @@
         left:0;
         transition: all cubic-bezier(0.77, 0.2, 0.05, 1) 0.3s;
         background-color: #102B2D;
-        height: 60vh;
+        z-index: 1;
+        display: block;
 
         &.active {
             top: 0;
@@ -346,14 +368,10 @@
 
         .page-link {
             display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
+            padding: 10px 0;
         }
     }
+
 }
 
 /**

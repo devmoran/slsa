@@ -85,9 +85,9 @@ levels:
         </div>
     </div>
 </section>
-<section href="/specifications/{{ site.current_version}}/threats" class="section cta_banner bg-pastel-green">
+<section class="section cta_banner bg-pastel-green">
     <div class="wrapper inner w-full flex items-center justify-center">
-        <a href="/specifications/{{ site.current_version}}/threats" class="cta-link white">Read about threats in detail</a>
+        <a href="/specifications/{{ site.current_version}}/threats" class="cta-link">Read about threats in detail</a>
     </div>
 </section>
 <section class="section bg-white border-b border-black-900">
