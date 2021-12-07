@@ -20,22 +20,22 @@ levels:
         badge: /images/levelBadge4.svg
 testimonials:
     - 1:
-        quote: quote text
+        quote: “In a cloud-first age, software supply chain visibility will become a cross-industry need to establish best practices and trusted evidence in each link.”
         name: name of person
         role: role of person
         logo: /images/intel-logo.png
     - 2:
-        quote: quote text
+        quote: “In a cloud-first age, software supply chain visibility will become a cross-industry need to establish best practices and trusted evidence in each link.”
         name: name of person
         role: role of person
         logo: /images/intel-logo.png
     - 3:
-        quote: quote text
+        quote: “In a cloud-first age, software supply chain visibility will become a cross-industry need to establish best practices and trusted evidence in each link.”
         name: name of person
         role: role of person
         logo: /images/intel-logo.png
     - 4:
-        quote: quote text
+        quote: “In a cloud-first age, software supply chain visibility will become a cross-industry need to establish best practices and trusted evidence in each link.”
         name: name of person
         role: role of person
         logo: /images/intel-logo.png
@@ -57,8 +57,7 @@ testimonials:
     </div>
 </section>
 
-<!-- Hero -->
-<section class="section bg-light-green flex justify-center items-center">
+<section class="section intro bg-light-green flex justify-center items-center pt-32 pb-16">
     <div class="wrapper inner w-full">
         <div class="flex flex-wrap justify-between items-center">
             <div class="text w-full md:w-1/2">
@@ -80,6 +79,7 @@ testimonials:
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
                 <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance. 
 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
+<a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-8">More about supply chain attacks </a>
             </div>
         </div>
         <img class="mt-16" src="{{ site.baseurl }}/images/SupplyChainDiagram.png" alt="the supply chain problem image">
@@ -94,8 +94,8 @@ These look at the builds, sources and dependencies in open source or commercial 
                 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
                 <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-8">Read the level specifications</a>
             </div>
-            <div class="w-full md:w-1/3 md:mt-0 mt-8">
-                <img src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
+            <div class="w-full md:w-2/4 md:mt-0 mt-8 pl-12">
+                <img class="w-3/4" src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
             </div>
         </div>
         <div class="flex flex-wrap justify-between items-center mt-16 -ml-4 -mr-4">
@@ -159,7 +159,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
               <!-- Slides -->
               {%- for testimonial in page.testimonials -%}
                   {%- assign testimonial_content = testimonial | map: testimonial -%}
-                  <div class="swiper-slide p-4 bg-light-pastel-green">
+                  <div class="swiper-slide p-4 bg-light-green rounded-lg">
                       {% include testimonial-card.html index=index testimonial=testimonial_content %}
                   </div>
               {%- endfor -%}          
@@ -196,17 +196,17 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         </div>
         <div class="flex flex-wrap justify-center items-center w-6/7 mx-auto -mr-4 -ml-4">
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80 mb-8 md:mb-0">
-                <div class="bg-white h-full rounded-lg p-10">
-                    <p class="h4 mb-8 md:mb-0">Start using SLSA</p>
+                <div class="bg-white h-full rounded-lg p-10 flex flex-col">
+                    <p class="h4 mb-8 md:mb-4">Start using SLSA</p>
                     <p>The first big on-ramp to becoming SLSA Level 1 compliant is generating provenance. We’ve put together quick, step-by-step walkthroughs to help you on your way, and there’s still more to come as our roadmap progresses. </p>
-                    <a href="specifications/{{ site.current_version}}/security-levels" class="cta-link mt-10">Learn more</a>
+                    <a href="specifications/{{ site.current_version}}/security-levels" class="cta-link mt-auto">Learn more</a>
                 </div>
             </div>
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80">
-                <div class="bg-white h-full rounded-lg p-10">
-                    <p class="h4 mb-8 md:mb-0">Github actions demo</p>
+                <div class="bg-white h-full rounded-lg p-10 flex flex-col">
+                    <p class="h4 mb-8 md:mb-4">Github actions demo</p>
                     <p>Ready to put your project through it’s paces? There’s a comprehensive list of the specific requirements sources, builds, provenance need to pass for the different SLSA levels, as well as the common requirements involved.</p>
-                    <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-10">Learn more</a>
+                    <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-auto">Learn more</a>
                 </div>
             </div>
         </div>
