@@ -78,7 +78,7 @@ testimonials:
                 <h3 class="h3 p-0">The supply chain problem</h3>
             </div>
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
-                <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance. 
+                <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance.
 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
             </div>
         </div>
@@ -90,7 +90,7 @@ These look at the builds, sources and dependencies in open source or commercial 
         <div class="flex flex-wrap justify-between items-center">
             <div class="text w-full md:w-1/2">
                 <h3 class="h3 mb-8">Levels of assurance</h3>
-                <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance. 
+                <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance.
                 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
                 <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-8">Read the level specifications</a>
             </div>
@@ -115,7 +115,7 @@ These look at the builds, sources and dependencies in open source or commercial 
                 <h3 class="h3 p-0">Who is SLSA for?</h3>
             </div>
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
-                <p>Whether you’re a developer, business or an enterprise, SLSA provides a industry standard, a recognizable and agreed-upon level of protection and compliance.<br><br> 
+                <p>Whether you’re a developer, business or an enterprise, SLSA provides a industry standard, a recognizable and agreed-upon level of protection and compliance.<br><br>
 It’s adaptable, and it’s been designed with the wider security ecosystem in mind, for anyone to adopt and use. That could be users requiring that the software they rely on is a particular SLSA level, an open source software project protecting its users by using SLSA compliant infrastructure, or an enterprise using SLSA as guiding principles to harden their own internal supply chains, requiring that dependencies are SLSA compliant too.</p>
             </div>
         </div>
@@ -149,7 +149,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         </div>
       <div class="w-full md:w-2/3 relative mx-auto">
         <div class="absolute inset-y-0 left-0 z-10 flex items-center">
-            <button @click="swiper.slidePrev()" 
+            <button @click="swiper.slidePrev()"
                 class="-ml-2 lg:-ml-12 flex justify-center items-center w-10 h-10 focus:outline-none">
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.2033 16.6509C16.2656 11.3624 16.2656 5.93933 15.2033 0.650878C9.66355 2.45134 4.4952 5.16732 3.49691e-07 8.65088C4.4952 12.1344 9.66355 14.8504 15.2033 16.6509Z" fill="#155757"/></svg>
                 </button>
@@ -162,11 +162,11 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
                   <div class="swiper-slide p-4 bg-light-pastel-green">
                       {% include testimonial-card.html index=index testimonial=testimonial_content %}
                   </div>
-              {%- endfor -%}          
+              {%- endfor -%}
             </div>
         </div>
         <div class="absolute inset-y-0 right-0 z-10 flex items-center">
-            <button @click="swiper.slideNext()" 
+            <button @click="swiper.slideNext()"
                     class="-mr-2 lg:-mr-12 flex justify-center items-center w-10 h-10 focus:outline-none">
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.796665 16.6509C-0.265559 11.3624 -0.26556 5.93933 0.796663 0.650878C6.33645 2.45134 11.5048 5.16732 16 8.65088C11.5048 12.1344 6.33645 14.8504 0.796665 16.6509Z" fill="#155757"/></svg>
             </button>
@@ -220,7 +220,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
             </div>
             <div class="w-full md:w-1/2">
                 <div class="rounded-lg text-green p-5 border border-green-400 inline-block mt-8 md:mt-0 mb-8 h4">SLSA is currently in alpha</div>
-                <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br> 
+                <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br>
 We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
 Google has been using an internal version of SLSA since 2013 and requires it for all of their production workloads.</p>
 <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link white mt-10">Learn more</a>

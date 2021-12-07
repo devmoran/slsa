@@ -21,7 +21,7 @@ order: 0
 </div>
             </div>
             <div class="w-2/4">
-                <div class="bg-white h-full rounded-lg p-10"> 
+                <div class="bg-white h-full rounded-lg p-10">
                     <p>
                         This guide will help you achieve Level 1, and it should take less than a couple of hours for an individual project. By following the steps, you’ll soon be compliant with these SLSA requirements:
 <ul class="list-disc mt-6 pl-4"><li class="pb-4">Producing provenance data</li>
@@ -43,7 +43,7 @@ order: 0
 </div>
             </div>
             <div class="w-1/2">
-                <div class="bg-white h-full rounded-lg"> 
+                <div class="bg-white h-full rounded-lg">
                     <p>Once the foundations are in place with Level 1, you can start looking towards the higher levels to further strengthen artifact integrity with central monitoring, authentication and automated compilation, as well as more secure development practices. But there’s a few things to consider first:</p>
                     <ul class="list-disc mt-6 pl-4">
                     <li class="pb-4">Decide what level is appropriate for your project in the short term and for your immediate needs. It can take years to achieve the ideal security state, so having intermediate milestones is important.</li>

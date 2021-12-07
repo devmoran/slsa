@@ -61,7 +61,7 @@
             opacity:1;
             transition: all .25s ease-in-out;
         }
-    
+
         & .logo-green {
             visibility: hidden;
             opacity:0;
@@ -79,19 +79,19 @@
                 color: $text-color;
 
                 &:hover {
-    
+
                     &:after {
                         background-color: $text-color;
                     }
                 }
-    
+
                 &.active {
                     &:after {
                         background-color: $text-color;
                     }
                 }
             }
-    
+
             & svg path {
                 fill: white;
             }
@@ -109,7 +109,7 @@
             opacity:0;
             transition: all .25s ease-in-out;
         }
-    
+
         & .logo-green {
             visibility: visible;
             opacity:1;
@@ -121,12 +121,12 @@
                 color: $text-color;
 
                 &:hover {
-    
+
                     &:after {
                         background-color: $text-color;
                     }
                 }
-    
+
                 &.active {
                     &:after {
                         background-color: $text-color;
@@ -138,19 +138,19 @@
                 color: $text-color;
 
                 &:hover {
-    
+
                     &:after {
                         background-color: $text-color;
                     }
                 }
-    
+
                 &.active {
                     &:after {
                         background-color: $text-color;
                     }
                 }
             }
-    
+
             & svg path {
                 fill: $text-color;
             }
@@ -243,7 +243,7 @@
 
                     &:hover {
                         text-decoration: none;
-        
+
                         &:after {
                             content: '';
                             width: auto;
