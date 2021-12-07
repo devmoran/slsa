@@ -54,6 +54,26 @@ order: 0
         <p>Kim Lewandowski<br>Founder, Chainguard</p>
     </div>
 </section>
+<section class="section bg-green-dark flex justify-center items-center">
+    <div class="wrapper inner w-full">
+        <div class="flex justify-between items-start text-white">
+            <div class="text w-1/3">
+<div class="h3 p-0">
+
+### Project Status
+
+</div>
+            </div>
+            <div class="w-1/2">
+                <div class="rounded-lg text-green p-5 border border-green-400 inline-block mb-8 h4">SLSA is currently in alpha</div>
+                <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br> 
+We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
+Google has been using an internal version of SLSA since 2013 and requires it for all of their production workloads.</p>
+<a target="_blank" href="/specifications/{{ site.current_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="section bg-pastel-green">
     <div class="wrapper inner w-full">
         <div class="flex flex-col justify-center items-center mb-8 w-2/3 mx-auto pl-5">
@@ -122,26 +142,6 @@ order: 0
                         <li>And <a target="_blank" class="font-bold text-green-darker" href="https://github.com/slsa-framework/slsa/graphs/contributors">many others</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section bg-green-dark flex justify-center items-center">
-    <div class="wrapper inner w-full">
-        <div class="flex justify-between items-start text-white">
-            <div class="text w-1/3">
-<div class="h3 p-0">
-
-### Project Status
-
-</div>
-            </div>
-            <div class="w-1/2">
-                <div class="rounded-lg text-green p-5 border border-green-400 inline-block mb-8 h4">SLSA is currently in alpha</div>
-                <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br> 
-We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
-Google has been using an internal version of SLSA since 2013 and requires it for all of their production workloads.</p>
-<a target="_blank" href="/specifications/{{ site.current_version}}/security-levels" class="cta-link white mt-10">Learn more</a>
             </div>
         </div>
     </div>
