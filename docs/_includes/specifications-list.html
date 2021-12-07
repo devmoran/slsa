@@ -6,7 +6,7 @@
 {% if item.path contains site.current_version %}
 {%- assign v = page.url | replace: '/','' | replace: 'specifications','' | replace: 'overview','' -%}
 {% if item.title != 'Specifications' %}
-<a class="text-black border-b border-black-900 inline-block w-full mb-6 hover:no-underline" href="{{ site.baseurl }}/{{item.path | replace: site.current_version,v | replace: "_", "" | replace: ".md", "" }}">
+<a class="text-green-dark border-b border-black-900 inline-block w-full mb-6 hover:no-underline" href="{{ site.baseurl }}/{{item.path | replace: site.current_version,v | replace: "_", "" | replace: ".md", "" }}">
 <p class="h4 font-normal mb-6 flex items-center">
     <span class="mr-4">
     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +15,7 @@
     </span>
     {{ item.title }}
 </p>
-<p class="mb-6 font-normal">{{ item.description }}</p>
+<p class="mb-6 font-normal text-black pl-9">{{ item.description }}</p>
 </a>
 {% endif %}
 {% endif %}
@@ -23,4 +23,17 @@
 {% endfor %}
 {% endif %}
 {%- endfor -%}
+<li>
+<a class="text-green-dark border-b border-black-900 inline-block w-full mb-6 hover:no-underline" href="{{ site.baseurl }}/specifications/faq">
+<p class="h4 font-normal mb-6 flex items-center">
+    <span class="mr-4">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/>
+    </svg>
+    </span>
+    FAQs
+</p>
+<p class="mb-6 font-normal text-black pl-9">Questions and more information</p>
+</a>
+</li>
 </ul>

@@ -4,13 +4,13 @@
             {{testimonial[forloop.index].quote}}
         </p>
     </div>
-    <div class="flex flex-wrap items-start justify-between w-full">
+    <div class="flex flex-wrap items-center justify-between w-full">
         <div class="w-full md:w-3/4 pr-6 mb-6 md:mb-0">
             <h4 class="h5">{{testimonial[forloop.index].name}}</h4>
             <p>{{testimonial[forloop.index].role}}</p>
         </div>
-        <div class="w-full md:w-1/4">
-            <img class="w-1/3 md:w-2/3 mx-auto" src="{{ site.baseurl }}{{testimonial[forloop.index].logo}}" alt"Testimonial Logo" />
+        <div class="w-full md:w-1/4 flex justify-end">
+            <img class="w-1/3 md:w-2/4" src="{{ site.baseurl }}{{testimonial[forloop.index].logo}}" alt"Testimonial Logo" />
         </div>
     </div>
 </article>
