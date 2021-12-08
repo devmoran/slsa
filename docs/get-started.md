@@ -88,8 +88,8 @@ order: 0
             <h4 class="h2 font-normal mb-8">Help us improve SLSA</h4>
             <div class="w-full lg:w-full mx-auto text-center">
                 <p>Already at SLSA Level 1? Let us know what went well, what didn’t, and what could be improved. We’re developing new tools and onboarding resources to make the process even easier, so your contribution really goes a long way.</p>
-                <a href="https://github.com/slsa-framework/slsa/issues" class="cta-link center mt-8">Leave a GitHub issue</a><br>
-                <a href="community" class="cta-link center mt-8">Join the community</a>
+                <a href="https://github.com/slsa-framework/slsa/issues" class="cta-link font-semibold h5 center mt-8">Leave a GitHub issue</a><br>
+                <a href="community" class="cta-link font-semibold h5 center mt-8">Join the community</a>
             </div>
         </div>
     </div>

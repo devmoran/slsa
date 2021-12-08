@@ -23,9 +23,9 @@
               </a>
             {% endif %}
             {% if my_page.title == 'Specifications' %}
-              <ul @click.outside="open = false" x-show="open" x-transition class="relative md:absolute m-0 py-4 md:bg-white rounded-lg md:shadow-md dropdown">
+              <div @click.outside="open = false" x-show="open" x-transition class="relative md:absolute m-0 md:py-4 md:bg-white rounded-lg md:shadow-md dropdown">
                 {% include specifications-nav.html %}
-              </ul>
+              </div>
             {% endif %}
           {%- endif -%}
         </li>
