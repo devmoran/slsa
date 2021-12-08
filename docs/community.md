@@ -50,8 +50,9 @@ order: 0
 <section class="section relative bg-green-transparent flex justify-center items-center overflow-hidden">
     <img class="object-cover absolute w-full h-full z-10" src="{{site.baseurl}}/images/community-bg.png" alt="Community background image">
     <div class="bg-light-green h-full rounded-lg p-10 z-20 w-2/3 mx-auto">
-        <p class="h4 font-semibold mb-6">“SLSA’s really the first of its kind, a framework for supply chain and build integrity. What sets it apart is the thriving community behind it, and it’s resonating with different organizations.”</p>
-        <p>Kim Lewandowski<br>Founder, Chainguard</p>
+        <p class="font-regular text-3xl mb-6">“SLSA’s really the first of its kind, a framework for supply chain and build integrity. What sets it apart is the thriving community behind it, and it’s resonating with different organizations.”</p>
+        <p class="font-semibold h4 mb-0.5">Kim Lewandowski</p>
+        <p class="font-regular">Founder, Chainguard</p>
     </div>
 </section>
 <section class="section bg-green-dark flex justify-center items-center">

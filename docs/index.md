@@ -16,7 +16,7 @@ levels:
         badge: /images/levelBadge3.svg
     - 4:
         title: Level 4
-        text: The highest assurances of build integrity and measures for dependency management
+        text: The highest assurances of build integrity and measures for dependency management in place
         badge: /images/levelBadge4.svg
 testimonials:
     - 1:
@@ -68,7 +68,7 @@ testimonials:
                 <h3 class="h2 p-0">The supply chain problem</h3>
             </div>
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
-                <p>Any software can introduce vulnerabilities into a supply chain. As a system gets more complex, it’s critical to already have checks and best practices in place to guarantee artifact integrity, that the source code you’re relying on is the code you’re actually using. Without solid foundations and a plan for system as it grows, it’s difficult to focus your efforts against tomorrow’s next hack, breach or compromise.</p>
+                <p>Any software can introduce vulnerabilities into a supply chain. As a system gets more complex, it’s critical to already have checks and best practices in place to guarantee artifact integrity, that the source code you’re relying on is the code you’re actually using. Without solid foundations and a plan for the system as it grows, it’s difficult to focus your efforts against tomorrow’s next hack, breach or compromise.</p>
                 <a href="/specifications/{{ site.current_version}}/overview#supply-chain-threats" class="cta-link mt-8">More about supply chain attacks </a>
             </div>
         </div>
@@ -186,22 +186,18 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         </div>
         <div class="flex flex-wrap justify-center items-center w-6/7 mx-auto -mr-4 -ml-4">
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80 mb-8 md:mb-0">
-              <a href="/get-started#reaching-slsa-level-1" class="hover:no-underline">
-                  <div class="bg-white h-full rounded-lg p-10 flex flex-col">
-                        <p class="h3 font-semibold mb-8 md:mb-6">Start using SLSA</p>
-                        <p>The first big on-ramp to becoming SLSA Level 1 compliant is generating provenance. We’ve put together quick, step-by-step walkthroughs to help you on your way, and there’s still more to come as our roadmap progresses. </p>
-                        <p class="mt-auto cta-link font-semibold">Get started</p>
-                  </div>
-              </a>
+                <div class="bg-white h-full rounded-lg p-10 flex flex-col">
+                    <p class="h3 font-semibold mb-8 md:mb-6">Start using SLSA</p>
+                    <p>Ready to put your project through its paces? The first on-ramp to SLSA Level 1 is generating provenance. We’ve put together a quick walkthrough with the steps you’ll need to take and available tools you can use.</p>
+                    <a href="/get-started#reaching-slsa-level-1" class="cta-link mt-auto">Get started</a>
+                </div>
             </div>
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80">
-              <a href="https://github.com/slsa-framework/github-actions-demo" class="hover:no-underline">
-                  <div class="bg-white h-full rounded-lg p-10 flex flex-col">
-                      <p class="h3 font-semibold mb-8 md:mb-6">Github actions demo</p>
-                      <p>Ready to put your project through it’s paces? There’s a comprehensive list of the specific requirements sources, builds, provenance need to pass for the different SLSA levels, as well as the common requirements involved.</p>
-                      <p class="cta-link mt-auto font-semibold">Learn more</p>
-                  </div>
-              </a>
+                <div class="bg-white h-full rounded-lg p-10 flex flex-col">
+                    <p class="h3 font-semibold mb-8 md:mb-6">Review the specifications</p>
+                    <p>Want to learn about how it fits your organization’s security? Here’s the documentation behind the framework, with use cases, specific threats (and their prevention), provenance and fully detailed requirements.</p>
+                    <a href="/specifications/{{site.current_version}}/overview#specifications" class="cta-link mt-auto">Learn more</a>
+                </div>
             </div>
         </div>
     </div>
@@ -215,7 +211,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
             <div class="w-full md:w-1/2">
                 <div class="rounded-lg text-green p-5 border border-green-400 inline-block mt-8 md:mt-0 mb-8 h4 font-semibold">SLSA is currently in alpha</div>
                 <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br>
-We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
+We’ve released a set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
 Google has been using an internal version of SLSA since 2013 and requires it for all of their production workloads.</p>
             </div>
         </div>
