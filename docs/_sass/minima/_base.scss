@@ -107,7 +107,7 @@ h1 {
 /**
  * Links
  */
-a:not(.table-of-contents a) {
+a:not(.table-of-contents a, .getting_started_card a, footer a, .button-mono, .cta-link) {
     color: #23907E;
     text-decoration: none;
     font-weight: 600;

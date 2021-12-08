@@ -88,9 +88,11 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
+<a href="/specifications/{{ site.current_version}}/threats" class="hover:no-underline h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
-        <a href="/specifications/{{ site.current_version}}/threats" class="cta-link">Read about threats in detail</a>
+        <p class="cta-link font-semibold h4">Read about threats in detail</p>
     </div>
+</a>
 </section>
 <section class="section bg-white border-b border-black-900">
     <div class="wrapper inner w-full">
@@ -140,7 +142,7 @@ levels:
               </div>
           {%- endfor -%}
         </div>
-        <div class="flex flex-col justify-between items-center mt-16">
+        <div class="flex flex-col justify-between items-center mt-24">
           {%- for level in page.levels -%}
           {%- assign level_content = level | map: level -%}
               <div class="w-full {% if forloop.index != 4 %}mb-32{% endif %}">
@@ -159,9 +161,11 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
+<a href="/specifications/{{ site.current_version}}/security-levels" class="h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
-        <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link">Read the level specifications</a>
+        <p class="cta-link font-semibold h4">Read the level specifications</p>
     </div>
+</a>
 </section>
 <section x-data="{ specificationPages: [], currentVersion: `{{site.current_version|replace: "v", ""}}` }" class="section flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">

@@ -372,6 +372,16 @@
             display: block;
             padding: 10px 0;
             font-family: "Prodigy";
+            color: white;
+            font-weight: normal;
+        }
+
+        .dropdown ul li a{
+            display: block;
+            padding: 5px 0;
+            font-family: "Prodigy";
+            color: white;
+            font-weight: normal;
         }
     }
 
@@ -471,7 +481,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 85vh;
+        height: 100vh;
     }
 
     &.specifications{
@@ -501,6 +511,14 @@
     }
 
     &.cta_banner {
-        padding: 30px 0 30px;
+        padding:0;
+        a {
+            padding: 30px 0 30px;
+            display: inline-block;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
 }

@@ -134,7 +134,7 @@ order: 0
             <p><strong>If you’ve been using SLSA already, get in touch.</strong><br><br>
 The scenarios above are proof of concepts and theoretical explorations. As more people adopt SLSA, we’ll add case studies to walk you through what long term adoption of the SLSA framework could look like, with real world scenarios, application and discovery, planning and strategic development.<br><br>
 The contribution guidelines help guide your feedback, and every contribution is useful for others to see how SLSA can be used in their project or organization.</p>
-            <a target="_blank" href="https://github.com/slsa-framework/slsa/tree/main/case-studies" class="cta-link mt-8">Submit a case study</a>
+            <a target="_blank" href="https://github.com/slsa-framework/slsa/tree/main/case-studies" class="cta-link font-semibold h5 mt-8">Submit a case study</a>
         </div>
     </div>
 </section>
