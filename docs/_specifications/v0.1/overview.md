@@ -82,7 +82,7 @@ levels:
                 <p>High profile attacks like <strong>SolarWinds</strong>, <strong>Codecov</strong> or <strong>Linux hypocrite commits</strong> exploit the kind of supply chain integrity vulnerabilities which may go unnoticed or be underdeveloped, and quickly become extremely public, disruptive and costly in today’s environment. </p>
             </div>
             <div class="w-1/2 pl-10">
-                <p>Attacks can occur at every link in a typical software supply chain, which puts an extra burden on anyone involved in complex critical systems. SLSA has been designed with these real world examples in mind to make sure they’re more common knowledge, and easier to protect against.</p>
+                <p>Attacks can occur at every link in a typical software supply chain, which puts an extra burden on anyone involved in complex critical systems. SLSA's designed with these examples in mind to make sure they’re common knowledge, and easier to protect against.</p>
             </div>
         </div>
     </div>
