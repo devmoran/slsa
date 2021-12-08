@@ -18,30 +18,32 @@ order: 0
 
 ## Reaching SLSA Level 1
 
+#### Effort: Low
+
 </div>
             </div>
             <div class="w-2/4">
                 <div class="bg-white h-full rounded-lg p-10">
-                    <p class="h5 font-bold mb-6">Overview:<p> 
+                    <p class="h5 font-bold mb-6">Overview<p>
                     <p>
                         This guide will help you achieve Level 1, and it should take less than a couple of hours for an individual project. By following the steps, you’ll soon be compliant with these SLSA requirements:
-<ul class="list-disc my-6 pl-6"><li class="pb-4">Producing provenance data</li>
-<li class="pb-4">Automating your builds</li></ul>
+<ul class="list-disc my-6 pl-6"><li>Producing provenance data</li>
+<li >Automating your builds</li></ul>
                     </p>
-                    <p class="h5 font-bold mb-6">Steps:</p> 
+                    <p class="h5 font-bold mb-6">Steps</p>
                     <ul class="list-decimal mt-6 mb-6 pl-6">
-                        <li>Read the Level 1 build and provenance requirements</li>
+                        <li>Read the Level 1 <a href="/specifications/{{site.current_version}}/requirements#build-requirements">build</a> and <a href="/specifications/{{site.current_version}}/requirements#provenance-requirements">provenance</a> requirements</li>
                         <li>Choose a compliant version control system (if needed)</li>
                         <li>Choose a scripted build tool (if needed)</li>
                         <li>Create your provenance using the in-toto format (the Tools listed below can help)</li>
                         <li>Decide where you'll store the signed provenance so you and your users can easily build it into workflows</li>
-                        <li>You’re Level 1! Add the SLSA Level 1 badge to your readme</li>
+                        <li>You’re Level 1! Add the SLSA Level 1 badge to your readme.</li>
                     </ul>
-                    <p class="h5 font-bold mb-6">Tools:</p> 
+                    <p class="h5 font-bold mb-6">Tools</p>
                     <ul class="list-disc mt-6 pl-6">
-                        <li>GitHub Actions provenance generator</li>
-                        <li>Azure DevOps provenance generator</li>
-                        <li>Cosign for storing signed provenance</li>
+                        <li><a href="https://github.com/slsa-framework/github-actions-demo">GitHub Actions provenance generator</a></li>
+                        <li><a href="https://github.com/slsa-framework/azure-devops-demo">Azure DevOps provenance generator</a></li>
+                        <li><a href="https://github.com/sigstore/cosign">Sigstore Cosign for storing signed provenance</a></li>
                     </ul>
                 </div>
             </div>
@@ -81,8 +83,8 @@ Not all projects require Level 4, and for others it’s impossible to achieve. I
             <h4 class="h3 mb-8">Help us improve SLSA</h4>
             <div class="w-full lg:w-full mx-auto text-center">
                 <p>Already at SLSA Level 1? Let us know what went well, what didn’t, and what could be improved. We’re developing new tools and onboarding resources to make the process even easier, so your contribution really goes a long way.</p>
-                <a target="_blank" href="https://github.com/slsa-framework/slsa/issues" class="cta-link center mt-8">Leave a GitHub issue</a><br>
-                <a target="_blank" href="https://github.com/slsa-framework/slsa/issues" class="cta-link center mt-8">Join the community</a>
+                <a href="https://github.com/slsa-framework/slsa/issues" class="cta-link center mt-8">Leave a GitHub issue</a><br>
+                <a href="community" class="cta-link center mt-8">Join the community</a>
             </div>
         </div>
     </div>

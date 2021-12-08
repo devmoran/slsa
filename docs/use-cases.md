@@ -82,7 +82,7 @@ order: 0
             <div class="text w-2/3">
 <div class="h3 p-0 mb-8">
 
-## Case Studies
+## Case studies
 
 </div>
 <p>These case studies go much more in depth. Starting from a particular scenario, they look at how you might harden an entire system over time, starting with immediate problems to solve and following through next steps to incrementally progress through to the higher SLSA levels, with space for the development of automatic analysis and policies. </p>
@@ -93,7 +93,7 @@ order: 0
         <p class="h4">Example case studies</p>
         <ul class="mt-6 mb-16">
             <li class="border-t border-b border-black-900">
-                <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/use-cases/consuming-third-party-software">
+                <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/use-cases/publishing-a-software-package">
                     <p class="h3 font-semibold flex items-center pt-8 pb-8">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
@@ -120,7 +120,7 @@ order: 0
                 </a>
             </li>
             <li class="border-b border-black-900">
-                <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/use-cases/package-repository-accepting-a-software-package">
+                <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/example">
                     <p class="h3 font-semibold flex items-center pt-8 pb-8">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
@@ -138,27 +138,3 @@ The contribution guidelines help guide your feedback, and every contribution is 
         </div>
     </div>
 </section>
-
-<!-- # Use cases
-
-<span class="subtitle">
-
-The following are some typical cases to explore how SLSA compliance can provide protection. In each, we’ve detailed goals that users need to meet, how organizations can use the SLSA framework to help meet them, and limitations that might be faced.
-
-</span>
-<div class="link-tree use-cases">
-
-|                                                                                                                                                                                                                   |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Publishing a software package](/publishing-a-software-package.md) How a developer can protect their users from malicious changes to the software they publish                                                    |
-| [Consuming third party software](/consuming-third-party-software.md) How a developer can work with third party software suppliers to reduce risk in a supply chain                                                |
-| [Package repository accepting a package](/package-repository-accepting-a-software-package.md) How a repository can protect their users from malicious changes to software artifacts published in their repository |
-| [IN DEVELOPMENT]: Checking an artifact’s SLSA level                                                                                                                                                               |
-| [IN DEVELOPMENT]: Determining a package’s intent                                                                                                                                                                  |
-| [IN DEVELOPMENT]: Automatically verifying software                                                                                                                                                                |
-
-</div>
-
-For a [full example](../example.md) that explores edge cases in greater detail, we created a use case for using curl through its official docker image.
-
-[Want to contribute?](https://github.com/slsa-framework/slsa/tree/main/case-studies) These are only a few of the most common use cases for developers, software consumers and repository maintainers. We welcome any real life scenarios you’ve faced using SLSA in your projects. -->

@@ -1,5 +1,5 @@
 ---
-layout: standard
+layout: specifications
 ---
 # Consuming third party software
 
@@ -23,7 +23,7 @@ A developer (e.g. FooCo) using third party software (e.g. HowDo developed by How
 -   Having the control-point check the candidate HowDo and its provenance (as well as any other published attestations) against the policy mentioned above, ensuring any attestations evaluated by the policy are signed by HowInc's public key(s)
 -   Only importing the software artifact if all the above checks pass
 
-### Limitations
+## Limitations
 
 This use case relies on FooCo trusting the SLSA information that HowInc provides. In the future, there may be accreditation bodies that confirm this information.
 
