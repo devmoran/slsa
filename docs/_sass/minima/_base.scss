@@ -107,8 +107,8 @@ h1 {
 /**
  * Links
  */
-a {
-    color: inherit;
+a:not(.table-of-contents a) {
+    color: #23907E;
     text-decoration: none;
     font-weight: 600;
 
