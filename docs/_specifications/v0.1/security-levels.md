@@ -63,26 +63,26 @@ The following table provides a summary of the [requirements](requirements.md) fo
 <!-- markdownlint-disable-next-line MD036 -->
 _○ = required unless there is a justification_
 
-[access]: /specifications/{{site.current_version}}/requirements.md.md#access
-[authenticated]: /specifications/{{site.current_version}}/requirements.md.md#authenticated
-[available]: /specifications/{{site.current_version}}/requirements.md#available
-[build as code]: /specifications/{{site.current_version}}/requirements.md#build-as-code
-[build service]: /specifications/{{site.current_version}}/requirements.md#build-service
-[dependencies complete]: /specifications/{{site.current_version}}/requirements.md#dependencies-complete
-[ephemeral environment]: /specifications/{{site.current_version}}/requirements.md#ephemeral-environment
-[hermetic]: /specifications/{{site.current_version}}/requirements.md#hermetic
-[isolated]: /specifications/{{site.current_version}}/requirements.md#isolated
-[non-falsifiable]: /specifications/{{site.current_version}}/requirements.md#non-falsifiable
-[parameterless]: /specifications/{{site.current_version}}/requirements.md#parameterless
-[reproducible]: /specifications/{{site.current_version}}/requirements.md#reproducible
-[retained indefinitely]: /specifications/{{site.current_version}}/requirements.md#retained-indefinitely
-[scripted build]: /specifications/{{site.current_version}}/requirements.md#scripted-build
-[security]: /specifications/{{site.current_version}}/requirements.md#security
-[service generated]: /specifications/{{site.current_version}}/requirements.md#service-generated
-[superusers]: /specifications/{{site.current_version}}/requirements.md#superusers
-[two-person reviewed]: /specifications/{{site.current_version}}/requirements.md#two-person-reviewed
-[verified history]: /specifications/{{site.current_version}}/requirements.md#verified-history
-[version controlled]: /specifications/{{site.current_version}}/requirements.md#version-controlled
+[access]: /requirements.md.md#access
+[authenticated]: /requirements.md.md#authenticated
+[available]: /requirements.md#available
+[build as code]: /requirements.md#build-as-code
+[build service]: /requirements.md#build-service
+[dependencies complete]: /requirements.md#dependencies-complete
+[ephemeral environment]: /requirements.md#ephemeral-environment
+[hermetic]: /requirements.md#hermetic
+[isolated]: /requirements.md#isolated
+[non-falsifiable]: /requirements.md#non-falsifiable
+[parameterless]: /requirements.md#parameterless
+[reproducible]: /requirements.md#reproducible
+[retained indefinitely]: /requirements.md#retained-indefinitely
+[scripted build]: /requirements.md#scripted-build
+[security]: /requirements.md#security
+[service generated]: /requirements.md#service-generated
+[superusers]: /requirements.md#superusers
+[two-person reviewed]: /requirements.md#two-person-reviewed
+[verified history]: /requirements.md#verified-history
+[version controlled]: /requirements.md#version-controlled
 
 ## <a name="threats"></a>Supply chain threats
 
