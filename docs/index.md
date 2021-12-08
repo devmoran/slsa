@@ -51,7 +51,7 @@ testimonials:
     <div class="wrapper inner w-full">
         <div class="flex flex-wrap justify-between items-center">
             <div class="text w-full md:w-1/2">
-                <h2 class="h3 mb-8">What is SLSA?</h2>
+                <h2 class="h2 mb-8">What is SLSA?</h2>
                 <p><strong>Supply chain Levels for Software Artifacts, or SLSA (salsa).</strong> It’s a security framework, a check-list of standards and controls to prevent tampering, improve integrity, and secure packages and infrastructure in your projects, businesses or enterprises. It’s how you get from safe enough to being as resilient as possible, at any link in the chain.</p>
             </div>
             <div class="w-full md:w-1/3 md:mt-0 mt-8">
@@ -64,27 +64,27 @@ testimonials:
     <div class="wrapper inner w-full">
         <div class="flex flex-wrap justify-between items-start">
             <div class="text w-full md:w-1/3">
-                <h3 class="h3 p-0">The supply chain problem</h3>
+                <h3 class="h2 p-0">The supply chain problem</h3>
             </div>
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
                 <p>Any software can introduce vulnerabilities into a supply chain. As a system gets more complex, it’s critical to already have checks and best practices in place to guarantee artifact integrity, that the source code you’re relying on is the code you’re actually using. Without solid foundations and a plan to harden the system as it grows, it’s difficult to focus your efforts against tomorrow’s next hack, breach or compromise.</p>
                 <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-8">More about supply chain attacks </a>
             </div>
         </div>
-        <img class="mt-16" src="{{ site.baseurl }}/images/SupplyChainDiagram.png" alt="the supply chain problem image">
+        <img class="mt-16 mx-auto w-3/4" src="{{ site.baseurl }}/images/SupplyChainDiagram.svg" alt="the supply chain problem image">
     </div>
 </section>
 <section class="section bg-pastel-green flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex flex-wrap justify-between items-center">
             <div class="text w-full md:w-1/2">
-                <h3 class="h3 mb-8">Levels of assurance</h3>
+                <h4 class="h2 mb-8">Levels of assurance</h4>
                 <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance.
                 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
                 <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link mt-8">Read the level specifications</a>
             </div>
             <div class="w-full md:w-2/4 md:mt-0 mt-8 pl-12">
-                <img class="w-3/4" src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
+                <img class="w-3/4 mx-auto" src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
             </div>
         </div>
         <div class="flex flex-wrap justify-between items-center mt-16 -ml-4 -mr-4">
@@ -101,7 +101,7 @@ testimonials:
     <div class="wrapper inner w-full">
         <div class="flex flex-wrap justify-between items-start">
             <div class="text w-full md:w-1/3">
-                <h3 class="h3 p-0">Who is SLSA for?</h3>
+                <h4 class="h2 p-0">Who is SLSA for?</h4>
             </div>
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
                 <p>Whether you’re a developer, business or an enterprise, SLSA provides a industry standard, a recognizable and agreed-upon level of protection and compliance.<br><br>
@@ -133,7 +133,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
   class="section bg-pastel-green flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex flex-col justify-center items-center mb-16 w-full md:w-2/3 mx-auto text-center">
-            <h4 class="h3 mb-8">An industry collaboration</h4>
+            <h4 class="h2 mb-8">An industry collaboration</h4>
             <p>SLSA is led by an initial cross-organization, vendor-neutral steering group committed to improving the security ecosystem for everyone. </p>
         </div>
       <div class="w-full md:w-2/3 relative mx-auto">
@@ -166,7 +166,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
 <section class="section bg-white flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex flex-col justify-center items-center mb-16 text-center md:w-2/3 relative mx-auto">
-            <p class="h3 mb-10">Our ethos</p>
+            <p class="h2 mb-10">Our ethos</p>
             <p>Today’s projects, products and services are increasingly complex and open to attack. As that trend continues, we need to scale up our effort to provide more secure, accessible ways to protect the development, distribution and consumption of the software we use, and all the impacted communities behind it.</p>
         </div>
         <div class="flex flex-wrap justify-center items-center mb-16 text-center md:w-3/4 relative mx-auto">
@@ -181,19 +181,19 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
 <section class="section bg-light-green flex justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex flex-col justify-center items-center text-center md:mb-16 md:w-2/3 relative mx-auto">
-            <p class="h3 mb-8">Get started</p>
+            <p class="h2 mb-8">Get started</p>
         </div>
         <div class="flex flex-wrap justify-center items-center w-6/7 mx-auto -mr-4 -ml-4">
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80 mb-8 md:mb-0">
                 <div class="bg-white h-full rounded-lg p-10 flex flex-col">
-                    <p class="h4 mb-8 md:mb-4">Start using SLSA</p>
+                    <p class="h3 font-semibold mb-8 md:mb-6">Start using SLSA</p>
                     <p>The first big on-ramp to becoming SLSA Level 1 compliant is generating provenance. We’ve put together quick, step-by-step walkthroughs to help you on your way, and there’s still more to come as our roadmap progresses. </p>
                     <a href="/get-started#reaching-slsa-level-1" class="cta-link mt-auto">Get started</a>
                 </div>
             </div>
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80">
                 <div class="bg-white h-full rounded-lg p-10 flex flex-col">
-                    <p class="h4 mb-8 md:mb-4">Github actions demo</p>
+                    <p class="h3 font-semibold mb-8 md:mb-6">Github actions demo</p>
                     <p>Ready to put your project through it’s paces? There’s a comprehensive list of the specific requirements sources, builds, provenance need to pass for the different SLSA levels, as well as the common requirements involved.</p>
                     <a href="https://github.com/slsa-framework/github-actions-demo" class="cta-link mt-auto">Learn more</a>
                 </div>
@@ -205,7 +205,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
     <div class="wrapper inner w-full">
         <div class="flex flex-wrap justify-between items-start text-white">
             <div class="text w-full md:w-1/3">
-                <h3 class="h3 p-0">Project status</h3>
+                <p class="h2 p-0">Project status</p>
             </div>
             <div class="w-full md:w-1/2">
                 <div class="rounded-lg text-green p-5 border border-green-400 inline-block mt-8 md:mt-0 mb-8 h4">SLSA is currently in alpha</div>

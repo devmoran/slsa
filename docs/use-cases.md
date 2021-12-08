@@ -13,11 +13,11 @@ order: 0
 
 <section class="section bg-pastel-green flex justify-center items-center">
     <div class="wrapper inner w-full">
-        <div class="flex justify-between items-start mb-16">
-            <div class="text w-1/3">
+        <div class="mb-16">
+            <div class="text w-full">
 <div class="h3 p-0">
 
-### Example use cases
+## Example use cases
 
 </div>
             </div>
@@ -26,7 +26,11 @@ order: 0
         </div>
         <div class="flex justify-between items-start mb-12 rounded-xl p-10 bg-white">
             <div class="text w-2/3">
-                <h3 class="h4 p-0">Developers</h3>
+<div class="h3 font-semibold p-0">
+
+### Developers
+
+</div>
             </div>
             <div class="w-3/4">
                     <ul class="list-disc">
@@ -39,7 +43,11 @@ order: 0
         </div>
         <div class="flex justify-between items-start mb-12 rounded-xl p-10 bg-white">
             <div class="text w-2/3">
-                <h3 class="h4 p-0">Enterprises</h3>
+<div class="h3 font-semibold p-0">
+
+### Enterprises
+
+</div>
             </div>
             <div class="w-3/4">
                     <ul class="list-disc">
@@ -52,7 +60,11 @@ order: 0
         </div>
         <div class="flex justify-between items-start mb-12 rounded-xl p-10 bg-white">
             <div class="text w-2/3">
-                <h3 class="h4 p-0">Platforms</h3>
+<div class="h3 font-semibold p-0">
+
+### Platforms
+
+</div>
             </div>
             <div class="w-3/4">
                     <ul class="list-disc">
@@ -70,7 +82,7 @@ order: 0
             <div class="text w-2/3">
 <div class="h3 p-0 mb-8">
 
-### Case Studies
+## Case Studies
 
 </div>
 <p>These case studies go much more in depth. Starting from a particular scenario, they look at how you might harden an entire system over time, starting with immediate problems to solve and following through next steps to incrementally progress through to the higher SLSA levels, with space for the development of automatic analysis and policies. </p>
@@ -82,7 +94,7 @@ order: 0
         <ul class="mt-6 mb-16">
             <li class="border-t border-b border-black-900">
                 <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/use-cases/consuming-third-party-software">
-                    <p class="h4 font-normal flex items-center pt-8 pb-8">
+                    <p class="h3 font-semibold flex items-center pt-8 pb-8">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
                         Publishing a software package
@@ -91,7 +103,7 @@ order: 0
             </li>
             <li class="border-b border-black-900">
                 <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/use-cases/consuming-third-party-software">
-                    <p class="h4 font-normal flex items-center pt-8 pb-8">
+                    <p class="h3 font-semibold flex items-center pt-8 pb-8">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
                         Consuming third party software
@@ -100,7 +112,7 @@ order: 0
             </li>
             <li class="border-b border-black-900">
                 <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/use-cases/package-repository-accepting-a-software-package">
-                    <p class="h4 font-normal flex items-center pt-8 pb-8">
+                    <p class="h3 font-semibold flex items-center pt-8 pb-8">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
                         Package repository accepting a software package
@@ -109,7 +121,7 @@ order: 0
             </li>
             <li class="border-b border-black-900">
                 <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/use-cases/package-repository-accepting-a-software-package">
-                    <p class="h4 font-normal flex items-center pt-8 pb-8">
+                    <p class="h3 font-semibold flex items-center pt-8 pb-8">
                         <span class="mr-4">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.896251 18C-0.298751 12.0505 -0.298752 5.94951 0.896249 -7.47629e-07C7.1285 2.02552 12.9429 5.081 18 9C12.9429 12.919 7.1285 15.9745 0.896251 18Z" fill="#40DB88"/></svg></span>
                         Incrementally reaching Level 4 using curl

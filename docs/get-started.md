@@ -14,9 +14,9 @@ order: 0
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start mb-16">
             <div class="text w-1/3">
-<div class="h3 p-0">
+<div class="h2 p-0">
 
-### Reaching SLSA Level 1
+## Reaching SLSA Level 1
 
 </div>
             </div>

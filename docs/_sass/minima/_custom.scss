@@ -78,6 +78,13 @@
 
 .table-of-contents {
     min-height: 300px;
+    ul{
+        margin-top: 5px;
+    }
+    ul li{
+        margin-bottom: 5px;
+        font-family: "Prodigy";
+    }
 }
 
 // Reponsive 2 column layout block
@@ -161,7 +168,7 @@
 // STYLING
 //
 
-h1, h2, h3, h4, h5 {
+h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5 {
     font-family: $header-font-family;
 }
 

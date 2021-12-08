@@ -52,34 +52,36 @@ levels:
         <div class="w-full">
 <div class="h3 mb-16">
 
-### Supply chain threats
+## Supply chain threats
 
 </div>
-            <h4 class="h4 mb-8">
+            <p class="h3 font-semibold mb-8">
                 Protecting against key threats
-            </h4>
+            </h>
         </div>
-        <div class="flex flex-row justify-between items-start -ml-6 -mr-6">
-            <div class="text w-1/2 pl-6">
+        <div class="flex flex-row justify-between items-start -ml-10 -mr-10">
+            <div class="text w-1/2 pl-10">
                 <p>Supply chain attacks are an ever-present threat, exploiting weakpoints to interfere with software. The SLSA framework establishes three trust boundaries encouraging the right standards, attestation and technical controls, so you can harden a system from these threats and risks.</p>
             </div>
-            <div class="w-1/2 pl-6">
+            <div class="w-1/2 pl-10">
                 <p>This means automatic capability to analyse artifacts, guarantee the original source code, protect against interference that can happen in the build and distribution processes, isolate any hidden vulnerabilities and knowing with certainty which system components might be affected.</p>
             </div>
         </div>
-        <img src="{{ site.baseurl }}/images/supply-chain-threats.svg" alt="supply chain full threats image" />
+        <div class="my-16 w-full">
+            <img class="mx-auto w-3/4" src="{{ site.baseurl }}/images/supply-chain-threats.svg" alt="supply chain full threats image" />
+        </div>
     </div>
     <div class="wrapper inner w-full">
         <div class="w-full">
-            <h4 class="h4 mb-8">
+            <p class="h3 font-semibold mb-8">
                 Real world examples
-            </h4>
+            </p>
         </div>
-        <div class="flex flex-row justify-between items-start -ml-6 -mr-6">
-            <div class="text w-1/2 pl-6">
+        <div class="flex flex-row justify-between items-start -ml-10 -mr-10">
+            <div class="text w-1/2 pl-10">
                 <p>High profile attacks like SolarWinds, Codecov or Linux hypocrite commits exploit the kind of supply chain integrity vulnerabilities which may go unnoticed or be underdeveloped, and quickly become extremely public, disruptive and costly in today’s environment. </p>
             </div>
-            <div class="w-1/2 pl-6">
+            <div class="w-1/2 pl-10">
                 <p>Attacks can occur at every link in a typical software supply chain, which puts an extra burden on anyone involved in complex critical systems. SLSA has been designed with these real world examples in mind to make sure they’re more common knowledge, and easier to protect against.</p>
             </div>
         </div>
@@ -93,9 +95,9 @@ levels:
 <section class="section bg-white border-b border-black-900">
     <div class="wrapper inner w-full">
         <div class="w-full">
-            <h4 class="h4 mb-8">
+            <p class="h3 mb-8 font-semibold">
                 How it fits into the security ecosystem
-            </h4>
+            </p>
         </div>
         <div class="flex flex-row justify-between items-start">
             <div class="text w-1/2">
@@ -113,17 +115,17 @@ levels:
 <div class="wrapper inner w-full">
 <div class="mb-16">
 
-### Security levels
+## Security levels
 
 </div>
 </div>
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-center">
             <div class="text w-1/2">
-                <h4 class="h4 mb-8">A ladder to the ideal state</h4>
+                <h4 class="h4 mb-8 font-semibold">A ladder to the ideal state</h4>
                 <p>SLSA’s requirements look at the three general main areas involved in a software artifact’s creation, and where vulnerabilities target - the build, the source, and the dependencies. As the levels scale up, they show that work’s been done to assure there’s more integrity in each area, which can be helpful in scenario planning.</p>
             </div>
-            <div class="w-1/3">
+            <div class="w-1/3 mx-auto">
                 <img src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
             </div>
         </div>
@@ -132,7 +134,7 @@ levels:
             {%- assign stage_content = stage | map: stage -%}
               <div class="{% if forloop.index == 1 %}w-full{% else %}w-1/2{% endif %} pl-4 pb-4">
                 <div class="bg-pastel-green rounded-lg p-10">
-                    <p class="font-bold mb-6">{{ stage[forloop.index].title}}</p>
+                    <p class="font-bold mb-4 h4">{{ stage[forloop.index].title}}</p>
                     <p>{{ stage[forloop.index].text}}</p>
                 </div>
               </div>
@@ -147,7 +149,7 @@ levels:
                         <img src="{{ site.baseurl }}{{level[forloop.index].badge}}" alt="{{level[forloop.index].title}} Badge" />
                     </div>
                     <div class="w-3/4 pl-8">
-                        <h4 class="h4 mb-4">{{level[forloop.index].title}}</h4>
+                        <p class="h3 font-semibold mb-4">{{level[forloop.index].title}}</p>
                         <p>{{level[forloop.index].text}}</p>
                     </div>
                 </article>

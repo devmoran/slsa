@@ -18,7 +18,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
 
     &.is-specification-markdown {
         & .site-nav ul li a{
@@ -245,6 +245,7 @@
             font-weight: 400;
             line-height: $base-line-height;
             position: relative;
+            font-family: "Prodigy";
 
             &:hover {
                 text-decoration: none;
@@ -288,6 +289,7 @@
                     font-size: $small-font-size;
                     font-weight: 400;
                     line-height: $base-line-height;
+                    font-family: "Prodigy";
 
                     &:hover {
                         text-decoration: none;
@@ -369,6 +371,7 @@
         .page-link {
             display: block;
             padding: 10px 0;
+            font-family: "Prodigy";
         }
     }
 
@@ -462,12 +465,13 @@
     margin-right: calc(50% - 50vw);
     background-color: $dark-green;
     height: 85vh;
+    z-index: 10;
 
     &.home{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 85vh;
     }
 
     &.specifications{
