@@ -18,11 +18,11 @@ stages:
 levels:
     - 1:
         title: Basic security steps
-        text: Level 1 means the supply chain is documented, there’s infrastructure to generate provenance data, and systems are prepared to comply with higher SLSA levels.
+        text: Level 1 means the supply chain is documented, there’s infrastructure to generate provenance, and systems are prepared for higher SLSA levels.
         badge: /images/SLSA-Badge-full-level1.svg
     - 2:
         title: After the build
-        text: Level 2 shows more trustworthiness in the build, that builders are source-aware, and that signatures are used to prevent provenance being tampered with.
+        text: Level 2 shows more trustworthiness in the build, builders are source-aware, and signatures are used to prevent provenance being tampered with.
         badge: /images/SLSA-Badge-full-level2.svg
     - 3:
         title: Back to source
@@ -88,11 +88,9 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
-<a href="/specifications/{{ site.current_version}}/threats" class="hover:no-underline h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
-        <p class="cta-link font-semibold h4">Read about threats in detail</p>
+        <a href="/specifications/{{ site.current_version}}/threats" class="cta-link">Read about threats in detail</a>
     </div>
-</a>
 </section>
 <section class="section bg-white border-b border-black-900">
     <div class="wrapper inner w-full">
@@ -142,7 +140,7 @@ levels:
               </div>
           {%- endfor -%}
         </div>
-        <div class="flex flex-col justify-between items-center mt-24">
+        <div class="flex flex-col justify-between items-center mt-16">
           {%- for level in page.levels -%}
           {%- assign level_content = level | map: level -%}
               <div class="w-full {% if forloop.index != 4 %}mb-32{% endif %}">
@@ -161,11 +159,9 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
-<a href="/specifications/{{ site.current_version}}/security-levels" class="h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
-        <p class="cta-link font-semibold h4">Read the level specifications</p>
+        <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link">Read the level specifications</a>
     </div>
-</a>
 </section>
 <section x-data="{ specificationPages: [], currentVersion: `{{site.current_version|replace: "v", ""}}` }" class="section flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">

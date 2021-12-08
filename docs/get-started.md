@@ -29,12 +29,15 @@ order: 0
 <ul class="list-disc my-6 pl-6"><li>Producing provenance data</li>
 <li >Automating your builds</li></ul>
                     </p>
+                    <p class="mb-10">
+                        The tools listed are optional resources only, there for demonstration and context-specific guidance.
+                    </p>
                     <p class="h5 font-bold mb-6">Steps</p>
-                    <ul class="list-decimal mt-6 mb-6 pl-6">
+                    <ul class="list-decimal mt-6 mb-10 pl-6">
                         <li>Read the Level 1 <a href="/specifications/{{site.current_version}}/requirements#build-requirements">build</a> and <a href="/specifications/{{site.current_version}}/requirements#provenance-requirements">provenance</a> requirements</li>
                         <li>Choose a compliant version control system (if needed)</li>
                         <li>Choose a scripted build tool (if needed)</li>
-                        <li>Create your provenance using the in-toto format (the Tools listed below can help)</li>
+                        <li>Create your provenance using the in-toto format</li>
                         <li>Decide where you'll store the signed provenance so you and your users can easily build it into workflows</li>
                         <li>You’re Level 1! Add the SLSA Level 1 badge to your readme.</li>
                     </ul>
@@ -75,7 +78,7 @@ order: 0
                         <p class="pb-4">You can progressively attain higher SLSA levels. Each artifact’s SLSA level is independent from one another, allowing parallel progress and prioritization based on risk.</p>
                     </div>
                 </div>
-            </div>       
+            </div>
         </div>
     </div>
 </section>
