@@ -15,9 +15,9 @@ order: 0
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start">
             <div class="text w-1/2">
-<div class="h3 mb-8">
+<div class="h2 mb-8">
 
-### Get involved
+## Get involved
 
 </div>
                 <p>We rely on feedback from other organizations to evolve SLSA and be more useful to more people. We’d love to hear your experiences using it, and welcome all contributions, challenges and collaboration.</p>
@@ -29,19 +29,19 @@ order: 0
         <div class="flex flex-wrap justify-center items-center w-6/7 mt-8 mx-auto -mr-5 -ml-5">
             <div class="w-full md:w-1/2 getting_started_card pl-5 lg:h-96 h-auto lg:mb-0 mb-8">
                 <div class="bg-pastel-green h-full rounded-lg p-10">
-                    <p class="h4 mb-6">Join the working group</p>
+                    <p class="h4 font-semibold mb-6">Join the working group</p>
                     <p>We’re part of the OpenSSF Digital Identity Attestation Working Group. The community meets bi-weekly on Wednesdays at 9am PT. Anyone is welcome to join, whether to listen or to contribute.</p>
-                    <a target="_blank" href="https://calendar.google.com/calendar/u/0/r/week/2021/8/11?eid=NjIycXNoOHBtbDhuNTJiNjlmaWk5ZjU5ZWVfMjAyMTA4MTFUMTYwMDAwWiBzNjN2b2VmaHA1aTlwZmx0YjVxNjduZ3Blc0Bn&sf=true" class="cta-link mt-8">Our bi-weekly meet invite</a>
-                    <a target="_blank" href="https://github.com/ossf/wg-digital-identity-attestation" class="cta-link mt-8">Our discussion group</a>
-                    <a target="_blank" href="https://github.com/ossf/wg-digital-identity-attestation" class="cta-link mt-8">The OpenSSF community calendar</a>
+                    <a target="_blank" href="https://calendar.google.com/calendar/u/0/r/week/2021/8/11?eid=NjIycXNoOHBtbDhuNTJiNjlmaWk5ZjU5ZWVfMjAyMTA4MTFUMTYwMDAwWiBzNjN2b2VmaHA1aTlwZmx0YjVxNjduZ3Blc0Bn&sf=true" class="cta-link mt-6">Our bi-weekly meet invite</a>
+                    <a target="_blank" href="https://github.com/ossf/wg-digital-identity-attestation" class="cta-link mt-6">Our discussion group</a>
+                    <a target="_blank" href="https://github.com/ossf/wg-digital-identity-attestation" class="cta-link mt-6">The OpenSSF community calendar</a>
                 </div>
             </div>
             <div class="w-full md:w-1/2 getting_started_card pl-5 lg:h-96 h-auto lg:mb-0 mb-8">
                 <div class="bg-pastel-green h-full rounded-lg p-10">
-                    <p class="h4 mb-6">Contribute and discuss</p>
+                    <p class="h4 font-semibold mb-6">Contribute and discuss</p>
                     <p>The project is authored on GitHub using issues to describe proposed work and pull requests to submit changes. See our contribution guidelines for more details and to add your contribution.</p>
-                    <a target="_blank" href="https://github.com/slsa-framework/slsa/blob/main/CONTRIBUTING.md" class="cta-link mt-8">Contribution guidelines</a>
-                    <a target="_blank" href="https://github.com/slsa-framework/slsa/issues" class="cta-link mt-8">Leave us an issue on GitHub</a>
+                    <a target="_blank" href="https://github.com/slsa-framework/slsa/blob/main/CONTRIBUTING.md" class="cta-link mt-6">Contribution guidelines</a>
+                    <a target="_blank" href="https://github.com/slsa-framework/slsa/issues" class="cta-link mt-6">Leave us an issue on GitHub</a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@ order: 0
 <section class="section relative bg-green-transparent flex justify-center items-center overflow-hidden">
     <img class="object-cover absolute w-full h-full z-10" src="{{site.baseurl}}/images/community-bg.png" alt="Community background image">
     <div class="bg-light-green h-full rounded-lg p-10 z-20 w-2/3 mx-auto">
-        <p class="h4 mb-6">“SLSA’s really the first of its kind, a framework for supply chain and build integrity. What sets it apart is the thriving community behind it, and it’s resonating with different organizations.”</p>
+        <p class="h4 font-semibold mb-6">“SLSA’s really the first of its kind, a framework for supply chain and build integrity. What sets it apart is the thriving community behind it, and it’s resonating with different organizations.”</p>
         <p>Kim Lewandowski<br>Founder, Chainguard</p>
     </div>
 </section>
@@ -58,9 +58,9 @@ order: 0
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start text-white">
             <div class="text w-1/3">
-<div class="h3 p-0">
+<div class="h2 p-0">
 
-### Project status
+## Project status
 
 </div>
             </div>
@@ -76,9 +76,9 @@ Google has been using an internal version of SLSA since 2013 and requires it for
 <section class="section bg-pastel-green">
     <div class="wrapper inner w-full">
         <div class="flex flex-col justify-center items-center mb-8 w-2/3 mx-auto pl-5">
-<div class="h3">
+<div class="h2">
 
-### Media
+## Media
 
 </div>
         </div>
@@ -102,9 +102,9 @@ Google has been using an internal version of SLSA since 2013 and requires it for
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start mb-16">
             <div class="text w-1/2">
-<div class="h3 p-0">
+<div class="h2 p-0">
 
-### Steering committee
+## Steering committee
 
 </div>
             </div>
@@ -124,9 +124,9 @@ Google has been using an internal version of SLSA since 2013 and requires it for
         </div>
         <div class="flex justify-between items-start mb-16">
             <div class="text w-1/2">
-<div class="h3 p-0">
+<div class="h2 p-0">
 
-### Contributors
+## Contributors
 
 </div>
             </div>
