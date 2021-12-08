@@ -18,11 +18,11 @@ stages:
 levels:
     - 1:
         title: Basic security steps
-        text: Level 1 means the supply chain is documented, there’s infrastructure to generate provenance data, and systems are prepared to comply with higher SLSA levels.
+        text: Level 1 means the supply chain is documented, there’s infrastructure to generate provenance, and systems are prepared for higher SLSA levels.
         badge: /images/SLSA-Badge-full-level1.svg
     - 2:
         title: After the build
-        text: Level 2 shows more trustworthiness in the build, that builders are source-aware, and that signatures are used to prevent provenance being tampered with.
+        text: Level 2 shows more trustworthiness in the build, builders are source-aware, and signatures are used to prevent provenance being tampered with.
         badge: /images/SLSA-Badge-full-level2.svg
     - 3:
         title: Back to source

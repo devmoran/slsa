@@ -1,6 +1,6 @@
 ---
 title: Overview
-subheading: Safeguarding artifact integrity across any supply chain
+subheading: Safeguarding artifact integrity across any software supply chain
 levels:
     - 1:
         title: Level 1
@@ -8,22 +8,22 @@ levels:
         badge: /images/levelBadge1.svg
     - 2:
         title: Level 2
-        text: Easy to adopt, giving you supply chain visibility and being able to generate provenance
+        text: Starts to protect against software tampering and adds minimal build integrity guarantees
         badge: /images/levelBadge2.svg
     - 3:
         title: Level 3
-        text: Easy to adopt, giving you supply chain visibility and being able to generate provenance
+        text: Hardens the infrastructure against attacks, more trust integrated into complex systems
         badge: /images/levelBadge3.svg
     - 4:
         title: Level 4
-        text: Easy to adopt, giving you supply chain visibility and being able to generate provenance
+        text: The highest assurances of build integrity and measures for dependency management
         badge: /images/levelBadge4.svg
 testimonials:
     - 1:
         quote: This is our chance to work with the industry, set a standard which we can all agree to, and work together to raise the collective bar.
         name: Trishank Karthik Kuppusamy
         role: Engineering Manager at Datadog
-        logo: assets/images/logos/datadog.png
+        logo: /images/datadog.png
     - 2:
         quote: Software supply chain visibility will become a cross-industry need to establish best practices and trusted evidence in each link.
         name: Bruno Domingues
@@ -52,7 +52,8 @@ testimonials:
         <div class="flex flex-wrap justify-between items-center">
             <div class="text w-full md:w-1/2">
                 <h2 class="h2 mb-8">What is SLSA?</h2>
-                <p><strong>Supply chain Levels for Software Artifacts, or SLSA (salsa).</strong> It’s a security framework, a check-list of standards and controls to prevent tampering, improve integrity, and secure packages and infrastructure in your projects, businesses or enterprises. It’s how you get from safe enough to being as resilient as possible, at any link in the chain.</p>
+                <p><strong>Supply chain Levels for Software Artifacts, or SLSA (salsa).</strong></p>
+                <p>It’s a security framework, a check-list of standards and controls to prevent tampering, improve integrity, and secure packages and infrastructure in your projects, businesses or enterprises. It’s how you get from safe enough to being as resilient as possible, at any link in the chain.</p>
             </div>
             <div class="w-full md:w-1/3 md:mt-0 mt-8">
                 <img src="{{ site.baseurl }}/images/logo-mono.svg" alt="SLSA logo mark mono version">
@@ -67,7 +68,7 @@ testimonials:
                 <h3 class="h2 p-0">The supply chain problem</h3>
             </div>
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
-                <p>Any software can introduce vulnerabilities into a supply chain. As a system gets more complex, it’s critical to already have checks and best practices in place to guarantee artifact integrity, that the source code you’re relying on is the code you’re actually using. Without solid foundations and a plan to harden the system as it grows, it’s difficult to focus your efforts against tomorrow’s next hack, breach or compromise.</p>
+                <p>Any software can introduce vulnerabilities into a supply chain. As a system gets more complex, it’s critical to already have checks and best practices in place to guarantee artifact integrity, that the source code you’re relying on is the code you’re actually using. Without solid foundations and a plan for system as it grows, it’s difficult to focus your efforts against tomorrow’s next hack, breach or compromise.</p>
                 <a href="/specifications/{{ site.current_version}}/overview#supply-chain-threats" class="cta-link mt-8">More about supply chain attacks </a>
             </div>
         </div>
@@ -187,15 +188,15 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80 mb-8 md:mb-0">
                 <div class="bg-white h-full rounded-lg p-10 flex flex-col">
                     <p class="h3 font-semibold mb-8 md:mb-6">Start using SLSA</p>
-                    <p>The first big on-ramp to becoming SLSA Level 1 compliant is generating provenance. We’ve put together quick, step-by-step walkthroughs to help you on your way, and there’s still more to come as our roadmap progresses. </p>
+                    <p>Ready to put your project through its paces? The first on-ramp to becoming SLSA Level 1 compliant is generating provenance. We’ve put together a quick walkthrough with the steps you’ll need to take and available tools you can use.</p>
                     <a href="/get-started#reaching-slsa-level-1" class="cta-link mt-auto">Get started</a>
                 </div>
             </div>
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80">
                 <div class="bg-white h-full rounded-lg p-10 flex flex-col">
-                    <p class="h3 font-semibold mb-8 md:mb-6">Github actions demo</p>
-                    <p>Ready to put your project through it’s paces? There’s a comprehensive list of the specific requirements sources, builds, provenance need to pass for the different SLSA levels, as well as the common requirements involved.</p>
-                    <a href="https://github.com/slsa-framework/github-actions-demo" class="cta-link mt-auto">Learn more</a>
+                    <p class="h3 font-semibold mb-8 md:mb-6">Review the specifications</p>
+                    <p>Want to learn about how it fits your organization’s security? Here’s the documentation and detail behind the framework, with example use cases, specific threats (and their prevention), provenance and fully detailed requirements.</p>
+                    <a href="/specifications/{{site.current_version}}/overview#specifications" class="cta-link mt-auto">Learn more</a>
                 </div>
             </div>
         </div>
