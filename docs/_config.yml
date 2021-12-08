@@ -5,7 +5,7 @@ repository: slsa-framework/slsa
 header_pages:
   - index.md
   - specifications.md
-  - provenance.md
+  - provenance/v0.1.md
   - use-cases.md
   - get-started.md
   - community.md
