@@ -26,8 +26,8 @@ order: 0
                 <img class="mx-auto w-2/4" src="{{site.baseurl}}/images/slsa-dancing-goose-logo.svg" alt="SLSA dancing goose image">
             </div>
         </div>
-        <div class="flex flex-wrap justify-center items-center w-6/7 mt-8 mx-auto -mr-5 -ml-5">
-            <div class="w-full md:w-1/2 getting_started_card pl-5 lg:h-96 h-auto lg:mb-0 mb-8">
+        <div class="flex flex-wrap justify-center items-center w-6/7 mt-8 mx-auto md:-mr-5 md:-ml-5">
+            <div class="w-full md:w-1/2 getting_started_card md:pl-5 lg:h-96 h-auto lg:mb-0 mb-8">
                 <div class="bg-pastel-green h-full rounded-lg p-10">
                     <p class="h4 font-semibold mb-6">Join the working group</p>
                     <p>We’re part of the OpenSSF Digital Identity Attestation Working Group. The community meets bi-weekly on Wednesdays at 9am PT. Anyone is welcome to join, whether to listen or to contribute.</p>
@@ -36,7 +36,7 @@ order: 0
                     <a target="_blank" href="https://github.com/ossf/wg-digital-identity-attestation" class="cta-link mt-6 font-semibold h5">The OpenSSF community calendar</a>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 getting_started_card pl-5 lg:h-96 h-auto lg:mb-0 mb-8">
+            <div class="w-full md:w-1/2 getting_started_card md:pl-5 lg:h-96 h-auto lg:mb-0 mb-8">
                 <div class="bg-pastel-green h-full rounded-lg p-10">
                     <p class="h4 font-semibold mb-6">Contribute and discuss</p>
                     <p>The project is authored on GitHub using issues to describe proposed work and pull requests to submit changes. See our contribution guidelines for more details and to add your contribution.</p>
@@ -49,7 +49,7 @@ order: 0
 </section>
 <section class="section relative bg-green-transparent flex justify-center items-center overflow-hidden">
     <img class="object-cover absolute w-full h-full z-0" src="{{site.baseurl}}/images/community-bg.png" alt="Community background image">
-    <div class="bg-light-green h-full rounded-lg p-10 z-10 w-2/3 mx-auto">
+    <div class="bg-light-green h-full rounded-lg p-10 z-10 w-4/5 md:w-2/3 mx-auto">
         <p class="font-bold h3 mb-6">“SLSA’s really the first of its kind, a framework for supply chain and build integrity. What sets it apart is the thriving community behind it, and it’s resonating with different organizations.”</p>
         <p class="font-semibold h4 mb-0.5">Kim Lewandowski</p>
         <p class="font-regular">Founder, Chainguard</p>
@@ -57,9 +57,9 @@ order: 0
 </section>
 <section class="section bg-green-dark flex justify-center items-center">
     <div class="wrapper inner w-full">
-        <div class="flex justify-between items-start text-white">
+        <div class="md:flex justify-between items-start text-white">
             <div class="text w-full md:w-1/3">
-<div class="h2 p-0">
+<div class="h2 p-0 mb-8 md:mb-0">
 
 ## Project status
 
@@ -76,23 +76,23 @@ Google has been using an internal version of SLSA since 2013 and requires it for
 </section>
 <section class="section bg-pastel-green">
     <div class="wrapper inner w-full">
-        <div class="flex flex-col justify-center items-center mb-8 w-2/3 mx-auto pl-5">
+        <div class="flex flex-col justify-center items-center mb-8 w-2/3 mx-auto md:pl-5">
 <div class="h2">
 
 ## Media
 
 </div>
         </div>
-        <div class="flex flex-wrap justify-start items-start mb-16 -mr-5 -ml-5">
-            <a href="https://youtu.be/S_MXbt0p_pg" class="w-full lg:w-1/2 pl-5 pb-16">
+        <div class="flex flex-wrap justify-start items-start mb-16 md:-mr-5 md:-ml-5">
+            <a href="https://youtu.be/S_MXbt0p_pg" class="w-full lg:w-1/2 md:pl-5 pb-16">
                 <img class="mx-auto w-full" src="https://img.youtube.com/vi/S_MXbt0p_pg/0.jpg" alt="operation slsa episode 1 image">
                 <p class="text-green-darker font-bold h5 mt-4">Operation SLSA: Episode 1</p>
             </a>
-            <a href="https://youtube.com/playlist?list=PLVl2hFL_zAh9sw-wib4W6A14i6DnBTod7" class="w-full lg:w-1/2 pl-5">
+            <a href="https://youtube.com/playlist?list=PLVl2hFL_zAh9sw-wib4W6A14i6DnBTod7" class="w-full lg:w-1/2 md:pl-5">
                 <img class="mx-auto w-full" src="https://img.youtube.com/vi/DxAyP1QVYXc/0.jpg" alt="slsa code image">
                 <p class="text-green-darker font-bold h5 mt-4">SLSA Biweekly Meetings (Playlist)</p>
             </a>
-            <a href="https://youtu.be/aS_FKrCLh8o" class="w-full lg:w-1/2 pl-5">
+            <a href="https://youtu.be/aS_FKrCLh8o" class="w-full lg:w-1/2 md:pl-5">
                 <img class="mx-auto w-full" src="https://img.youtube.com/vi/aS_FKrCLh8o/0.jpg" alt="supply chain media image">
                 <p class="text-green-darker font-bold h5 mt-4">Getting Started with Supply Chain Security is Easier Than You... Michael Lieberman & Timothy Miller</p>
             </a>
@@ -101,9 +101,9 @@ Google has been using an internal version of SLSA since 2013 and requires it for
 </section>
 <section class="section bg-white flex justify-center items-center">
     <div class="wrapper inner w-full">
-        <div class="flex justify-between items-start mb-16">
+        <div class="md:flex justify-between items-start mb-16">
             <div class="text w-full md:w-1/2">
-<div class="h2 p-0">
+<div class="h2 p-0 mb-8 md:mb-0">
 
 ## Steering committee
 
@@ -123,9 +123,9 @@ Google has been using an internal version of SLSA since 2013 and requires it for
                 </div>
             </div>
         </div>
-        <div class="flex justify-between items-start mb-16">
+        <div class="md:flex justify-between items-start mb-16">
             <div class="text w-full md:w-1/2">
-<div class="h2 p-0">
+<div class="h2 p-0 mb-8 md:mb-0">
 
 ## Contributors
 

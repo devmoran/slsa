@@ -88,10 +88,10 @@ testimonials:
                 <img class="w-3/4 mx-auto" src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
             </div>
         </div>
-        <div class="flex flex-wrap justify-between items-center mt-16 -ml-4 -mr-4">
+        <div class="flex flex-wrap justify-between items-center mt-16 md:-ml-4 md:-mr-4">
           {%- for level in page.levels -%}
           {%- assign level_content = level | map: level -%}
-              <div class="w-full md:w-1/2 pl-4 pb-4">
+              <div class="w-full md:w-1/2 md:pl-4 pb-4">
                   {% include levels-card.html index=index level=level_content %}
               </div>
           {%- endfor -%}
@@ -173,7 +173,9 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         <div class="flex flex-wrap justify-center items-center mb-16 text-center md:w-3/4 relative mx-auto">
             {%- for image in site.static_files -%}
                 {%- if image.path contains 'images/logos' -%}
-                    <div class="w-2/4 md:w-1/4 mb-8"><img class="mx-auto w-1/3 h-auto" src="{{ site.baseurl }}{{ image.path }}" alt="image" /></div>
+                    <div class="w-2/4 md:w-1/4 mb-8">
+                        <img class="mx-auto w-1/3 h-auto" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div>
                 {%- endif -%}
             {%- endfor -%}
         </div>
@@ -184,22 +186,22 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         <div class="flex flex-col justify-center items-center text-center md:mb-16 md:w-2/3 relative mx-auto">
             <p class="h2 mb-8">Get started</p>
         </div>
-        <div class="flex flex-wrap justify-center items-center w-6/7 mx-auto -mr-4 -ml-4">
-            <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80 mb-8 md:mb-0">
-                <a href="{{site.baseurl}}/get-started#reaching-slsa-level-1" class="hover:no-underline">
+        <div class="flex flex-wrap justify-center items-center w-6/7 mx-auto md:-ml-4 md:-mr-4">
+            <div class="w-full md:w-1/2 getting_started_card md:pl-4 md:h-80 mb-8 md:mb-0">
+                <a href="/get-started#reaching-slsa-level-1" class="hover:no-underline">
                   <div class="bg-white h-full rounded-lg p-10 flex flex-col">
                       <p class="h3 font-semibold mb-8 md:mb-6">Start using SLSA</p>
                       <p>Ready to put your project through its paces? The first on-ramp to SLSA Level 1 is generating provenance. We’ve put together a quick walkthrough with the steps you’ll need to take and available tools you can use.</p>
-                      <p class="cta-link h5 font-semibold mt-auto">Get started</p>
+                      <p class="cta-link h5 font-semibold mt-auto pt-8 md:pt-0">Get started</p>
                   </div>
                 </a>
             </div>
-            <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80">
-              <a href="{{site.baseurl}}/specifications/{{site.current_version}}/overview#specifications" class="hover:no-underline">
+            <div class="w-full md:w-1/2 getting_started_card md:pl-4 md:h-80">
+              <a href="/specifications/{{site.current_version}}/overview#specifications" class="hover:no-underline">
                   <div class="bg-white h-full rounded-lg p-10 flex flex-col">
                       <p class="h3 font-semibold mb-8 md:mb-6">Review the specifications</p>
                       <p>Want to learn about how it fits your organization’s security? Here’s the documentation behind the framework, with use cases, specific threats (and their prevention), provenance and fully detailed requirements.</p>
-                      <p class="cta-link h5 font-semibold mt-auto">Learn more</p>
+                      <p class="cta-link h5 font-semibold mt-auto pt-8 md:pt-0">Learn more</p>
                   </div>
                 </a>
             </div>
