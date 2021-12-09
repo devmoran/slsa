@@ -35,7 +35,7 @@ The SLSA level is not transitive ([see our FAQs](faq.md)). This makes each artif
 
 ## Level requirements
 
-The following table provides a summary of the [requirements](requirements.md) for each level.
+The following table provides a summary of the [requirements]({{ site.baseurl }}{% link _specifications/{{site.current_version}}/requirements.md %}) for each level.
 
 | Requirement                          | SLSA 1 | SLSA 2 | SLSA 3 | SLSA 4 |
 | ------------------------------------ | ------ | ------ | ------ | ------ |
