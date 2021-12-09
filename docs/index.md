@@ -173,7 +173,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         <div class="flex flex-wrap justify-center items-center mb-16 text-center md:w-3/4 relative mx-auto">
             {%- for image in site.static_files -%}
                 {%- if image.path contains 'images/logos' -%}
-                    <div class="w-2/4 md:w-1/4 mb-8 h-16"><img class="mx-auto w-2/3 h-auto" src="{{ site.baseurl }}{{ image.path }}" alt="image" /></div>
+                    <div class="w-2/4 md:w-1/4 mb-8"><img class="mx-auto w-1/3 h-auto" src="{{ site.baseurl }}{{ image.path }}" alt="image" /></div>
                 {%- endif -%}
             {%- endfor -%}
         </div>
