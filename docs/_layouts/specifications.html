@@ -8,7 +8,7 @@
   <body>
     <div class="max-width">
       {%- include header.html -%}
-      <main aria-label="Content" class="pb-36">
+      <main aria-label="Content">
         {% if page.title == 'Overview' %}
             <div class="wrapper">
                 <!-- Hero -->
@@ -48,10 +48,10 @@
             </div>
             <section class="wrapper">
                 <div class="flex justify-between items-start">
-                    <div class="w-full md:w-2/3 markdown">
+                    <div class="w-full md:w-2/3 markdown pb-36">
                         {{ content }}
                     </div>
-                    <div class="table-of-contents w-full md:w-1/3 sticky top-32">
+                    <div class="table-of-contents w-full md:w-1/3 sticky top-32 pb-12">
                         {% if page.title != 'Frequently Asked Questions' %}
                             {% include specifications-versions-dropdown.html %}
                         {%- endif -%}

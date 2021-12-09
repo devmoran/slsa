@@ -43,6 +43,8 @@ plugins:
   - jekyll-toc
 versions: ['v0.1']
 current_version: "v0.1"
+relative_links:
+  collections: true
 defaults:
   - scope:
       path: "assets/images"
