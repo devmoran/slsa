@@ -14,7 +14,7 @@
   }" 
   class="site-header {% if page.url != '/specifications/{{site.current_version}}/overview' and page.url != {{site.baseurl}} and page.url != '/' or page.url == '/specifications/{{site.current_version}}/overview' %} is-specification-markdown{% endif %}">
   <div class="wrapper">   
-  <div class="py-4 flex items-center justify-between">
+  <div class="py-4 md:py-0 flex items-center justify-between">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}

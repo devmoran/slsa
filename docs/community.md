@@ -14,7 +14,7 @@ order: 0
 <section class="section bg-white flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start">
-            <div class="text w-1/2">
+            <div class="text w-full md:w-1/2">
 <div class="h2 mb-8">
 
 ## Get involved
@@ -22,7 +22,7 @@ order: 0
 </div>
                 <p>We rely on feedback from other organizations to evolve SLSA and be more useful to more people. We’d love to hear your experiences using it, and welcome all contributions, challenges and collaboration.</p>
             </div>
-            <div class="w-1/3">
+            <div class="w-full md:w-1/3">
                 <img class="mx-auto w-2/4" src="{{site.baseurl}}/images/slsa-dancing-goose-logo.svg" alt="SLSA dancing goose image">
             </div>
         </div>
@@ -48,8 +48,8 @@ order: 0
     </div>
 </section>
 <section class="section relative bg-green-transparent flex justify-center items-center overflow-hidden">
-    <img class="object-cover absolute w-full h-full z-10" src="{{site.baseurl}}/images/community-bg.png" alt="Community background image">
-    <div class="bg-light-green h-full rounded-lg p-10 z-20 w-2/3 mx-auto">
+    <img class="object-cover absolute w-full h-full z-0" src="{{site.baseurl}}/images/community-bg.png" alt="Community background image">
+    <div class="bg-light-green h-full rounded-lg p-10 z-10 w-2/3 mx-auto">
         <p class="font-bold h3 mb-6">“SLSA’s really the first of its kind, a framework for supply chain and build integrity. What sets it apart is the thriving community behind it, and it’s resonating with different organizations.”</p>
         <p class="font-semibold h4 mb-0.5">Kim Lewandowski</p>
         <p class="font-regular">Founder, Chainguard</p>
@@ -58,14 +58,14 @@ order: 0
 <section class="section bg-green-dark flex justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start text-white">
-            <div class="text w-1/3">
+            <div class="text w-full md:w-1/3">
 <div class="h2 p-0">
 
 ## Project status
 
 </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full md:w-1/2">
                 <div class="rounded-lg text-green p-5 border border-green-400 inline-block mb-8 h4">SLSA is currently in alpha</div>
                 <p>The initial v0.1 specification is out and is now ready to be tried out and tested.<br><br>
 We’ve released an initial set of tools and services to generate SLSA 1-2 provenance, which we’re looking to develop further soon.<br><br>
@@ -102,14 +102,14 @@ Google has been using an internal version of SLSA since 2013 and requires it for
 <section class="section bg-white flex justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start mb-16">
-            <div class="text w-1/2">
+            <div class="text w-full md:w-1/2">
 <div class="h2 p-0">
 
 ## Steering committee
 
 </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full md:w-1/2">
                 <div class="bg-pastel-green h-full rounded-lg p-10">
                     <ul>
                         <li class="mb-2"><a target="_blank" class="font-bold text-green-darker" href="https://github.com/brunodom">Bruno Domingues</a> - Intel</li>
@@ -124,14 +124,14 @@ Google has been using an internal version of SLSA since 2013 and requires it for
             </div>
         </div>
         <div class="flex justify-between items-start mb-16">
-            <div class="text w-1/2">
+            <div class="text w-full md:w-1/2">
 <div class="h2 p-0">
 
 ## Contributors
 
 </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full md:w-1/2">
                 <div class="bg-pastel-green h-full rounded-lg p-10">
                     <ul>
                         <li class="mb-2"><a target="_blank" class="font-bold text-green-darker" href="https://github.com/kimsterv">Kim Lewandowski</a></li>
