@@ -204,6 +204,7 @@
 
 h1,.h1, h2,.h2, h5,.h5 {
     font-family: $header-font-family;
+    font-weight: normal;
 }
 
 // Type size ramp
@@ -226,7 +227,7 @@ h1, .h1 {
 h2, .h2 {
     font-size: $header2-font-size;
     line-height: 1;
-    letter-spacing: 0;
+    letter-spacing: -0.01em;
 }
 
 h3, .h3 {
@@ -234,6 +235,7 @@ h3, .h3 {
     line-height: 1.3;
     letter-spacing: 0.055rem;
     font-family: $header-font-family-medium;
+    font-weight: 500;
 }
 
 h4, .h4 {
@@ -241,6 +243,7 @@ h4, .h4 {
     font-size: $header4-font-size;
     letter-spacing: 0.055rem;
     font-family: $header-font-family-semibold;
+    font-weight: 600;
 }
 
 h5, .h5 {
