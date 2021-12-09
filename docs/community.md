@@ -31,17 +31,17 @@ order: 0
                 <div class="bg-pastel-green h-full rounded-lg p-10">
                     <p class="h4 font-semibold mb-6">Join the working group</p>
                     <p>We’re part of the OpenSSF Digital Identity Attestation Working Group. The community meets bi-weekly on Wednesdays at 9am PT. Anyone is welcome to join, whether to listen or to contribute.</p>
-                    <a target="_blank" href="https://calendar.google.com/calendar/u/0/r/week/2021/8/11?eid=NjIycXNoOHBtbDhuNTJiNjlmaWk5ZjU5ZWVfMjAyMTA4MTFUMTYwMDAwWiBzNjN2b2VmaHA1aTlwZmx0YjVxNjduZ3Blc0Bn&sf=true" class="cta-link mt-6">Our bi-weekly meet invite</a>
-                    <a target="_blank" href="https://github.com/ossf/wg-digital-identity-attestation" class="cta-link mt-6">Our discussion group</a>
-                    <a target="_blank" href="https://github.com/ossf/wg-digital-identity-attestation" class="cta-link mt-6">The OpenSSF community calendar</a>
+                    <a target="_blank" href="https://calendar.google.com/calendar/u/0/r/week/2021/8/11?eid=NjIycXNoOHBtbDhuNTJiNjlmaWk5ZjU5ZWVfMjAyMTA4MTFUMTYwMDAwWiBzNjN2b2VmaHA1aTlwZmx0YjVxNjduZ3Blc0Bn&sf=true" class="cta-link mt-6 font-semibold h5">Our bi-weekly meet invite</a>
+                    <a target="_blank" href="https://github.com/ossf/wg-digital-identity-attestation" class="cta-link mt-6 font-semibold h5">Our discussion group</a>
+                    <a target="_blank" href="https://github.com/ossf/wg-digital-identity-attestation" class="cta-link mt-6 font-semibold h5">The OpenSSF community calendar</a>
                 </div>
             </div>
             <div class="w-full md:w-1/2 getting_started_card pl-5 lg:h-96 h-auto lg:mb-0 mb-8">
                 <div class="bg-pastel-green h-full rounded-lg p-10">
                     <p class="h4 font-semibold mb-6">Contribute and discuss</p>
                     <p>The project is authored on GitHub using issues to describe proposed work and pull requests to submit changes. See our contribution guidelines for more details and to add your contribution.</p>
-                    <a target="_blank" href="https://github.com/slsa-framework/slsa/blob/main/CONTRIBUTING.md" class="cta-link mt-6">Contribution guidelines</a>
-                    <a target="_blank" href="https://github.com/slsa-framework/slsa/issues" class="cta-link mt-6">Leave us an issue on GitHub</a>
+                    <a target="_blank" href="https://github.com/slsa-framework/slsa/blob/main/CONTRIBUTING.md" class="cta-link mt-6 font-semibold h5">Contribution guidelines</a>
+                    <a target="_blank" href="https://github.com/slsa-framework/slsa/issues" class="cta-link mt-6 font-semibold h5">Leave us an issue on GitHub</a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@ order: 0
 <section class="section relative bg-green-transparent flex justify-center items-center overflow-hidden">
     <img class="object-cover absolute w-full h-full z-10" src="{{site.baseurl}}/images/community-bg.png" alt="Community background image">
     <div class="bg-light-green h-full rounded-lg p-10 z-20 w-2/3 mx-auto">
-        <p class="font-regular text-3xl mb-6">“SLSA’s really the first of its kind, a framework for supply chain and build integrity. What sets it apart is the thriving community behind it, and it’s resonating with different organizations.”</p>
+        <p class="font-bold h3 mb-6">“SLSA’s really the first of its kind, a framework for supply chain and build integrity. What sets it apart is the thriving community behind it, and it’s resonating with different organizations.”</p>
         <p class="font-semibold h4 mb-0.5">Kim Lewandowski</p>
         <p class="font-regular">Founder, Chainguard</p>
     </div>
