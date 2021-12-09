@@ -1,7 +1,7 @@
 ---
 title: Security levels
 order: 1
-version: 0.2
+version: 0.1
 layout: specifications
 description: Start here for the level breakdowns
 ---
@@ -63,28 +63,28 @@ The following table provides a summary of the [requirements](requirements.md) fo
 <!-- markdownlint-disable-next-line MD036 -->
 _○ = required unless there is a justification_
 
-[access]: requirements#access
-[authenticated]: requirements#authenticated
-[available]: requirements#available
-[build as code]: requirements#build-as-code
-[build service]: requirements#build-service
-[dependencies complete]: requirements#dependencies-complete
-[ephemeral environment]: requirements#ephemeral-environment
-[hermetic]: requirements#hermetic
-[isolated]: requirements#isolated
-[non-falsifiable]: requirements#non-falsifiable
-[parameterless]: requirements#parameterless
-[reproducible]: requirements#reproducible
-[retained indefinitely]: requirements#retained-indefinitely
-[scripted build]: requirements#scripted-build
-[security]: requirements#security
-[service generated]: requirements#service-generated
-[superusers]: requirements#superusers
-[two-person reviewed]: requirements#two-person-reviewed
-[verified history]: requirements#verified-history
-[version controlled]: requirements#version-controlled
+[access]: /requirements.md.md#access
+[authenticated]: /requirements.md.md#authenticated
+[available]: /requirements.md#available
+[build as code]: /requirements.md#build-as-code
+[build service]: /requirements.md#build-service
+[dependencies complete]: /requirements.md#dependencies-complete
+[ephemeral environment]: /requirements.md#ephemeral-environment
+[hermetic]: /requirements.md#hermetic
+[isolated]: /requirements.md#isolated
+[non-falsifiable]: /requirements.md#non-falsifiable
+[parameterless]: /requirements.md#parameterless
+[reproducible]: /requirements.md#reproducible
+[retained indefinitely]: /requirements.md#retained-indefinitely
+[scripted build]: /requirements.md#scripted-build
+[security]: /requirements.md#security
+[service generated]: /requirements.md#service-generated
+[superusers]: /requirements.md#superusers
+[two-person reviewed]: /requirements.md#two-person-reviewed
+[verified history]: /requirements.md#verified-history
+[version controlled]: /requirements.md#version-controlled
 
-## Supply chain threats
+## <a name="threats"></a>Supply chain threats
 
 Attacks can occur at every link in a typical software supply chain, and these kinds of attacks are increasingly public, disruptive and costly in today’s environment. In developing SLSA, the requirements for each level are designed to specifically mitigate the risk of such known examples. For a much deeper technical analysis of the risks and how SLSA mitigates them, see [Threats and mitigations](threats.md).
 
