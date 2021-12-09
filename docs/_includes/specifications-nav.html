@@ -1,22 +1,20 @@
 <ul>
-
-
 {% for collection in site.collections %}
     {% if collection.label == 'specifications' %}
         {% for item in site[collection.label] %}
         {% if item.path contains site.current_version %}
         <li>
-        <a class="text-white md:text-black" href="{{site.baseurl}}/{{item.path | replace: "_", "" | replace: ".md", "" }}">
-        {{ item.title }}
-        </a>
+            <a class="text-white md:text-black" href="{{site.baseurl}}/{{item.path | replace: "_", "" | replace: ".md", "" }}">
+            {{ item.title }}
+            </a>
         </li>
         {% endif %}
         {% endfor %}
     {% endif%}
 {% endfor %}
-<li>
-    <a class="text-white md:text-black" href="{{ "_/specifications" | replace: "_", "" }}/faq">
-    FAQ
-    </a>
+    <li>
+        <a class="text-white md:text-black" href="{{ "_/specifications" | replace: "_", "" }}/faq">
+        FAQ
+        </a>
     </li>
 </ul>
