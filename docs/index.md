@@ -173,7 +173,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         <div class="flex flex-wrap justify-center items-center mb-16 text-center md:w-3/4 relative mx-auto">
             {%- for image in site.static_files -%}
                 {%- if image.path contains 'images/logos' -%}
-                    <div class="w-2/4 md:w-1/4 mb-8"><img class="mx-auto w-2/4" src="{{ site.baseurl }}{{ image.path }}" alt="image" /></div>
+                    <div class="w-2/4 md:w-1/4 mb-8 h-16"><img class="mx-auto w-2/3 h-auto" src="{{ site.baseurl }}{{ image.path }}" alt="image" /></div>
                 {%- endif -%}
             {%- endfor -%}
         </div>
@@ -186,18 +186,22 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         </div>
         <div class="flex flex-wrap justify-center items-center w-6/7 mx-auto -mr-4 -ml-4">
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80 mb-8 md:mb-0">
-                <div class="bg-white h-full rounded-lg p-10 flex flex-col">
-                    <p class="h3 font-semibold mb-8 md:mb-6">Start using SLSA</p>
-                    <p>Ready to put your project through its paces? The first on-ramp to SLSA Level 1 is generating provenance. We’ve put together a quick walkthrough with the steps you’ll need to take and available tools you can use.</p>
-                    <a href="/get-started#reaching-slsa-level-1" class="cta-link h5 font-semibold mt-auto">Get started</a>
-                </div>
+                <a href="/get-started#reaching-slsa-level-1" class="hover:no-underline">
+                  <div class="bg-white h-full rounded-lg p-10 flex flex-col">
+                      <p class="h3 font-semibold mb-8 md:mb-6">Start using SLSA</p>
+                      <p>Ready to put your project through its paces? The first on-ramp to SLSA Level 1 is generating provenance. We’ve put together a quick walkthrough with the steps you’ll need to take and available tools you can use.</p>
+                      <p class="cta-link h5 font-semibold mt-auto">Get started</p>
+                  </div>
+                </a>
             </div>
             <div class="w-full md:w-1/2 getting_started_card pl-4 md:h-80">
-                <div class="bg-white h-full rounded-lg p-10 flex flex-col">
-                    <p class="h3 font-semibold mb-8 md:mb-6">Review the specifications</p>
-                    <p>Want to learn about how it fits your organization’s security? Here’s the documentation behind the framework, with use cases, specific threats (and their prevention), provenance and fully detailed requirements.</p>
-                    <a href="/specifications/{{site.current_version}}/overview#specifications" class="cta-link h5 font-semibold mt-auto">Learn more</a>
-                </div>
+              <a href="/specifications/{{site.current_version}}/overview#specifications" class="hover:no-underline">
+                  <div class="bg-white h-full rounded-lg p-10 flex flex-col">
+                      <p class="h3 font-semibold mb-8 md:mb-6">Review the specifications</p>
+                      <p>Want to learn about how it fits your organization’s security? Here’s the documentation behind the framework, with use cases, specific threats (and their prevention), provenance and fully detailed requirements.</p>
+                      <p class="cta-link h5 font-semibold mt-auto">Learn more</p>
+                  </div>
+                </a>
             </div>
         </div>
     </div>

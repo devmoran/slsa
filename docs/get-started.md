@@ -13,7 +13,7 @@ order: 0
 <section class="section bg-pastel-green flex justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex justify-between items-start mb-16">
-            <div class="text w-1/3">
+            <div class="text w-full md:w-1/3">
 <div class="h2 p-0">
 
 ## Reaching SLSA Level 1
@@ -21,7 +21,7 @@ order: 0
 </div>
 <p class="h4 font-semibold my-6 text-green-dark">Effort: Low</p>
             </div>
-            <div class="w-2/4">
+            <div class="w-full md:w-2/3">
                 <div class="bg-white h-full rounded-lg p-10">
                     <p class="h5 font-bold mb-6">Overview<p>
                     <p>
@@ -55,25 +55,25 @@ order: 0
 <section class="section bg-white flex justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="flex flex-wrap justify-between items-start -mr-10 -ml-10">
-            <div class="text w-1/3 pl-10">
+            <div class="text w-full md:w-1/3 pl-10">
 <div class="h3 p-0">
 
 ## Building to higher levels
 
 </div>
             </div>
-            <div class="w-1/2 pl-10">
+            <div class="w-full md:w-1/2 pl-10">
                 <div class="bg-white">
                     <p>Once the foundations are in place with Level 1, you can start looking towards the higher levels to further strengthen artifact integrity with central monitoring, authentication and automated compilation, as well as more secure development practices. But there’s a few things to consider first:</p>
                 </div>
             </div>
             <div class="w-full mt-8">
                 <div class="bg-white flex justify-between">
-                    <div class="mt-6 w-1/2 pl-10">
+                    <div class="mt-6 w-full md:w-1/2 pl-10">
                         <p class="h3 font-semibold mb-6 ">Define your ideal state</p>
                         <p class="pb-4">Which level is most realistic, which is appropriate for your project in the short term and for your immediate needs? It can take years to achieve the ideal security state, so having intermediate milestones is important.<br><br>Not all projects require Level 4, and for others it’s impossible to achieve. If it seems unrealistic for your project, focus your efforts on Level 3 instead.</p>
                     </div>
-                    <div class="mt-6 w-1/2 pl-10">
+                    <div class="mt-6 w-full md:w-1/2 pl-10">
                         <p class="h3 font-semibold mb-6 ">Make progress in parallel</p>
                         <p class="pb-4">You can progressively attain higher SLSA levels. Each artifact’s SLSA level is independent from one another, allowing parallel progress and prioritization based on risk.</p>
                     </div>

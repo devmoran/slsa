@@ -70,6 +70,12 @@
     }
 }
 
+.co-logo {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
 .border {
     &-green {
         border-color: $button-green;
@@ -318,6 +324,7 @@ h5, .h5 {
         border-radius: 10px;
         display: block;
         padding: ($spacer-xl / 3) ($spacer-xl / 2);
+        margin-bottom: 1rem;
         &[open] > summary {
           margin-bottom: $spacer-l;
         }
@@ -411,7 +418,7 @@ h5, .h5 {
 
 .button-mono {
     font-family: $base-button-font;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1;
 }
 
@@ -548,7 +555,7 @@ h5, .h5 {
   &::-ms-expand { display: none };
 
     position: relative;
-    min-width: 332px;
+    min-width: 100%;
     outline: none;
     font-family: "Prodigy";
     line-height: 1;
