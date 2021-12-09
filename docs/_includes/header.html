@@ -19,9 +19,12 @@
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
       <a rel="author" href="{{ "/" | relative_url }}" class="relative logo">
-        <img src="{{ site.baseurl }}/images/logo.svg" alt="{{site.title}} logo" />
-        <!-- <a rel="author" class="logo-white" href="{{ "/" | relative_url }}"><img class="w-full" src="/images/logo.svg" alt="{{site.title}} logo" /></a>
-        <a rel="author" class="logo-green" href="{{ "/" | relative_url }}"><img class="w-full" src="/images/logo-green.svg" alt="{{site.title}} logo" /></a> -->
+        {% if page.url == '/' %}
+          <img src="{{ site.baseurl }}/images/logo.svg" alt="{{site.title}} logo" />
+        {% else %}
+        <img x-cloak x-show="!sticky" src="{{ site.baseurl }}/images/logo-green.svg" alt="{{site.title}} logo" />
+          <img x-cloak x-show="sticky" src="{{ site.baseurl }}/images/logo.svg" alt="{{site.title}} logo" />
+        {% endif%}
       </a>
       {%- if titles_size > 0 -%}
         {% include mobile-nav.html paths=page_paths %}
@@ -49,7 +52,7 @@
                     </a>
                   {% endif %}
                   {% if my_page.title == 'Specifications' %}
-                    <div @click.outside="open = false" x-show="open" x-transition class="absolute m-0 p-4 -ml-2 mt-4 bg-white rounded-lg shadow-md dropdown">
+                    <div @click.outside="open = false" x-cloak x-show="open" x-transition class="absolute m-0 p-4 -ml-2 mt-4 bg-white rounded-lg shadow-md dropdown">
                       {% include specifications-nav.html %}
                     </div>
                   {% endif %}
