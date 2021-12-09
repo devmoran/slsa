@@ -89,7 +89,7 @@
     a {
         color: inherit;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     ul {
@@ -206,16 +206,19 @@ h1, .h1 {
 h2, .h2 {
     font-size: $header2-font-size;
     line-height: 1;
+    letter-spacing: 0;
 }
 
 h3, .h3 {
     font-size: $header3-font-size;
     line-height: 1.3;
+    letter-spacing: 0.055rem;
 }
 
 h4, .h4 {
     line-height: 1.3;
     font-size: $header4-font-size;
+    letter-spacing: 0.055rem;
 }
 
 h5, .h5 {
@@ -242,8 +245,9 @@ h5, .h5 {
 
 .markdown {
     h2 {
-        margin-bottom: 40px;
         color: $green-darkest;
+        margin-bottom: 32px;
+        margin-top: 60px;
     }
     h3, h4 {
         margin-bottom: 30px;
@@ -394,6 +398,7 @@ h5, .h5 {
 .button-mono {
     font-family: $base-button-font;
     font-size: 20px;
+    line-height: 1;
 }
 
 .cta-link {

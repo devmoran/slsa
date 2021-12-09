@@ -308,8 +308,8 @@
         }
     }
 
-    & > .dropdown {
-        min-width: 135px;
+    .dropdown ul{
+        min-width: 105px;
     }
 
     @include media-query($on-tablet) {
@@ -492,6 +492,7 @@
     &.markdown-page{
         background-color: white;
         height: auto;
+        padding-bottom: 0;
     }
 }
 

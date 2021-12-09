@@ -107,7 +107,7 @@ h1 {
 /**
  * Links
  */
-a:not(.table-of-contents a, .getting_started_card a, footer a, .button-mono, .cta-link) {
+a:not(.table-of-contents a, .getting_started_card a, footer a, .button-mono, .cta-link, .border-b) {
     color: #23907E;
     text-decoration: none;
     font-weight: 600;
@@ -148,7 +148,8 @@ pre,
 code {
     @include relative-font-size(0.9375);
     border-radius: 3px;
-    background-color: #F7FAF9;
+    background-color: #b4f3c9;
+    font-family: "IBM Plex Mono";
 }
 
 code {
