@@ -88,7 +88,7 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
-<a href="/specifications/{{ site.current_version}}/threats" class="hover:no-underline h-full w-full">
+<a href="{{site.baseurl}}/specifications/{{site.current_version}}/threats" class="hover:no-underline h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
         <p class="cta-link font-semibold h4">Read about threats in detail</p>
     </div>
@@ -106,7 +106,7 @@ levels:
                 <p>There’s more to security than just protection against tampering. From vulnerability management and fuzzing to testing and developer trust, many of these require solutions where effort’s focused on the source. That’s where SLSA complements your wider security efforts, giving you confidence that the code you run is the code you analyzed.</p>
             </div>
             <div class="w-1/2">
-                <img class="mx-auto" src="{{ site.baseurl }}/images/SLSA-SBOM.svg" alt="How it fits into the security ecosystem image" />
+                <img class="mx-auto" src="{{site.baseurl}}/images/SLSA-SBOM.svg" alt="How it fits into the security ecosystem image" />
             </div>
         </div>
     </div>
@@ -128,7 +128,7 @@ levels:
                 <p>SLSA’s requirements look at the three general main areas involved in a software artifact’s creation, and where vulnerabilities target - the build, the source, and the dependencies. As the levels scale up, they show that work’s been done to assure there’s more integrity in each area, which can be helpful in scenario planning.</p>
             </div>
             <div class="w-1/3 mx-auto">
-                <img src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
+                <img src="{{site.baseurl}}/images/badge-exploded.svg" alt="SLSA levels badge">
             </div>
         </div>
         <div class="flex flex-wrap justify-between items-start mt-16 -ml-4 -mr-4">
@@ -161,7 +161,7 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
-<a href="/specifications/{{ site.current_version}}/security-levels" class="h-full w-full">
+<a href="{{site.baseurl}}/specifications/{{ site.current_version}}/security-levels" class="h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
         <p class="cta-link font-semibold h4">Read the level specifications</p>
     </div>

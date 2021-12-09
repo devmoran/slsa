@@ -16,7 +16,7 @@ This document covers all of the detailed requirements for an artifact to meet SL
 
 ## What is SLSA?
 
-SLSA is a set of incrementally adoptable security guidelines, established by industry consensus. The standards set by SLSA are guiding principles for both software producers and consumers: producers can follow the guidelines to make their software more secure, and consumers can make decisions based on a software package's security posture. SLSA's [four levels](levels.md) are designed to be incremental and actionable, and to protect against specific integrity attacks. SLSA 4 represents the ideal end state, and the lower levels represent milestones with corresponding integrity guarantees.
+SLSA is a set of incrementally adoptable security guidelines, established by industry consensus. The standards set by SLSA are guiding principles for both software producers and consumers: producers can follow the guidelines to make their software more secure, and consumers can make decisions based on a software package's security posture. SLSA's [four levels](security-levels.md) are designed to be incremental and actionable, and to protect against specific integrity attacks. SLSA 4 represents the ideal end state, and the lower levels represent milestones with corresponding integrity guarantees.
 
 ### Terminology
 

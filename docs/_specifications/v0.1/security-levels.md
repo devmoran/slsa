@@ -63,26 +63,26 @@ The following table provides a summary of the [requirements](requirements.md) fo
 <!-- markdownlint-disable-next-line MD036 -->
 _○ = required unless there is a justification_
 
-[access]: /requirements.md.md#access
-[authenticated]: /requirements.md.md#authenticated
-[available]: /requirements.md#available
-[build as code]: /requirements.md#build-as-code
-[build service]: /requirements.md#build-service
-[dependencies complete]: /requirements.md#dependencies-complete
-[ephemeral environment]: /requirements.md#ephemeral-environment
-[hermetic]: /requirements.md#hermetic
-[isolated]: /requirements.md#isolated
-[non-falsifiable]: /requirements.md#non-falsifiable
-[parameterless]: /requirements.md#parameterless
-[reproducible]: /requirements.md#reproducible
-[retained indefinitely]: /requirements.md#retained-indefinitely
-[scripted build]: /requirements.md#scripted-build
-[security]: /requirements.md#security
-[service generated]: /requirements.md#service-generated
-[superusers]: /requirements.md#superusers
-[two-person reviewed]: /requirements.md#two-person-reviewed
-[verified history]: /requirements.md#verified-history
-[version controlled]: /requirements.md#version-controlled
+[access]: requirements.md.md#access
+[authenticated]: requirements.md.md#authenticated
+[available]: requirements.md#available
+[build as code]: requirements.md#build-as-code
+[build service]: requirements.md#build-service
+[dependencies complete]: requirements.md#dependencies-complete
+[ephemeral environment]: requirements.md#ephemeral-environment
+[hermetic]: requirements.md#hermetic
+[isolated]: requirements.md#isolated
+[non-falsifiable]: requirements.md#non-falsifiable
+[parameterless]: requirements.md#parameterless
+[reproducible]: requirements.md#reproducible
+[retained indefinitely]: requirements.md#retained-indefinitely
+[scripted build]: requirements.md#scripted-build
+[security]: requirements.md#security
+[service generated]: requirements.md#service-generated
+[superusers]: requirements.md#superusers
+[two-person reviewed]: requirements.md#two-person-reviewed
+[verified history]: requirements.md#verified-history
+[version controlled]: requirements.md#version-controlled
 
 ## <a name="threats"></a>Supply chain threats
 
