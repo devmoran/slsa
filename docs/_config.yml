@@ -41,7 +41,7 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-relative-links
   - jekyll-toc
-versions: ['v0.1','v00-delete-this-experimental']
+versions: ['v0.1','v0.2']
 current_version: "v0.2"
 defaults:
   - scope:
