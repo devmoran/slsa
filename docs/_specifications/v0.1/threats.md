@@ -11,7 +11,7 @@ description: Specific supply chain attacks and how SLSA helps
 This document is a comprehensive technical analysis of supply chain integrity
 threats and their corresponding mitigations in SLSA. For a higher level overview
 of threats and mitigations, please see
-[Supply chain threats](security-levels.md#threats).
+[Supply chain threats](security-security-levels.md#threats).
 
 The goals of this document are to:
 
