@@ -4,7 +4,7 @@ layout: landing
 subheading: Safeguarding artifact integrity across any supply chain
 hero_text: SLSA is a set of standards and technical controls you can adopt to improve artifact integrity, and build towards completely resilient systems. It’s not a single tool, but a step-by-step outline to prevent artifacts being tampered with and tampered artifacts from being used, and at the higher levels, hardening up the platforms that make up a supply chain. These requirements are explained below, along with the rest of the essential specifications.
 order: 0
-version: 0.2
+version: 0.1
 stages:
     - 1:
         title: Build integrity
@@ -82,15 +82,17 @@ levels:
                 <p>High profile attacks like <strong>SolarWinds</strong>, <strong>Codecov</strong> or <strong>Linux hypocrite commits</strong> exploit the kind of supply chain integrity vulnerabilities which may go unnoticed or be underdeveloped, and quickly become extremely public, disruptive and costly in today’s environment. </p>
             </div>
             <div class="w-1/2 pl-10">
-                <p>Attacks can occur at every link in a typical software supply chain, which puts an extra burden on anyone involved in complex critical systems. SLSA has been designed with these real world examples in mind to make sure they’re more common knowledge, and easier to protect against.</p>
+                <p>Attacks can occur at every link in a typical software supply chain, which puts an extra burden on anyone involved in complex critical systems. SLSA's designed with these examples in mind to make sure they’re common knowledge, and easier to protect against.</p>
             </div>
         </div>
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
+<a href="/specifications/{{ site.current_version}}/threats" class="hover:no-underline h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
-        <a href="/specifications/{{ site.current_version}}/threats" class="cta-link">Read about threats in detail</a>
+        <p class="cta-link font-semibold h4">Read about threats in detail</p>
     </div>
+</a>
 </section>
 <section class="section bg-white border-b border-black-900">
     <div class="wrapper inner w-full">
@@ -140,7 +142,7 @@ levels:
               </div>
           {%- endfor -%}
         </div>
-        <div class="flex flex-col justify-between items-center mt-16">
+        <div class="flex flex-col justify-between items-center mt-32">
           {%- for level in page.levels -%}
           {%- assign level_content = level | map: level -%}
               <div class="w-full {% if forloop.index != 4 %}mb-32{% endif %}">
@@ -159,9 +161,11 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
+<a href="/specifications/{{ site.current_version}}/security-levels" class="h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
-        <a href="/specifications/{{ site.current_version}}/security-levels" class="cta-link">Read the level specifications</a>
+        <p class="cta-link font-semibold h4">Read the level specifications</p>
     </div>
+</a>
 </section>
 <section x-data="{ specificationPages: [], currentVersion: `{{site.current_version|replace: "v", ""}}` }" class="section flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">

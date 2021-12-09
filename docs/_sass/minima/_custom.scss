@@ -2,7 +2,7 @@
 // GLOBALS
 //
 
-// Alpine js 
+// Alpine js
 
 [x-cloak] { display: none; }
 
@@ -90,10 +90,20 @@
     min-height: 300px;
     ul{
         margin-top: 5px;
+        // Opacity on hover effect
+        &:hover > li {
+            transition: 150ms all ease;
+            opacity: 0.3;
+        }
     }
-    ul li{
+
+    ul li {
         margin-bottom: 5px;
-        font-family: "Prodigy";
+        font-family: 'Prodigy';
+    }
+    // Focus on hover effect
+    ul li:hover {
+        opacity: 1;
     }
 
     a {
