@@ -142,7 +142,7 @@ levels:
               </div>
           {%- endfor -%}
         </div>
-        <div class="flex flex-col justify-between items-center mt-24">
+        <div class="flex flex-col justify-between items-center mt-32">
           {%- for level in page.levels -%}
           {%- assign level_content = level | map: level -%}
               <div class="w-full {% if forloop.index != 4 %}mb-32{% endif %}">
