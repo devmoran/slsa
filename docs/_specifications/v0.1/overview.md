@@ -32,11 +32,7 @@ levels:
         text: Level 4 means the build environment is fully accounted for, dependencies are tracked in provenance and insider threats are ruled out.
         badge: /images/SLSA-Badge-full-level4.svg
 ---
-<!--{% if false %}-->
-
-**NOTE: This site is best viewed at https://slsa.dev.**
-
-<!--{% endif %}-->
+<!-- markdownlint-disable no-inline-html -->
 
 <section class="section bg-white">
 <!-- no indentation here to get markdown working with jekyll commonmark for styling the headings better -->

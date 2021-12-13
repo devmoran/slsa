@@ -46,9 +46,10 @@ testimonials:
         logo: /images/intel-logo.png
 
 ---
+<!-- markdownlint-disable no-inline-html -->
 <!--{% if false %}-->
 
-**NOTE: This site is best viewed at https://slsa.dev.**
+**NOTE: This site is best viewed at [https://slsa.dev](https://slsa.dev).**
 
 <!--{% endif %}-->
 
