@@ -89,7 +89,7 @@ testimonials:
                 <a href="{{site.baseurl}}/specifications/{{site.current_version}}/overview#supply-chain-threats" class="cta-link h5 font-semibold mt-8">More about supply chain attacks</a>
             </div>
         </div>
-        <img class="mt-16 mx-auto w-3/4" src="{{site.baseurl}}/images/SupplyChainDiagram.svg" alt="the supply chain problem image">
+        <img class="mt-16 mx-auto w-full md:w-3/4" src="{{site.baseurl}}/images/SupplyChainDiagram.svg" alt="the supply chain problem image">
     </div>
 </section>
 <section class="section bg-pastel-green flex flex-col justify-center items-center">
@@ -137,7 +137,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         <div class="flex flex-wrap justify-center items-center text-center md:w-3/4 relative mx-auto">
             {%- for image in site.static_files -%}
                 {%- if image.path contains 'images/logos' -%}
-                    <div class="w-2/4 md:w-1/4 mb-8">
+                    <div class="w-full md:w-2/4 mb-8">
                         <img class="mx-auto w-1/3 h-auto" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                     </div>
                 {%- endif -%}

@@ -4,15 +4,10 @@ layout: standard
 hero_text: There’s an active community of members, contributors and collaborators behind the SLSA framework. We’re drawn together by the shared goals of improving software supply chain security and codifying best practices for development, deployment and governance, all collaborating on an objective framework that works for open source projects and organizations, influences policy and regulations, empowers engineers and builds for the future.
 order: 0
 ---
-<!--{% if false %}-->
-
-**NOTE: This site is best viewed at https://slsa.dev.**
-
-<!--{% endif %}-->
-
+<!-- markdownlint-disable no-inline-html -->
 <section class="section bg-white flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
-        <div class="flex justify-between items-start">
+        <div class="flex flex-wrap justify-between items-start">
             <div class="text w-full md:w-1/2">
 <div class="h2 mb-8">
 
@@ -21,8 +16,8 @@ order: 0
 </div>
                 <p>We rely on feedback from other organizations to evolve SLSA and be more useful to more people. We’d love to hear your experiences using it, and welcome all contributions, challenges and collaboration.</p>
             </div>
-            <div class="w-full md:w-1/3">
-                <img class="mx-auto w-2/4" src="{{site.baseurl}}/images/slsa-dancing-goose-logo.svg" alt="SLSA dancing goose image">
+            <div class="md:w-5/12 w-full flex justify-center md:justify-end">
+                <img class="w-3/4 pl-6 mt-12" src="{{site.baseurl}}/images/slsa-dancing-goose-logo.svg" alt="SLSA dancing goose image">
             </div>
         </div>
         <div class="flex flex-wrap justify-center items-center w-6/7 mt-8 mx-auto md:-mr-5 md:-ml-5">

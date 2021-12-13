@@ -1,6 +1,6 @@
 ---
 title: Introduction
-layout: landing
+layout: standard
 hero_text: SLSA is a set of standards and technical controls you can adopt to improve artifact integrity, and build towards completely resilient systems. It’s not a single tool, but a step-by-step outline to prevent artifacts being tampered with and tampered artifacts from being used, and at the higher levels, hardening up the platforms that make up a supply chain. These requirements are explained below, along with the rest of the essential specifications.
 order: 0
 version: 0.1
@@ -63,7 +63,7 @@ levels:
             </div>
         </div>
         <div class="my-16 w-full">
-            <img class="mx-auto w-3/4" src="{{ site.baseurl }}/images/supply-chain-threats.svg" alt="supply chain full threats image" />
+            <img class="mx-auto w-full md:w-3/4" src="{{ site.baseurl }}/images/supply-chain-threats.svg" alt="supply chain full threats image" />
         </div>
     </div>
     <div class="wrapper inner w-full">
