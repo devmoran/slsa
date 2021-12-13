@@ -29,6 +29,22 @@ testimonials:
         name: Bruno Domingues
         role: CTO, Financial Services Industry, Intel
         logo: /images/intel-logo.png
+    - 3:
+        quote: Having a common language and standard for objectively measuring our supply chain security is a must in order to even begin meeting EO 14028.
+        name: Trishank Karthik Kuppusamy
+        role: Engineering Manager at Datadog
+        logo: /images/datadog.png
+    - 4:
+        quote: The threat to the software supply chain is real and growing, 650% from the last year. However, changing development process without slowing down is a major barrier.
+        name: Bruno Domingues
+        role: CTO, Financial Services Industry, Intel
+        logo: /images/intel-logo.png
+    - 5:
+        quote: Regulated industries such as Financial Services are being more vocal on defining their responsibility on the software supply chain. Having control and traceability as a requirement is taking shape.
+        name: Bruno Domingues
+        role: CTO, Financial Services Industry, Intel
+        logo: /images/intel-logo.png
+
 ---
 <!--{% if false %}-->
 
@@ -111,6 +127,23 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         </div>
     </div>
 </section>
+<section class="section bg-pastel-green flex flex-col justify-center items-center">
+    <div class="wrapper inner w-full">
+        <div class="flex flex-col justify-center items-center mb-16 text-center md:w-2/3 relative mx-auto">
+            <p class="h2 mb-10">An industry collaboration</p>
+            <p>SLSA is led by an initial cross-organization, vendor-neutral steering group committed to improving the security ecosystem for everyone.</p>
+        </div>
+        <div class="flex flex-wrap justify-center items-center text-center md:w-3/4 relative mx-auto">
+            {%- for image in site.static_files -%}
+                {%- if image.path contains 'images/logos' -%}
+                    <div class="w-2/4 md:w-1/4 mb-8">
+                        <img class="mx-auto w-1/3 h-auto" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
 <section x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
       loop: true,
       slidesPerView: 1,
@@ -131,11 +164,11 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         },
       },
     })"
-  class="section bg-pastel-green flex flex-col justify-center items-center">
+  class="section bg-white flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
-        <div class="flex flex-col justify-center items-center mb-16 w-full md:w-2/3 mx-auto text-center">
-            <h4 class="h2 mb-8">An industry collaboration</h4>
-            <p>SLSA is led by an initial cross-organization, vendor-neutral steering group committed to improving the security ecosystem for everyone. </p>
+        <div class="flex flex-col justify-center items-center mb-16 text-center md:w-2/3 relative mx-auto">
+            <p class="h2 mb-10">Our ethos</p>
+            <p>Today’s projects, products and services are increasingly complex and open to attack. As that trend continues, we need to scale up our effort to provide more secure, accessible ways to protect the development, distribution and consumption of the software we use, and all the impacted communities behind it.</p>
         </div>
       <div class="w-full md:w-2/3 relative mx-auto">
         <div class="absolute inset-y-0 left-0 z-10 flex items-center">
@@ -162,23 +195,6 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
             </button>
         </div>
       </div>
-    </div>
-</section>
-<section class="section bg-white flex flex-col justify-center items-center">
-    <div class="wrapper inner w-full">
-        <div class="flex flex-col justify-center items-center mb-16 text-center md:w-2/3 relative mx-auto">
-            <p class="h2 mb-10">Our ethos</p>
-            <p>Today’s projects, products and services are increasingly complex and open to attack. As that trend continues, we need to scale up our effort to provide more secure, accessible ways to protect the development, distribution and consumption of the software we use, and all the impacted communities behind it.</p>
-        </div>
-        <div class="flex flex-wrap justify-center items-center mb-16 text-center md:w-3/4 relative mx-auto">
-            {%- for image in site.static_files -%}
-                {%- if image.path contains 'images/logos' -%}
-                    <div class="w-2/4 md:w-1/4 mb-8">
-                        <img class="mx-auto w-1/3 h-auto" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                    </div>
-                {%- endif -%}
-            {%- endfor -%}
-        </div>
     </div>
 </section>
 <section class="section bg-light-green flex justify-center items-center">

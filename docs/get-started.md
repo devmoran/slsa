@@ -23,7 +23,7 @@ order: 0
             </div>
             <div class="w-full md:w-2/3">
                 <div class="bg-white h-full rounded-lg p-10">
-                    <p class="h5 font-bold mb-6">Overview<p>
+                    <p class="h4 font-bold mb-6">Overview<p>
                     <p>
                         This guide will help you achieve Level 1, and it should take less than a couple of hours for an individual project. By following the steps, you’ll soon be compliant with these SLSA requirements:
 <ul class="list-disc my-6 pl-6"><li>Producing provenance data</li>
@@ -32,7 +32,7 @@ order: 0
                     <p class="mb-10">
                         The tools listed are optional resources only, there for demonstration and context-specific guidance.
                     </p>
-                    <p class="h5 font-bold mb-6">Steps</p>
+                    <p class="h4 font-bold mb-6">Steps</p>
                     <ul class="list-decimal mt-6 mb-10 pl-6">
                         <li>Read the Level 1 <a href="/specifications/{{site.current_version}}/requirements#build-requirements">build</a> and <a href="/specifications/{{site.current_version}}/requirements#provenance-requirements">provenance</a> requirements</li>
                         <li>Choose a compliant version control system (if needed)</li>
@@ -41,7 +41,7 @@ order: 0
                         <li>Decide where you'll store the signed provenance so you and your users can easily build it into workflows</li>
                         <li>You’re Level 1! Add the SLSA Level 1 badge to your readme.</li>
                     </ul>
-                    <p class="h5 font-bold mb-6">Tools</p>
+                    <p class="h4 font-bold mb-6">Tools</p>
                     <ul class="list-disc mt-6 pl-6">
                         <li><a href="https://github.com/slsa-framework/github-actions-demo">GitHub Actions provenance generator</a></li>
                         <li><a href="https://github.com/slsa-framework/azure-devops-demo">Azure DevOps provenance generator</a></li>
@@ -54,15 +54,15 @@ order: 0
 </section>
 <section class="section bg-white flex justify-center items-center">
     <div class="wrapper inner w-full">
-        <div class="md:flex justify-between items-start md:-mr-10 md:-ml-10">
-            <div class="text w-full md:w-1/3 md:pl-10">
-<div class="h3 p-0">
+        <div class="justify-between items-start md:-mr-10 md:-ml-10">
+            <div class="text w-full md:pl-10">
+<div class="h2 mb-8">
 
 ## Building to higher levels
 
 </div>
             </div>
-            <div class="w-full md:w-1/2 md:pl-10">
+            <div class="w-full md:pl-10">
                 <div class="bg-white">
                     <p>Once the foundations are in place with Level 1, you can start looking towards the higher levels to further strengthen artifact integrity with central monitoring, authentication and automated compilation, as well as more secure development practices. But there’s a few things to consider first:</p>
                 </div>
