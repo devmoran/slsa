@@ -5,7 +5,7 @@ version: 0.1
 layout: specifications
 description: Start here for the level breakdowns
 ---
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable no-inline-html -->
 <span class="subtitle">
 
 Each level provides an increasing degree of confidence, a way to say that software hasn’t been tampered with and can be securely traced back to its source.

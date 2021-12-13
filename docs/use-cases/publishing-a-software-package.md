@@ -16,17 +16,17 @@ A developer (e.g. BarInc) wants to protect consumers of their software from mali
 
 BarInc can achieve these goals when publishing the container image by:
 
--   Upgrading their source control systems to meet higher SLSA levels
--   Upgrading their build system to meet higher SLSA levels
--   Ensuring BarImage must go through a secure control-point in order to be published
--   Having the control-point check the candidate BarImage against its provenance, checking that – for example:
-    -   The expected builder created it
-    -   The builder meets a minimum SLSA level
-    -   The source repositories listed in the provenance meets a minimum SLSA level
-    -   The build entry point listed in the provenance is expected
-    -   The binary dependencies listed in the provenance meets a minimum SLSA level
--   Only publishing the container image if all the above checks pass
--   Storing the provenance and all other attestations for future reference
+- Upgrading their source control systems to meet higher SLSA levels
+- Upgrading their build system to meet higher SLSA levels
+- Ensuring BarImage must go through a secure control-point in order to be published
+- Having the control-point check the candidate BarImage against its provenance, checking that – for example:
+  - The expected builder created it
+  - The builder meets a minimum SLSA level
+  - The source repositories listed in the provenance meets a minimum SLSA level
+  - The build entry point listed in the provenance is expected
+  - The binary dependencies listed in the provenance meets a minimum SLSA level
+- Only publishing the container image if all the above checks pass
+- Storing the provenance and all other attestations for future reference
 
 ## Limitations
 
