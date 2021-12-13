@@ -25,8 +25,10 @@ order: 0
                     <p class="h4 font-bold mb-6">Overview<p>
                     <p>
                         This guide will help you achieve Level 1, and it should take less than a couple of hours for an individual project. The goals is to:
-<ul class="list-disc my-6 pl-6"><li>Produce provenance data</li>
-<li >Automating your builds</li></ul>
+                    <ul class="list-disc my-6 pl-6">
+                        <li>Automate your builds</li>
+                        <li>Produce provenance data</li>
+                    </ul>
                     </p>
                     <p class="mb-10">
                         The tools listed are optional resources only, there for demonstration and context-specific guidance.
