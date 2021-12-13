@@ -10,14 +10,9 @@ SLSA (pronounced ["salsa"](https://www.google.com/search?q=how+to+pronounce+sals
 
 ## What's in this repo?
 
-The primary content of this repo is the [docs/](docs/) directory, which contains the core SLSA
-specification and sources to the [slsa.dev] website.
+The primary content of this repo is the [docs/](docs/) directory, which contains the core SLSA specification and sources to the [slsa.dev] website.
 
-You can read SLSA's documentation here:
-
--   [Levels](docs/_specifications/{{site.current_version}}/security-levels.md) (Defining the framework)
--   [Requirements](docs/_specifications/{{site.current_version}}/requirements.md) (How to attain compliance)
--   [Use cases](docs/use-cases.md)
+You can read [SLSA's documentation here](docs/_specifications/). The key documents are `security-levels` - which defines the framework - and `requirements`, which explains how to attain compliance.
 
 ## Project status
 
