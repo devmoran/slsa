@@ -24,8 +24,8 @@ order: 0
                 <div class="bg-white h-full rounded-lg p-10">
                     <p class="h4 font-bold mb-6">Overview<p>
                     <p>
-                        This guide will help you achieve Level 1, and it should take less than a couple of hours for an individual project. By following the steps, you’ll soon be compliant with these SLSA requirements:
-<ul class="list-disc my-6 pl-6"><li>Producing provenance data</li>
+                        This guide will help you achieve Level 1, and it should take less than a couple of hours for an individual project. The goals is to:
+<ul class="list-disc my-6 pl-6"><li>Produce provenance data</li>
 <li >Automating your builds</li></ul>
                     </p>
                     <p class="mb-10">
@@ -33,17 +33,16 @@ order: 0
                     </p>
                     <p class="h4 font-bold mb-6">Steps</p>
                     <ul class="list-decimal mt-6 mb-10 pl-6">
-                        <li>Read the Level 1 <a href="/specifications/{{site.current_version}}/requirements#build-requirements">build</a> and <a href="/specifications/{{site.current_version}}/requirements#provenance-requirements">provenance</a> requirements</li>
-                        <li>Choose a compliant version control system (if needed)</li>
-                        <li>Choose a scripted build tool (if needed)</li>
-                        <li>Create your provenance using the in-toto format</li>
-                        <li>Decide where you'll store the signed provenance so you and your users can easily build it into workflows</li>
-                        <li>You’re Level 1! Add the SLSA Level 1 badge to your readme.</li>
+                        <li>If you don't already use a build service or CI/CD, we recommend you set one up. This is not strictly required but it makes the following steps easier and is needed for higher levels. Consider using a service that is supported in the next step.</li>
+                        <li>Generate <a href="{{site.baseurl}}/provenance">provenance</a> during your build. The <a href="#tools">tools</a> below might be useful. If your build service is not listed there, consider creating a plugin to generate provenance.
+                        <li>Make the provenance available to your consumers. We don't yet have a standard convention for this. Best practises will develop as SLSA becomes more popular and we get more experience.</li>
+                        <li>You’re Level 1! Add the <a href="{{site.baseurl}}/images/SLSA-Badge-full-level1.svg">SLSA Level 1 badge</a> to your project's readme.</li>
                     </ul>
-                    <p class="h4 font-bold mb-6">Tools</p>
+                    <p class="h4 font-bold mb-6" id="tools">Tools</p>
                     <ul class="list-disc mt-6 pl-6">
-                        <li><a href="https://github.com/slsa-framework/github-actions-demo">GitHub Actions provenance generator</a></li>
-                        <li><a href="https://github.com/slsa-framework/azure-devops-demo">Azure DevOps provenance generator</a></li>
+                        <li><a href="https://github.com/slsa-framework/github-actions-demo">GitHub actions provenance generator</a> (SLSA level 1)</li>
+                        <li><a href="https://github.com/slsa-framework/azure-devops-demo">Azure DevOps provenance generator</a> (SLSA level 1)</li>
+                        <li><a href="https://cloud.google.com/build/docs/securing-builds/use-provenance-and-binary-authorization">Google Cloud Build</a> (SLSA level 2)</li>
                         <li><a href="https://github.com/sigstore/cosign">Sigstore Cosign for storing signed provenance</a></li>
                     </ul>
                 </div>
