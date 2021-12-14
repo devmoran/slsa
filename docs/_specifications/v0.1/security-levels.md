@@ -5,7 +5,6 @@ version: 0.1
 layout: specifications
 description: Start here for the level breakdowns
 ---
-<!-- markdownlint-disable no-inline-html -->
 <span class="subtitle">
 
 Each level provides an increasing degree of confidence, a way to say that software hasn’t been tampered with and can be securely traced back to its source.
@@ -120,9 +119,9 @@ impossible, to do with most software today.
 
 SLSA can help reduce supply chain threats in a software artifact, but there are limitations.
 
-- There are a significant number of dependencies in the supply chain for many artifacts. The full graph of dependencies could be intractably large.
-- In practice, a team working on security will need to identify and focus on the important components in a supply chain. This can be performed manually, but the effort could be significant.
-- An artifact’s SLSA level is not transitive ([see our FAQs](/faq)) and dependencies have their own SLSA ratings. This means that it is possible for a SLSA 4 artifact to be built from SLSA 0 dependencies. So, while the main artifact has strong security, risks may still exist elsewhere. The aggregate of these risks will help software consumers understand how and where to use the SLSA 4 artifact.
-- While automation of these tasks will help, it isn’t practical for every software consumer to fully vet the entire graph of every artifact. To close this gap, auditors and accreditation bodies could verify and assert that something meets the SLSA requirements. This could be particularly valuable for closed source software.
+-   There are a significant number of dependencies in the supply chain for many artifacts. The full graph of dependencies could be intractably large.
+-   In practice, a team working on security will need to identify and focus on the important components in a supply chain. This can be performed manually, but the effort could be significant.
+-   An artifact’s SLSA level is not transitive ([see our FAQs](/faq)) and dependencies have their own SLSA ratings. This means that it is possible for a SLSA 4 artifact to be built from SLSA 0 dependencies. So, while the main artifact has strong security, risks may still exist elsewhere. The aggregate of these risks will help software consumers understand how and where to use the SLSA 4 artifact.
+-   While automation of these tasks will help, it isn’t practical for every software consumer to fully vet the entire graph of every artifact. To close this gap, auditors and accreditation bodies could verify and assert that something meets the SLSA requirements. This could be particularly valuable for closed source software.
 
 As part of our roadmap, we’ll explore how to identify important components, how to determine aggregate risk throughout a supply chain, and the role of accreditation.

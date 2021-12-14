@@ -4,7 +4,6 @@ layout: standard
 hero_text: If you’re looking to jump straight in and try SLSA, here’s a quick start guide for the steps to take to reach the first SLSA level. Level 1 ensures that you’re setting up the foundation of trust in a system and that all your applications are generating appropriate provenance data. It also sets a baseline to achieve higher SLSA compliance later, which we explain in detail below.
 order: 0
 ---
-<!-- markdownlint-disable no-inline-html -->
 <section class="section bg-pastel-green flex justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="md:flex justify-between items-start mb-16">
