@@ -83,7 +83,7 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
-<a href="{{site.baseurl}}/specifications/{{site.current_version}}/threats" class="hover:no-underline h-full w-full">
+<a href="{{site.baseurl}}/specifications/{{site.current_spec_version}}/threats" class="hover:no-underline h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
         <p class="cta-link font-semibold h4">Read about threats in detail</p>
     </div>
@@ -156,13 +156,13 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
-<a href="{{site.baseurl}}/specifications/{{ site.current_version}}/security-levels" class="h-full w-full">
+<a href="{{site.baseurl}}/specifications/{{ site.current_spec_version}}/security-levels" class="h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
         <p class="cta-link font-semibold h4">Read the level specifications</p>
     </div>
 </a>
 </section>
-<section x-data="{ specificationPages: [], currentVersion: `{{site.current_version|replace: "v", ""}}` }" class="section flex flex-col justify-center items-center">
+<section x-data="{ specificationPages: [], currentVersion: `{{site.current_spec_version|replace: "v", ""}}` }" class="section flex flex-col justify-center items-center">
     <div class="wrapper inner w-full">
         <div class="md:flex justify-between items-start">
 <!-- no indentation here to get markdown working with jekyll commonmark for styling the headings better -->
