@@ -3,10 +3,10 @@
 {% if collection.label == 'specifications' %}
 {% for item in site[collection.label] %}
 <li>
-{% if item.path contains site.current_version %}
+{% if item.path contains site.current_spec_version %}
 {%- assign v = page.url | replace: '/','' | replace: 'specifications','' | replace: 'overview','' -%}
 {% if item.title != 'Introduction' %}
-<a class="border-b border-black-900 inline-block w-full mb-6" href="{{ site.baseurl }}/{{item.path | replace: site.current_version,v | replace: "_", "" | replace: ".md", "" }}">
+<a class="border-b border-black-900 inline-block w-full mb-6" href="{{ site.baseurl }}/{{item.path | replace: site.current_spec_version,v | replace: "_", "" | replace: ".md", "" }}">
 <p class="h3 font-semibold mb-2 flex items-center text-green-dark">
     <span class="mr-4">
     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

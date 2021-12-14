@@ -46,10 +46,9 @@ testimonials:
         logo: /images/intel-logo.png
 
 ---
-<!-- markdownlint-disable no-inline-html -->
 <!--{% if false %}-->
 
-**NOTE: This site is best viewed at [https://slsa.dev](https://slsa.dev).**
+**NOTE: This site is best viewed at https://slsa.dev.**
 
 <!--{% endif %}-->
 
@@ -86,7 +85,7 @@ testimonials:
             </div>
             <div class="w-full md:w-1/2 md:mt-0 mt-8">
                 <p>Any software can introduce vulnerabilities into a supply chain. As a system gets more complex, it’s critical to already have checks and best practices in place to guarantee artifact integrity, that the source code you’re relying on is the code you’re actually using. Without solid foundations and a plan for the system as it grows, it’s difficult to focus your efforts against tomorrow’s next hack, breach or compromise.</p>
-                <a href="{{site.baseurl}}/specifications/{{site.current_version}}/overview#supply-chain-threats" class="cta-link h5 font-semibold mt-8">More about supply chain attacks</a>
+                <a href="{{site.baseurl}}/specifications/{{site.current_spec_version}}/overview#supply-chain-threats" class="cta-link h5 font-semibold mt-8">More about supply chain attacks</a>
             </div>
         </div>
         <img class="mt-16 mx-auto w-full md:w-3/4" src="{{site.baseurl}}/images/SupplyChainDiagram.svg" alt="the supply chain problem image">
@@ -99,7 +98,7 @@ testimonials:
                 <h4 class="h2 mb-8">Levels of assurance</h4>
                 <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance.
                 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
-                <a href="{{site.baseurl}}/specifications/{{site.current_version}}/security-levels" class="cta-link h5 font-semibold mt-8">Read the level specifications</a>
+                <a href="{{site.baseurl}}/specifications/{{site.current_spec_version}}/security-levels" class="cta-link h5 font-semibold mt-8">Read the level specifications</a>
             </div>
             <div class="w-full md:w-2/4 md:mt-0 mt-8 pl-12">
                 <img class="w-3/4 mx-auto" src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
@@ -214,7 +213,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
                 </a>
             </div>
             <div class="w-full md:w-1/2 getting_started_card md:pl-4 md:h-80">
-              <a href="/specifications/{{site.current_version}}/overview#specifications" class="hover:no-underline">
+              <a href="/specifications/{{site.current_spec_version}}/overview#specifications" class="hover:no-underline">
                   <div class="bg-white h-full rounded-lg p-10 flex flex-col">
                       <p class="h3 font-semibold mb-8 md:mb-6">Review the specifications</p>
                       <p>Want to learn about how it fits your organization’s security? Here’s the documentation behind the framework, with use cases, specific threats (and their prevention), provenance and fully detailed requirements.</p>

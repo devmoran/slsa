@@ -2,7 +2,7 @@
 {% for collection in site.collections %}
     {% if collection.label == 'specifications' %}
         {% for item in site[collection.label] %}
-        {% if item.path contains site.current_version %}
+        {% if item.path contains site.current_spec_version %}
         <li>
             <a class="text-white md:text-black" href="{{site.baseurl}}/{{item.path | replace: "_", "" | replace: ".md", "" }}">
             {{ item.title }}

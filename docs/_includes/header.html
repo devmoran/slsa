@@ -1,6 +1,6 @@
 
-   
-<header 
+
+<header
   x-data="{ open: false, navOpen: false, sticky: false, lastPos: window.scrollY }"
   x-ref="navbar"
   x-on:scroll.window="
@@ -11,9 +11,9 @@
   'sticky': sticky,
   'fixed': !sticky && lastPos > 0,
   'static': lastPos === 0 && !sticky
-  }" 
-  class="site-header {% if page.url != '/specifications/{{site.current_version}}/overview' and page.url != {{site.baseurl}} and page.url != '/' or page.url == '/specifications/{{site.current_version}}/overview' %} is-specification-markdown{% endif %}">
-  <div class="wrapper">   
+  }"
+  class="site-header {% if page.url != '/specifications/{{site.current_spec_version}}/overview' and page.url != {{site.baseurl}} and page.url != '/' or page.url == '/specifications/{{site.current_spec_version}}/overview' %} is-specification-markdown{% endif %}">
+  <div class="wrapper">
   <div class="py-4 md:py-0 flex items-center justify-between">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -46,7 +46,7 @@
                         </svg></div></button>
                     </a>
                     {% else %}
-                    <a {% if my_page.title == page.title %}class="active page-link text-white flex items-center"{% else %}class="page-link text-white flex items-center"{% endif %} 
+                    <a {% if my_page.title == page.title %}class="active page-link text-white flex items-center"{% else %}class="page-link text-white flex items-center"{% endif %}
                     href="{{my_page_url}}">
                       {{ my_page.title | escape }}
                     </a>

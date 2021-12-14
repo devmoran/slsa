@@ -246,13 +246,14 @@
         display: none;
     }
 
-    ul li{
+    ul li {
         a{
             color: $text-color-light;
             font-weight: 400;
             line-height: $base-line-height;
             position: relative;
             font-family: "Prodigy";
+            width: 100%;
 
             &:hover {
                 text-decoration: none;
@@ -296,6 +297,7 @@
                     font-weight: 400;
                     line-height: $base-line-height;
                     font-family: "Prodigy";
+                    display: block;
 
                     &:hover {
                         text-decoration: none;

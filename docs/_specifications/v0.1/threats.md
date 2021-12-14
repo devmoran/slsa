@@ -5,7 +5,6 @@ version: 0.1
 layout: specifications
 description: Specific supply chain attacks and how SLSA helps
 ---
-<!-- markdownlint-disable no-inline-html -->
 > **IMPORTANT:** This is a work in progress.
 
 This document is a comprehensive technical analysis of supply chain integrity
@@ -15,10 +14,10 @@ of threats and mitigations, please see
 
 The goals of this document are to:
 
-- Explain the reasons for each of the SLSA requirements.
-- Increase confidence that the SLSA requirements are sufficient to achieve the
+-   Explain the reasons for each of the SLSA requirements.
+-   Increase confidence that the SLSA requirements are sufficient to achieve the
     desired level of integrity protection.
-- Help implementers better understand what they are protecting against so that
+-   Help implementers better understand what they are protecting against so that
     they can better design and implement controls.
 
 ## Definition of integrity
