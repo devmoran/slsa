@@ -5,6 +5,9 @@ version: 0.1
 layout: specifications
 description: Specific supply chain attacks and how SLSA helps
 ---
+<!-- markdownlint disable required to avoid list sub-items appearing in table of contents -->
+<!-- markdownlint-disable MD001 -->
+
 > **IMPORTANT:** This is a work in progress.
 
 This document is a comprehensive technical analysis of supply chain integrity
@@ -22,7 +25,7 @@ The goals of this document are to:
 
 ## Definition of integrity
 
-![Supply Chain Threats]({{site.baseurl}}/images/supply-chain-threats.svg)
+![Supply Chain Threats]({{ site.baseurl }}/images/supply-chain-threats.svg)
 
 Our goal is to provide software supply chain integrity, but we first need to
 define "integrity." Within SLSA, we divide integrity into two main areas:
@@ -42,8 +45,6 @@ stages.
 
 <article class="threats">
 
-<!-- markdownlint disable required to avoid items appearing in table of contents -->
-<!-- markdownlint-disable-next-line MD001 -->
 #### (A1) Submit bad code without review
 
 <details><summary>Directly submit without review <span>(SLSA 4)</span></summary>
@@ -299,8 +300,6 @@ management system to bypass controls.
 
 ## Build integrity
 
-<!-- markdownlint disable required to avoid items appearing in table of contents -->
-<!-- markdownlint-disable-next-line MD001 -->
 #### (C) Modify code after source control
 
 <details><summary>Build from unofficial fork of code <span>(TBD)</span></summary>

@@ -4,7 +4,7 @@
         {% for item in site[collection.label] %}
         {% if item.path contains site.current_spec_version %}
         <li>
-            <a class="text-white md:text-black" href="{{site.baseurl}}/{{item.path | replace: "_", "" | replace: ".md", "" }}">
+            <a class="text-white md:text-black" href="{{ site.baseurl }}/{{item.path | replace: "_", "" | replace: ".md", "" }}">
             {{ item.title }}
             </a>
         </li>
@@ -13,7 +13,7 @@
     {% endif%}
 {% endfor %}
     <li>
-        <a class="text-white md:text-black" href="{{site.baseurl}}/{{ "_/specifications" | replace: "_", "" }}/faq">
+        <a class="text-white md:text-black" href="{{ site.baseurl }}/{{ "_/specifications" | replace: "_", "" }}/faq">
         FAQ
         </a>
     </li>

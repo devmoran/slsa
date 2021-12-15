@@ -12,7 +12,7 @@
   'fixed': !sticky && lastPos > 0,
   'static': lastPos === 0 && !sticky
   }"
-  class="site-header {% if page.url != '/specifications/{{site.current_spec_version}}/overview' and page.url != {{site.baseurl}} and page.url != '/' or page.url == '/specifications/{{site.current_spec_version}}/overview' %} is-specification-markdown{% endif %}">
+  class="site-header {% if page.url != '/specifications/{{ site.current_spec_version }}/overview' and page.url != {{ site.baseurl }} and page.url != '/' or page.url == '/specifications/{{ site.current_spec_version }}/overview' %} is-specification-markdown{% endif %}">
   <div class="wrapper">
   <div class="py-4 md:py-0 flex items-center justify-between">
       {%- assign default_paths = site.pages | map: "path" -%}
@@ -56,9 +56,9 @@
                       {% include specifications-nav.html %}
                     </div>
                   {% endif %}
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
+                  {%- endif -%}
+                </li>
+                {%- endfor -%}
           </ul>
         </nav>
       {%- endif -%}

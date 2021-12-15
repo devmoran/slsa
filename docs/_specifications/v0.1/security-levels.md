@@ -59,7 +59,7 @@ The following table provides a summary of the [requirements](requirements.md) fo
 | Common - [Access]                    |        |        |        | ✓      |
 | Common - [Superusers]                |        |        |        | ✓      |
 
-<!-- markdownlint-disable-next-line MD036 -->
+<!-- markdownlint-disable MD036 -->
 _○ = required unless there is a justification_
 
 [access]: requirements.md.md#access
@@ -87,7 +87,7 @@ _○ = required unless there is a justification_
 
 Attacks can occur at every link in a typical software supply chain, and these kinds of attacks are increasingly public, disruptive and costly in today’s environment. In developing SLSA, the requirements for each level are designed to specifically mitigate the risk of such known examples. For a much deeper technical analysis of the risks and how SLSA mitigates them, see [Threats and mitigations](threats.md).
 
-![Supply Chain Threats]({{site.baseurl}}/images/supply-chain-threats.svg)
+![Supply Chain Threats]({{ site.baseurl }}/images/supply-chain-threats.svg)
 
 Many recent high-profile attacks were consequences of supply-chain integrity vulnerabilities, and could have been prevented by SLSA's framework. For example:
 
