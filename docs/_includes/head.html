@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | relative_url }}">
     <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | relative_url }}" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-square150x150logo" content="/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
 
     {% if jekyll.environment == 'production' %}
@@ -23,6 +24,8 @@
       <link rel="stylesheet" href="/fonts/fonts.css">
     {% endif %}
 
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
