@@ -5,19 +5,19 @@ levels:
     - 1:
         title: Level 1
         text: Easy to adopt, giving you supply chain visibility and being able to generate provenance
-        badge: /images/levelBadge1.svg
+        badge: /images/SLSA-badge-level1.svg
     - 2:
         title: Level 2
         text: Starts to protect against software tampering and adds minimal build integrity guarantees
-        badge: /images/levelBadge2.svg
+        badge: /images/SLSA-badge-level2.svg
     - 3:
         title: Level 3
         text: Hardens the infrastructure against attacks, more trust integrated into complex systems
-        badge: /images/levelBadge3.svg
+        badge: /images/SLSA-badge-level3.svg
     - 4:
         title: Level 4
         text: The highest assurances of build integrity and measures for dependency management in place
-        badge: /images/levelBadge4.svg
+        badge: /images/SLSA-badge-level4.svg
 testimonials:
     - 1:
         quote: This is our chance to work with the industry, set a standard which we can all agree to, and work together to raise the collective bar.
