@@ -154,7 +154,7 @@ levels:
     </div>
 </section>
 <section class="section cta_banner bg-pastel-green">
-<a href="{{ site.baseurl }}/specifications/{{ site.current_spec_version}}/security-levels" class="h-full w-full">
+<a href="{{ site.baseurl }}/specifications/{{ site.current_spec_version}}/levels" class="h-full w-full">
     <div class="wrapper inner w-full flex items-center justify-center">
         <p class="cta-link font-semibold h4">Read the level specifications</p>
     </div>

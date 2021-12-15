@@ -167,6 +167,22 @@
 
 }
 
+.main-content {
+    ul:not(.custom-list) {
+        list-style: disc;
+        padding-left: 25px;
+        margin-bottom: 30px;
+
+        & > li {
+            margin-bottom: 10px;
+        }
+    }
+
+    blockquote {
+        margin: 30px 0;
+    }
+}
+
 .max-width {
     align-items: center;
 }
@@ -300,7 +316,6 @@ h5, .h5 {
         font-weight: normal;
     }
 }
-
 
 details {
     // Simulate a 1px border with same behavior as "border-collapse: collapse".

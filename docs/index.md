@@ -98,7 +98,7 @@ testimonials:
                 <h4 class="h2 mb-8">Levels of assurance</h4>
                 <p>SLSA levels are like a common language to talk about how secure software, supply chains and their component parts really are. From source to system, the levels blend together industry-recognized best practices to create four compliance levels of increasing assurance.
                 These look at the builds, sources and dependencies in open source or commercial software. Starting with easy, basic steps at the lower levels to build up and protect against advanced threats later, bringing SLSA into your work means prioritized, practical measures to prevent unauthorized modifications to software, and a plan to harden that security over time.</p>
-                <a href="{{ site.baseurl }}/specifications/{{ site.current_spec_version }}/security-levels" class="cta-link h5 font-semibold mt-8">Read the level specifications</a>
+                <a href="{{ site.baseurl }}/specifications/{{ site.current_spec_version }}/levels" class="cta-link h5 font-semibold mt-8">Read the level specifications</a>
             </div>
             <div class="w-full md:w-2/4 md:mt-0 mt-8 pl-12">
                 <img class="w-3/4 mx-auto" src="{{ site.baseurl }}/images/badge-exploded.svg" alt="SLSA levels badge">
@@ -135,7 +135,7 @@ It’s adaptable, and it’s been designed with the wider security ecosystem in 
         </div>
         <div class="flex flex-wrap justify-center items-center text-center w-full relative mx-auto">
             {%- for image in site.static_files -%}
-                {%- if image.path contains 'images/logos' -%}
+                {%- if image.path contains '/logos' -%}
                     <div class="w-full md:w-1/4 mb-12">
                         <img class="mx-auto w-5/12 md:8/12 h-auto" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                     </div>

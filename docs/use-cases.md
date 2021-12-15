@@ -84,7 +84,7 @@ order: 0
             </div>
         </div>
         <p class="h4">Example case studies</p>
-        <ul class="mt-6 mb-16">
+        <ul class="mt-6 mb-16 custom-list">
             <li class="border-t border-b border-black-900">
                 <a class="p-0 m-0 text-green-dark w-full hover:no-underline" href="/use-cases/publishing-a-software-package">
                     <p class="h3 font-semibold flex items-center pt-8 pb-8">
