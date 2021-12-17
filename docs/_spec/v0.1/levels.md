@@ -5,32 +5,60 @@ version: 0.1
 layout: specifications
 description: Start here for the level breakdowns
 ---
-<span class="subtitle">
 
-Each level provides an increasing degree of confidence, a way to say that software hasn’t been tampered with and can be securely traced back to its source.
+SLSA’s levels prioritize measures to provide you and your users with appropriate, industry-recognized security guarantees. Each level builds on baseline guarantees that the source code you analyze and trust is the code that you're actually using, starting by prioritizing the security of packages you’re using, then focusing effort to securing the infrastructure in place to deliver that package.
 
-</span>
+Artifacts used in critical infrastructure or vital business operations may want to attain a higher level of security, whereas software that poses a low risk can stop when it’s appropriate. It can take years to achieve the ideal security state, so having intermediate milestones is important. That’s where SLSA levels come in, representing stages of gradual improvement.
 
-| Level | Description                                   | Example                                               |
-| :---- | :-------------------------------------------- | :---------------------------------------------------- |
-| 1     | Documentation of the build process            | Unsigned provenance                                   |
-| 2     | Tamper resistance of the build service        | Hosted source/build, signed provenance                |
-| 3     | Extra resistance to specific threats          | Security controls on host, non-falsifiable provenance |
-| 4     | Highest levels of confidence and trust        | Two-party review + hermetic builds                    |
+The SLSA level is not transitive ([see our FAQs](../faq)). Each artifact’s SLSA level is independent from one another, allowing parallel progress and prioritization based on risk. The level describes the integrity protections of an artifact’s build process and top-level source, but nothing about the artifact’s dependencies. Dependencies have their own SLSA levels, and it’s possible for a SLSA Level 4 artifact to be built from SLSA Level 0 dependencies.
 
-It can take years to achieve the ideal security state - intermediate milestones are important. SLSA guides you through gradually improving the security of your software. Artifacts used in critical infrastructure or vital business operations may want to attain a higher level of security, whereas software that poses a low risk can stop when they're comfortable.
+## Level 1: Basic security steps
 
-## Detailed explanation
+**Level 1** means the supply chain is documented, there’s infrastructure to generate provenance data, and systems are prepared to comply with higher SLSA levels. Integrity across the build, source and dependencies involved are best effort. These checks are the basic first steps anyone can take to start mapping things out and focus their security efforts.
 
-| Level | Requirements |
-| ----- | ------------ |
-| 0     | **No guarantees.** SLSA 0 represents the lack of any SLSA level. |
-| 1     | **The build process must be fully scripted/automated and generate provenance.** Provenance is metadata about how an artifact was built, including the build process, top-level source, and dependencies. Knowing the provenance allows software consumers to make risk-based security decisions. Provenance at SLSA 1 does not protect against tampering, but it offers a basic level of code source identification and can aid in vulnerability management. |
-| 2     | **Requires using version control and a hosted build service that generates authenticated provenance.** These additional requirements give the software consumer greater confidence in the origin of the software. At this level, the provenance prevents tampering to the extent that the build service is trusted. SLSA 2 also provides an easy upgrade path to SLSA 3. |
-| 3     | **The source and build platforms meet specific standards to guarantee the auditability of the source and the integrity of the provenance respectively.** We envision an accreditation process whereby auditors certify that platforms meet the requirements, which consumers can then rely on. SLSA 3 provides much stronger protections against tampering than earlier levels by preventing specific classes of threats, such as cross-build contamination. |
-| 4     | **Requires two-person review of all changes and a hermetic, reproducible build process.** Two-person review is an industry best practice for catching mistakes and deterring bad behavior. Hermetic builds guarantee that the provenance’s list of dependencies is complete. Reproducible builds, though not strictly required, provide many auditability and reliability benefits. Overall, SLSA 4 gives the consumer a high degree of confidence that the software has not been tampered with. |
+![level 1](/images/SLSA-Badge-full-level1.svg)
 
-The SLSA level is not transitive ([see our FAQs](../faq.md)). This makes each artifact’s SLSA rating independent from one another, allowing parallel progress and prioritization based on risk. The level describes the integrity protections of an artifact’s build process and top-level source, but nothing about the artifact’s dependencies. Dependencies have their own SLSA ratings, and it is possible for a SLSA 4 artifact to be built from SLSA 0 dependencies.
+|                   | Description |
+|-------------------|-------------|
+| **Goals**         | <ul><li>Figure out the scope and risk of supply chain practices</li><li>Determine gaps in supply chain visibility</li><li>Provide a steel thread of information flow</li><li>Prepare systems for higher SLSA levels</li></ul> |
+| **Requirements**  |  <ul><li>Automated build process</li><li>Supply chain is documented</li><li>Infrastructure to generate provenance data</li></ul>      |
+| **Use cases**     |<ul><li><strong>Developer</strong> building and releasing locally</li><li><strong>Project</strong> releasing performed manually on maintainers’ machines</li><li><strong>Enterprise</strong> publishing applications through multiple distribution channels</li></ul> |
+
+## Level 2: Protection for builders
+
+**Level 2** shows more trustworthiness in the build, that there’s a build service instead of compiling locally, builders are source-aware, and signatures are used to prevent provenance being tampered with. Integrity in the build is now credible. It’s the logical place to establish more trust in a decoupled system. These requirements protect against threats like generating false or modified provenance to bypass policy checks.
+
+![level 2](/images/SLSA-Badge-full-level2.svg)
+
+|                   | Description |
+|-------------------|-------------|
+| **Goals**         | <ul><li>Establish builders as a trust boundary</li><li>Make builders source-aware</li><li>Prevent tampering</li></ul> |
+| **Requirements**  |  <ul><li>Moving to a build service</li><li>Every change to the source is tracked in a version controlled system</li><li>Using cryptographic signatures verifiable by the consumer</li></ul>      |
+| **Use cases**     |<ul><li><strong>Developer</strong> running open source builder instance on own infrastructure</li><li><strong>Project</strong> using a publically hosted CI</li><li><strong>Enterprise</strong> using their own internal CI</li></ul> |
+
+## Level 3: Back to source
+
+**Level 3** shows that a system’s builds are fully trustworthy, build definitions come from the source and a system has more hardened CI. Each build involved can be marked as fully trustworthy, and any builder compromise won’t undermine the rest of the system. Build integrity is now fully resilient, source integrity is credible but dependencies are best effort. This means mitigating against threats like compromised build environment of a subsequent build, compromised parallel builds, stealing cryptographic secrets, or building from a modified version of code changed after checkout.
+
+![level 3](/images/SLSA-Badge-full-level3.svg)
+
+|                   | Description |
+|-------------------|-------------|
+| **Goals**         | <ul><li>Isolate builds from one another within the builder</li><li>Insider with access to trigger builds can't influence build output</li></ul> |
+| **Requirements**  |  <ul><li>Build definitions and configuration is defined in source control</li><li>Build service ensures the build steps ran in an ephemeral and isolated environment</li><li>Provenance can’t be falsified by the build service’s users</li><li>Provenance identifies entry point and all build parameters</li></ul>      |
+| **Use cases**     |<ul><li><strong>Developer</strong> mirroring their code in a public repository and building on a public CI service</li><li><strong>Project</strong> using a publically hosted CI with isolated workers and records all build and release workflows in code</li><li><strong>Enterprise</strong> using a hardened internal CI system</li></ul> |
+
+## Level 4: Across the chain
+
+**Level 4** means the build environment is fully accounted for, dependencies are tracked in provenance and insider threats are ruled out. This means limiting access and input to the most critical people involved to prevent any tampering of the source, compromises and attacks, like project owners bypassing or disabling controls, platform administrators abusing privileges and pushing malicious versions of software, submitting bad code without review or evading code review requirements. Build and source integrity are fully resilient, and dependencies integrity is credible.
+
+![level 4](/images/SLSA-Badge-full-level4.svg)
+
+|                   | Description |
+|-------------------|-------------|
+| **Goals**         | <ul><li>Insider with commit access can't influence build output</li><li>Fully accounted for build environment</li><li>Ensure dependencies are tracked in provenance</li></ul> |
+| **Requirements**  |  <ul><li>Every change in revision history has gone through two-person review</li><li>Build service is parameterless and hermetic</li><li>Provenance records all build dependencies available when running the build steps</li><li>Provenance includes reproducible information</li></ul>      |
+| **Use cases**     |<ul><li><strong>Developer</strong> having a volunteer (maintainer) review all changes to the public mirror and makes all build dependencies content-addressed</li><li><strong>Project</strong> requiring all changes have at least one maintainer sign-off (or two community members for submissions from new contributors) and eliminates all network access during their build</li><li><strong>Enterprise</strong> requiring two-party review for all changes and vendors/pins all dependencies</li></ul> |
 
 ## Level requirements
 
@@ -83,7 +111,7 @@ _○ = required unless there is a justification_
 [verified history]: requirements.md#verified-history
 [version controlled]: requirements.md#version-controlled
 
-## <a name="threats"></a>Supply chain threats
+## Supply chain threats
 
 Attacks can occur at every link in a typical software supply chain, and these kinds of attacks are increasingly public, disruptive and costly in today’s environment. In developing SLSA, the requirements for each level are designed to specifically mitigate the risk of such known examples. For a much deeper technical analysis of the risks and how SLSA mitigates them, see [Threats and mitigations](threats.md).
 
