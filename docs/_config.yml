@@ -1,5 +1,5 @@
-title: SLSA
-description: Supply-chain Levels for Software Artifacts
+title: SLSA – Supply-chain Levels for Software Artifacts
+description: Safeguarding artifact integrity across any software supply chain
 copyright_html: Copyright 2021 The Linux Foundation<br>under the terms of the <a href="https://github.com/slsa-framework/slsa/blob/main/LICENSE">Apache License 2.0</a>
 repository: slsa-framework/slsa
 collections:
