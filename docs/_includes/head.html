@@ -2,7 +2,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {%- seo title=false -%}
+    {%- seo -%}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "images/icons/apple-touch-icon.png" | relative_url }}">
@@ -15,21 +15,8 @@
     <meta name="msapplication-square150x150logo" content="images/icons/mstile-150x150.png" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://slsa.dev">
-    <meta property="og:title" content="SLSA – Supply-chain Levels for Software Artifacts">
-    <meta property="og:description" content="Safeguarding artifact integrity across any software supply chain">
-    <meta property="og:image" content="{{ "{{site.baseurl}}/images/icons/android-chrome-512x512.png" | relative_url }}">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://slsa.dev">
-    <meta property="twitter:title" content="SLSA – Supply-chain Levels for Software Artifacts">
+    <meta property="twitter:title" content="SLSA • Supply-chain Levels for Software Artifacts">
     <meta property="twitter:description" content="Safeguarding artifact integrity across any software supply chain">
-    <meta property="twitter:image" content="{{ "{{site.baseurl}}/images/icons/android-chrome-512x512.png" | relative_url }}">
-
-    <title>SLSA • {% if page.title %}{{page.title}}{% endif %}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
